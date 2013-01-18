@@ -1,0 +1,24 @@
+if (heading >= 338 || heading < 23) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car1.png";
+}
+if (23 <= heading && heading < 68) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car2.png";
+}
+if (68 <= heading && heading < 113) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car3.png";
+}
+if (113 <= heading && heading < 158) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car4.png";
+}
+if (158 <= heading && heading < 203) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car5.png";
+}
+if (203 <= heading && heading < 248) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car6.png";
+}
+if (248 <= heading && heading < 293) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car7.png";
+}
+if (293 <= heading && heading < 338) {
+    baseIcon.image = "http://" + location.host + "/Pictures/car8.png";
+}

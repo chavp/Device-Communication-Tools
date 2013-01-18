@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "Device Communication Tracking";
+}
+
+<style>
+    #map_canvas { height: 800px; }
+    #map_panorama { height: 500px; }
+</style>  
+
+@section script{
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">  </script>
+    <script type="text/javascript">
+        var carIcon = '@Url.Content("~/Content/map-icons-collection-2.0/icons/car.png")';
+
+        var direction_up_icon = '@Url.Content("~/Content/heading/direction_up.png")';
+        var direction_upright_icon = '@Url.Content("~/Content/heading/direction_upright.png")';
+        var direction_right_icon = '@Url.Content("~/Content/heading/direction_right.png")';
+        var direction_upleft_icon = '@Url.Content("~/Content/heading/direction_upleft.png")';
+        var direction_downright_icon = '@Url.Content("~/Content/heading/direction_downright.png")';
+        var direction_left_icon = '@Url.Content("~/Content/heading/direction_left.png")';
+        var direction_down_icon = '@Url.Content("~/Content/heading/direction_down.png")';
+        var direction_downleft_icon = '@Url.Content("~/Content/heading/direction_downleft.png")';
+
+        var _currentLat = '@ViewBag.FirstLat';
+        var _currentLng = '@ViewBag.FirstLng';
+        var _seq = '@ViewBag.Seq';
+        var _heading = '@ViewBag.Heading';
+
+        Ext.onReady(function () {
+            Ext.QuickTips.init();
+
+            var panoramaWindow = Ext.create('Ext.Window', {
+                title: 'Street View Panorama',
+                width: 500, height: 530,
+                plain: true,
+                layout: 'fit',
+                closable: true,
+                resizable: false,
+                items: {
+                    border: false,
+                    html: "<div id='map_panorama'/>"
+                },
+                loadMap: function () {
+                    _map_panorama = new google.maps.StreetViewPanorama($("#map_panorama").get(0));
+                }
+            });
+
+            panoramaWindow.show();
+            panoramaWindow.setPosition(900, 250);
+            panoramaWindow.loadMap();
+
+            Ext.define('Ext.App.Devices.Tracking', {
+                extend: 'Ext.grid.Panel',
+                initComponent: function () {
+                    var items = [];
+                    items.push(
+                     {
+                         region: "center",
+                         title: "Tracking [" + '@ViewBag.Imei' + "]",
+                         html: "<div id='map_canvas'/>"
+                     }
+                    );
+
+                    //                    items.push(
+                    //                     {
+                    //                         region: "east",
+                    //                         title: "Street View Panorama",
+                    //                         split: true,
+                    //                         collapsible: true,
+                    //                         width: 600,
+                    //                         html: "<div id='map_panorama'/>"
+                    //                     }
+                    //                    );
+
+                    var main = Ext.create('Ext.container.Viewport', {
+                        layout: {
+                            type: 'border',
+                            padding: 5
+                        },
+                        defaults: {
+                            split: true,
+                            frame: false
+                        },
+                        items: items
+                    });
+                }
+            });
+
+            var app = new Ext.App.Devices.Tracking();
+
+            var myOptions = {
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            _map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+
+            var fenway = new google.maps.LatLng(_currentLat, _currentLng);
+
+            //_map.setStreetView(panorama);
+
+            var marker = createMarker(_map, _currentLat, _currentLng, _seq, _heading);
+
+
+            _map_panorama.setPov({
+                heading: parseInt(_heading),
+                pitch: 10,
+                zoom: 1
+            });
+            _map.setCenter(marker.position);
+            marker.setMap(_map);
+
+//            _map_panorama = new google.maps.StreetViewPanorama(
+//            $("#map_panorama").get(0),
+//            {
+//                pov: {
+//                    heading: 34,
+//                    pitch: 10,
+//                    zoom: 1
+//                }
+//            });
+            _map_panorama.setPosition(marker.position);
+
+            _poly = new google.maps.Polyline({
+                strokeColor: '#000000'
+                , strokeOpacity: 0.5
+                , strokeWeight: 5
+            });
+
+            _poly.setMap(_map);
+            var path = _poly.getPath();
+            path.push(marker.position);
+
+            var imei = '@ViewBag.Imei';
+            var host = '@Url.Action("GetLastKnownLocation", "Devices")';
+
+            startTracking(imei, host);
+
+        });
+
+        var _map;
+        var _poly;
+
+        var createMarker = function (map, lat, lng, seq, heading) {
+
+            var latlng = new google.maps.LatLng(lat, lng);
+
+            var marker = new google.maps.Marker(
+            {
+                position: latlng,
+                map: map,
+                title: "Seq: " + seq + ", Lat: " + lat + ", Lng: " + lng + ", Heading: " + heading,
+                icon: carIcon
+            });
+
+            if (heading >= 338 || heading < 23) {
+                marker.icon = direction_up_icon;
+            }
+            else if (23 <= heading && heading < 68) {
+                marker.icon = direction_upright_icon;
+            }
+            else if (68 <= heading && heading < 113) {
+                marker.icon = direction_right_icon;
+            }
+            else if (113 <= heading && heading < 158) {
+                marker.icon = direction_downright_icon;
+            }
+            else if (158 <= heading && heading < 203) {
+                marker.icon = direction_down_icon;
+            }
+            else if (203 <= heading && heading < 248) {
+                marker.icon = direction_downleft_icon;
+            }
+            else if (248 <= heading && heading < 293) {
+                marker.icon = direction_left_icon;
+            }
+            else if (293 <= heading && heading < 338) {
+                marker.icon = direction_upleft_icon;
+            }
+
+            return marker;
+        }
+
+        var startTracking = function (imei, services) {
+            var updateLastKnownLocation = function () {
+                $.ajax({
+                    type: "POST",
+                    cache: false,
+                    data: "{'imei': '" + imei + "'}",
+                    //async: false,
+                    url: services,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (result) {
+                        
+                        var geopoint = result.data;
+                        var seq = geopoint.Seq;
+                        var lat = geopoint.Latitude;
+                        var lng = geopoint.Longitude;
+                        var heading = geopoint.Heading;
+                        //console.log(heading);
+                        //console.log(seq + ", " + lat + ", " + lng);
+                        if (_currentLat != lat || _currentLng != lng) {
+
+                            var marker = createMarker(_map, lat, lng, seq, heading);
+                            _currentLat = lat;
+                            _currentLng = lng;
+                            _seq = seq;
+                            _heading = heading;
+
+                            var path = _poly.getPath();
+                            path.push(marker.position);
+
+                            marker.setMap(_map);
+                            _map.panTo(marker.position);
+
+                            _map_panorama.setPosition(marker.position);
+                            _map_panorama.setPov({
+                                heading: parseInt(_heading),
+                                pitch: 10,
+                                zoom: 1
+                            });
+                        }
+
+                        setTimeout(updateLastKnownLocation, 1000);
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert(xhr.status + " " + thrownError);
+                        setTimeout(updateLastKnownLocation, 3000);
+                    }
+                });
+            }
+
+            updateLastKnownLocation();
+        }
+    </script>
+}
+

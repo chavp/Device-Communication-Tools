@@ -1,0 +1,2445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MessageValues>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">329</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:37:29</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:37:28</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7295324</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5803491</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">-5</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">7</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">315</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GoodNight</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GoodNight</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">328</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:37:29</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>JourneySummary</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">JourneySummary</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">327</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:37:28</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>272</Code>
+          <Name>JourneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description />
+        </DataCode>
+        <DataCode>
+          <Code>273</Code>
+          <Name>DrivingCumulativeDulation</Name>
+          <Value xsi:type="xsd:string">990</Value>
+          <Description>seconds</Description>
+        </DataCode>
+        <DataCode>
+          <Code>274</Code>
+          <Name>IdlingCumulativeDulation</Name>
+          <Value xsi:type="xsd:string">105</Value>
+          <Description>seconds</Description>
+        </DataCode>
+        <DataCode>
+          <Code>275</Code>
+          <Name>TowingCumulativeDulation</Name>
+          <Value xsi:type="xsd:string">42</Value>
+          <Description>seconds</Description>
+        </DataCode>
+        <DataCode>
+          <Code>276</Code>
+          <Name>MissingGpsSignalDulation</Name>
+          <Value xsi:type="xsd:string">214</Value>
+          <Description>seconds</Description>
+        </DataCode>
+        <DataCode>
+          <Code>277</Code>
+          <Name>TotalJourneyDuration</Name>
+          <Value xsi:type="xsd:string">1095</Value>
+          <Description>seconds</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>PartialIntegrationOfObdSpeedOverTime</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Partial Integration of OBD Speed over time (='C'), M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>279</Code>
+          <Name>PartialHarversine</Name>
+          <Value xsi:type="xsd:string">849</Value>
+          <Description>Partial Harversine, M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>280</Code>
+          <Name>DrivenPidx31</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>281</Code>
+          <Name>TruOdometer</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>TRU odometer, M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>288</Code>
+          <Name>TowedObdSpeed</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>289</Code>
+          <Name>TowedHarversine</Name>
+          <Value xsi:type="xsd:string">504</Value>
+          <Description>M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>290</Code>
+          <Name>TowedPidx31</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>291</Code>
+          <Name>TowedRealOdoPid</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>292</Code>
+          <Name>DrValue</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>M (Resolution = 1E-07)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>293</Code>
+          <Name>DrNumberReadings</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description />
+        </DataCode>
+        <DataCode>
+          <Code>294</Code>
+          <Name>DrStandardDeviation</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>M (Resolution = 1E-07)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>832</Code>
+          <Name>CumulativeDistanceForMissingGpsSignal</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>M</Description>
+        </DataCode>
+        <DataCode>
+          <Code>3</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2010-01-01T00:00:00</Value>
+          <Description />
+        </DataCode>
+        <DataCode>
+          <Code>1078</Code>
+          <Name>FullHarvesine</Name>
+          <Value xsi:type="xsd:string">1309</Value>
+          <Description>Full Harvesine</Description>
+        </DataCode>
+        <DataCode>
+          <Code>1079</Code>
+          <Name>FullIntegrationOfObdSpeedOverTime</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Full Integration of OBD Speed over time</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>InternalBatterySoh</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">InternalBatterySoh</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">326</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:33:54</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>4</Code>
+          <Name>InternalDateTime1</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:33:52</Value>
+          <Description>second	Internal (RTC) date/time	Date/time encoded with 4 bytes. Source = RTC clock</Description>
+        </DataCode>
+        <DataCode>
+          <Code>101</Code>
+          <Name>BatteryVoltage1</Name>
+          <Value xsi:type="xsd:double">4118.72</Value>
+          <Description>(-4997, 4997)*1.22 mV | Battery voltage (GPS device)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>103</Code>
+          <Name>BatteryCurrent1</Name>
+          <Value xsi:type="xsd:double">-0.065</Value>
+          <Description>(-3.413, 3.413)*(0.000025/0.015) A | Battery current (GPS device)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>102</Code>
+          <Name>Temperature1</Name>
+          <Value xsi:type="xsd:double">51.625</Value>
+          <Description>(-128, 128)*(0.125) degrees ⁰C | Temperature (GPS device)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>4</Code>
+          <Name>InternalDateTime2</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:33:54</Value>
+          <Description>second	Internal (RTC) date/time	Date/time encoded with 4 bytes. Source = RTC clock</Description>
+        </DataCode>
+        <DataCode>
+          <Code>101</Code>
+          <Name>BatteryVoltage2</Name>
+          <Value xsi:type="xsd:double">4106.5199999999995</Value>
+          <Description>(-4997, 4997)*1.22 mV | Battery voltage (GPS device)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>103</Code>
+          <Name>BatteryCurrent2</Name>
+          <Value xsi:type="xsd:double">-0.12333333333333334</Value>
+          <Description>(-3.413, 3.413)*(0.000025/0.015) A | Battery current (GPS device)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>102</Code>
+          <Name>Temperature2</Name>
+          <Value xsi:type="xsd:double">51.625</Value>
+          <Description>(-128, 128)*(0.125) degrees ⁰C | Temperature (GPS device)</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">325</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:32:42</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:26:13</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7295700</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5804583</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">53</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">286</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">4</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">324</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:26:12</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:41</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7297183</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5810416</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">59</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">12</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">332</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>TowingAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">TowingAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">323</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:54</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>771</Code>
+          <Name>TowingFlagAlert</Name>
+          <Value xsi:type="xsd:unsignedByte">0</Value>
+          <Description>0=no(not towed), 1=yes(towing)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MeterDriven</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) (3 bytes)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:06.3061495+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:56</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7296033</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5806350</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">57</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">8</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">288</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">322</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:41</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:14</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7290099</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5814433</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">60</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">41</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">22</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">4</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>TowingAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">TowingAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">321</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:37</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>771</Code>
+          <Name>TowingFlagAlert</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+          <Description>0=no(not towed), 1=yes(towing)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MeterDriven</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) (3 bytes)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:06.5233357+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:39</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7297950</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5811282</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">59</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">14</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">349</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>TowingAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">TowingAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">320</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:20</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>771</Code>
+          <Name>TowingFlagAlert</Name>
+          <Value xsi:type="xsd:unsignedByte">0</Value>
+          <Description>0=no(not towed), 1=yes(towing)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MeterDriven</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) (3 bytes)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:06.6474421+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:22</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7296400</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5816217</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">60</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">37</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">19</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">319</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:13</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:24:56</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7271016</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5802000</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">60</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">36</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">14</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">4</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>TowingAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">TowingAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">318</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:24:59</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>771</Code>
+          <Name>TowingFlagAlert</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+          <Description>0=no(not towed), 1=yes(towing)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MeterDriven</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) (3 bytes)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:06.8801416+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:25:01</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7277333</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5806049</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">60</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">42</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">20</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">317</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:24:56</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:24:31</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7249833</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5793350</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">61</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">18</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">328</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">316</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:24:30</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:22:32</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7227766</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5810349</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">62</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">19</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">332</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GpsFixAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GpsFixAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">315</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:24:27</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>871</Code>
+          <Name>Gps3DFixStatus</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:07.2214342+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:23:21</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7238408</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5796783</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">59</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">20</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">323</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>281</Code>
+          <Name>MetersDriven</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>Meters driven (real odo PID) [TRU OBD)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>280</Code>
+          <Name>MetersDrivenPinx31</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>Meters driven (PIDx31)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MetersDrivenIntObdSpeed</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) </Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GpsFixAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GpsFixAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">314</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:23:40</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>871</Code>
+          <Name>Gps3DFixStatus</Name>
+          <Value xsi:type="xsd:unsignedByte">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:07.3300273+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:23:21</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7238408</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5796783</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">59</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">20</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">323</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>281</Code>
+          <Name>MetersDriven</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>Meters driven (real odo PID) [TRU OBD)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>280</Code>
+          <Name>MetersDrivenPinx31</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>Meters driven (PIDx31)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MetersDrivenIntObdSpeed</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) </Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>AgpsRequest</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">AgpsRequest</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">313</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:23:16</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>790</Code>
+          <Name>ForceToDownloadAgps</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>EulerAnglesArray</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">EulerAnglesArray</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">312</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:22:38</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>MsgId</Name>
+          <Value xsi:type="xsd:unsignedShort">65280</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>TotalMsg</Name>
+          <Value xsi:type="xsd:unsignedShort">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Msg#</Name>
+          <Value xsi:type="xsd:short">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Rows</Name>
+          <Value xsi:type="xsd:unsignedShort">5</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Cols</Name>
+          <Value xsi:type="xsd:unsignedByte">15</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>DataDef</Name>
+          <Value xsi:type="xsd:string">818,390,818,391,818,392,3,102,390,3,102,391,3,102,392</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>BinData</Name>
+          <Value xsi:type="xsd:string">01-54-00-05-23-FF-05-AB-FF-FE-5E-10-04-00-92-01-54-00-A0-01-00-00-00-00-00-47-FF-A0-01-00-00-00-00-00-18-00-01-54-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-C9-01-00-00-00-00-00-48-FF-C9-01-00-00-00-00-00-1D-00-01-54-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-ED-02-00-00-00-FE-00-23-FF-ED-02-00-00-00-FE-00-AB-FF-01-54-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-CE-00-00-00-00-98-01-23-FF-CE-00-00-00-00-98-01-AD-FF-01-54-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-FB-5E-10-04-00-92-01-23-FF-FB-5E-10-04-00-92-01-AD-FF</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>EulerAnglesArray</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">EulerAnglesArray</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">311</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:22:35</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>MsgId</Name>
+          <Value xsi:type="xsd:unsignedShort">65280</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>TotalMsg</Name>
+          <Value xsi:type="xsd:unsignedShort">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Msg#</Name>
+          <Value xsi:type="xsd:short">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Rows</Name>
+          <Value xsi:type="xsd:unsignedShort">5</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Cols</Name>
+          <Value xsi:type="xsd:unsignedByte">15</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>DataDef</Name>
+          <Value xsi:type="xsd:string">818,390,818,391,818,392,3,102,390,3,102,391,3,102,392</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>BinData</Name>
+          <Value xsi:type="xsd:string">00-00-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-A0-01-00-00-00-00-00-47-FF-A0-01-00-00-00-00-00-18-00-00-00-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-C9-01-00-00-00-00-00-48-FF-C9-01-00-00-00-00-00-1D-00-00-00-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-ED-02-00-00-00-FE-00-23-FF-ED-02-00-00-00-FE-00-AB-FF-00-00-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-CE-00-00-00-00-98-01-23-FF-CE-00-00-00-00-98-01-AD-FF-00-00-00-05-23-FF-05-AB-FF-00-00-00-00-00-00-00-00-00-FB-5E-10-04-00-92-01-23-FF-FB-5E-10-04-00-92-01-AD-FF</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">310</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:22:31</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:20:26</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7208216</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5823716</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">90</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">341</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">3</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>TowingAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">TowingAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">309</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:22:18</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>771</Code>
+          <Name>TowingFlagAlert</Name>
+          <Value xsi:type="xsd:unsignedByte">0</Value>
+          <Description>0=no(not towed), 1=yes(towing)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MeterDriven</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) (3 bytes)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:07.9040194+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:22:20</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7217183</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5821616</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">63</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">9</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">323</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">4</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>TowingAlert</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">TowingAlert</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">308</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:21:55</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>771</Code>
+          <Name>TowingFlagAlert</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+          <Description>0=no(not towed), 1=yes(towing)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>278</Code>
+          <Name>MeterDriven</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>Meter Driven (Int. OBD speed) (3 bytes)</Description>
+        </DataCode>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">0</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T13:16:08.0281258+07:00</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:21:56</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7210816</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5826749</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">66</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">2</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">322</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">307</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:20:26</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:18</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7209816</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5829425</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">100</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">112</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">4</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GeoPoint</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">306</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:19</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UniqueJouneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+          <Description>If during journey, fill value, if not fill 0</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>UtcTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:12</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Latitude</Name>
+          <Value xsi:type="xsd:string">13.7210458</Value>
+          <Description>-90 to 90</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Longitude</Name>
+          <Value xsi:type="xsd:string">100.5829825</Value>
+          <Description>-180 to 180</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Altitude</Name>
+          <Value xsi:type="xsd:string">99</Value>
+          <Description>-999 to 15384</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>GroundSpeed</Name>
+          <Value xsi:type="xsd:string">4</Value>
+          <Description>0-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Heading</Name>
+          <Value xsi:type="xsd:string">111</Value>
+          <Description>0-359</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>NumberOfSatellitesUsed</Name>
+          <Value xsi:type="xsd:string">5</Value>
+          <Description>Number of Satellites used: 0-255</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>HealthAndInfo</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">HealthAndInfo</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">305</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:18</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>305</Code>
+          <Name>Profile</Name>
+          <Value xsi:type="xsd:string">1</Value>
+          <Description>1…20</Description>
+        </DataCode>
+        <DataCode>
+          <Code>306</Code>
+          <Name>PowerSourceType</Name>
+          <Value xsi:type="xsd:string">1</Value>
+          <Description>0=internal GPS battery, 1=external ower</Description>
+        </DataCode>
+        <DataCode>
+          <Code>307</Code>
+          <Name>ShortcutObd</Name>
+          <Value xsi:type="xsd:string">1</Value>
+          <Description>0=no, 1=yes</Description>
+        </DataCode>
+        <DataCode>
+          <Code>37</Code>
+          <Name>Imsi</Name>
+          <Value xsi:type="xsd:unsignedLong">520010104960857</Value>
+          <Description>last 10 digits are SIM #</Description>
+        </DataCode>
+        <DataCode>
+          <Code>38</Code>
+          <Name>Iccid</Name>
+          <Value xsi:type="xsd:string">D1-DC-0D-3C-87-AB-6D-7C-00-00-00-00-00-00-00-00</Value>
+          <Description>SIM S/N</Description>
+        </DataCode>
+        <DataCode>
+          <Code>825</Code>
+          <Name>SetOfKeyHealthFlag</Name>
+          <Value xsi:type="xsd:string">0000000000000000</Value>
+          <Description>16 bits</Description>
+        </DataCode>
+        <DataCode>
+          <Code>101</Code>
+          <Name>BatteryVoltage</Name>
+          <Value xsi:type="xsd:double">4118.72</Value>
+          <Description>x*1.22, mv</Description>
+        </DataCode>
+        <DataCode>
+          <Code>102</Code>
+          <Name>Temperature</Name>
+          <Value xsi:type="xsd:double">50.25</Value>
+          <Description>x*0.125, Degree celcius</Description>
+        </DataCode>
+        <DataCode>
+          <Code>103</Code>
+          <Name>BatteryCurrent</Name>
+          <Value xsi:type="xsd:double">109.16166666666668</Value>
+          <Description>x*(0.000025/0.015), A</Description>
+        </DataCode>
+        <DataCode>
+          <Code>104</Code>
+          <Name>BatteryCurrentAccumulation</Name>
+          <Value xsi:type="xsd:unsignedShort">0</Value>
+          <Description>Ah</Description>
+        </DataCode>
+        <DataCode>
+          <Code>105</Code>
+          <Name>BatteryCellCapacity</Name>
+          <Value xsi:type="xsd:double">0.96</Value>
+          <Description>x*0.005, %</Description>
+        </DataCode>
+        <DataCode>
+          <Code>112</Code>
+          <Name>InitialBatteryVoltageReading</Name>
+          <Value xsi:type="xsd:double">3366</Value>
+          <Description>x*1.22, mV</Description>
+        </DataCode>
+        <DataCode>
+          <Code>113</Code>
+          <Name>NewBatteryCapacityLearning</Name>
+          <Value xsi:type="xsd:double">0</Value>
+          <Description>x*0.005, %</Description>
+        </DataCode>
+        <DataCode>
+          <Code>130</Code>
+          <Name>KeyfobProximityDetected</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>0 or 1=yes</Description>
+        </DataCode>
+        <DataCode>
+          <Code>136</Code>
+          <Name>KeyfobIdWhichPaired</Name>
+          <Value xsi:type="xsd:unsignedLong">0</Value>
+          <Description>Eight byte of number.</Description>
+        </DataCode>
+        <DataCode>
+          <Code>135</Code>
+          <Name>KeyfobPairingStatus</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>0 or 1=yes</Description>
+        </DataCode>
+        <DataCode>
+          <Code>132</Code>
+          <Name>KeyfobBatteryVoltage</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>V</Description>
+        </DataCode>
+        <DataCode>
+          <Code>133</Code>
+          <Name>LowKeyfobBatteryVoltage</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>0 or 1=yes</Description>
+        </DataCode>
+        <DataCode>
+          <Code>134</Code>
+          <Name>KeyfobRssi</Name>
+          <Value xsi:type="xsd:string">251</Value>
+          <Description>dBm</Description>
+        </DataCode>
+        <DataCode>
+          <Code>1060</Code>
+          <Name>KeyfobFirmwareVersion</Name>
+          <Value xsi:type="xsd:string">NA</Value>
+          <Description>1-255</Description>
+        </DataCode>
+        <DataCode>
+          <Code>326</Code>
+          <Name>FlashMemoryAvailable</Name>
+          <Value xsi:type="xsd:string">100883968</Value>
+          <Description>bytes</Description>
+        </DataCode>
+        <DataCode>
+          <Code>327</Code>
+          <Name>NumberOfGeopointInNandMemory</Name>
+          <Value xsi:type="xsd:string">20736</Value>
+          <Description>bytes</Description>
+        </DataCode>
+        <DataCode>
+          <Code>328</Code>
+          <Name>NumberOfAlertsInNandMemory</Name>
+          <Value xsi:type="xsd:string">11520</Value>
+          <Description>bytes</Description>
+        </DataCode>
+        <DataCode>
+          <Code>329</Code>
+          <Name>NumberOfImpactInNandMemory</Name>
+          <Value xsi:type="xsd:string">0</Value>
+          <Description>bytes</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GsmInfoArray</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GsmInfoArray</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">304</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:18</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>MsgId</Name>
+          <Value xsi:type="xsd:unsignedShort">65280</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>TotalMsg</Name>
+          <Value xsi:type="xsd:unsignedShort">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Msg#</Name>
+          <Value xsi:type="xsd:short">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Rows</Name>
+          <Value xsi:type="xsd:unsignedShort">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Cols</Name>
+          <Value xsi:type="xsd:unsignedByte">6</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>DataDef</Name>
+          <Value xsi:type="xsd:string">40,41,48,49,50,51</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>BinData</Name>
+          <Value xsi:type="xsd:string">02-02-01-E8-5D-35-2C-00-55-02</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GpsAwakeArray</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GpsAwakeArray</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">303</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:17</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>MsgId</Name>
+          <Value xsi:type="xsd:unsignedShort">65280</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>TotalMsg</Name>
+          <Value xsi:type="xsd:unsignedShort">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Msg#</Name>
+          <Value xsi:type="xsd:short">1</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Rows</Name>
+          <Value xsi:type="xsd:unsignedShort">4</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Cols</Name>
+          <Value xsi:type="xsd:unsignedByte">5</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>DataDef</Name>
+          <Value xsi:type="xsd:string">22,24,25,32,33</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>BinData</Name>
+          <Value xsi:type="xsd:string">0F-00-16-58-09-01-1D-00-00-3A-25-01-1A-00-11-2E-26-00-28-00-00-2D-FC-00</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GpsFirstFix</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GpsFirstFix</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">302</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:17</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>19</Code>
+          <Name>GpsFixType</Name>
+          <Value xsi:type="xsd:unsignedByte">1</Value>
+          <Description />
+        </DataCode>
+        <DataCode>
+          <Code>21</Code>
+          <Name>TimeToFirstFix</Name>
+          <Value xsi:type="xsd:unsignedShort">16</Value>
+          <Description>seconds</Description>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>GoodMorning</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">GoodMorning</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">301</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:17</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+    <MessageValue>
+      <Imei>352848024130417</Imei>
+      <MessageType>StartJourney</MessageType>
+      <Values>
+        <DataCode>
+          <Code>65535</Code>
+          <Name>MessageType</Name>
+          <Value xsi:type="xsd:string">StartJourney</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Seq</Name>
+          <Value xsi:type="xsd:short">300</Value>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>HeaderTime</Name>
+          <Value xsi:type="xsd:dateTime">2012-02-29T03:19:16</Value>
+          <Description>Epoc time, start from 2010-01-01 00:00:000, keep at second level</Description>
+        </DataCode>
+        <DataCode>
+          <Code>0</Code>
+          <Name>Version</Name>
+          <Value xsi:type="xsd:unsignedByte">56</Value>
+        </DataCode>
+        <DataCode>
+          <Code>272</Code>
+          <Name>JourneyId</Name>
+          <Value xsi:type="xsd:short">8</Value>
+        </DataCode>
+      </Values>
+    </MessageValue>
+  </MessageValues>
+</SimMessages>

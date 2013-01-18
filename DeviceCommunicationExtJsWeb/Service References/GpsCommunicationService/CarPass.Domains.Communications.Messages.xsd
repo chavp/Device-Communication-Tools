@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfRequestAckCommandMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RequestAckCommandMessage" nillable="true" type="tns:RequestAckCommandMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRequestAckCommandMessage" nillable="true" type="tns:ArrayOfRequestAckCommandMessage" />
+  <xs:complexType name="RequestAckCommandMessage">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Message">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AckCount" type="xs:int" />
+          <xs:element minOccurs="0" name="ConfsRevision" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastestAck" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastestResponse" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RequestId" type="xs:long" />
+          <xs:element minOccurs="0" name="ResponseCount" type="xs:int" />
+          <xs:element minOccurs="0" name="ResponseMessageType" type="tns:MessageType" />
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ResponsePacket" nillable="true" type="q1:ArrayOfunsignedByte" />
+          <xs:element minOccurs="0" name="ResponsePacketMD5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResponsePacketView" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResponsePackets" nillable="true" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RequestAckCommandMessage" nillable="true" type="tns:RequestAckCommandMessage" />
+  <xs:complexType name="Message">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MessageHeader">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceMode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceSN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:unsignedShort" />
+          <xs:element minOccurs="0" name="PacketId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Priority" type="xs:int" />
+          <xs:element minOccurs="0" name="Protocol" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServerId" type="xs:short" />
+          <xs:element minOccurs="0" name="ServerTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SourceIP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourcePort" type="xs:int" />
+          <xs:element minOccurs="0" name="TotalSeq" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Message" nillable="true" type="tns:Message" />
+  <xs:complexType name="MessageHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HeaderTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Imei" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageType" type="tns:MessageType" />
+      <xs:element minOccurs="0" name="Seq" type="xs:short" />
+      <xs:element minOccurs="0" name="UdpPacket" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Version" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MessageHeader" nillable="true" type="tns:MessageHeader" />
+  <xs:simpleType name="MessageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="GoodMorning" />
+      <xs:enumeration value="GoodNight" />
+      <xs:enumeration value="HealthAndInfo" />
+      <xs:enumeration value="GsmInfo" />
+      <xs:enumeration value="GsmInfoArray" />
+      <xs:enumeration value="Dummy" />
+      <xs:enumeration value="GpsAwake" />
+      <xs:enumeration value="GpsAwakeArray" />
+      <xs:enumeration value="ObdCore" />
+      <xs:enumeration value="GpsFirstFix" />
+      <xs:enumeration value="GeoPoint" />
+      <xs:enumeration value="MultiGeoPoint" />
+      <xs:enumeration value="CumulativeDurationForNonGeopoint" />
+      <xs:enumeration value="FreezeFrame" />
+      <xs:enumeration value="FreezeFrameArray" />
+      <xs:enumeration value="JourneySummary" />
+      <xs:enumeration value="GprsStats" />
+      <xs:enumeration value="EulerAngles" />
+      <xs:enumeration value="EulerAnglesArray" />
+      <xs:enumeration value="RawAcceleration" />
+      <xs:enumeration value="RawAcceleration2" />
+      <xs:enumeration value="RawAccelerationArray" />
+      <xs:enumeration value="NonGeoPointGsmInfo" />
+      <xs:enumeration value="NonGeoPointGsmInfoArray" />
+      <xs:enumeration value="NonGeoPointGpsInfo" />
+      <xs:enumeration value="NonGeoPointGpsInfoArray" />
+      <xs:enumeration value="NonGeoPointAdditionalInfo" />
+      <xs:enumeration value="StartJourney" />
+      <xs:enumeration value="InternalBatterySoh" />
+      <xs:enumeration value="ConfigurationUpdate" />
+      <xs:enumeration value="MileageReportDuringJourney" />
+      <xs:enumeration value="ButtonTriggered" />
+      <xs:enumeration value="TowingAlert" />
+      <xs:enumeration value="Sms" />
+      <xs:enumeration value="ImpactAlert1" />
+      <xs:enumeration value="ImpactAlert1Info" />
+      <xs:enumeration value="ImpactAlert2" />
+      <xs:enumeration value="ImpactAlert2Info" />
+      <xs:enumeration value="ImpactAlert1Array" />
+      <xs:enumeration value="ImpactAlert2Array" />
+      <xs:enumeration value="EngineStartStopAlert" />
+      <xs:enumeration value="VehicleBatteryLowAlert" />
+      <xs:enumeration value="GeoFenceAlert" />
+      <xs:enumeration value="FuelDropAlert" />
+      <xs:enumeration value="FuelThreholdAlert" />
+      <xs:enumeration value="IdlingAlert" />
+      <xs:enumeration value="ObdDtcCodesAlert" />
+      <xs:enumeration value="ResponseSimple" />
+      <xs:enumeration value="CalibrationInformation" />
+      <xs:enumeration value="PidsData" />
+      <xs:enumeration value="FwDumpConfigurationData" />
+      <xs:enumeration value="AlgorithmConf" />
+      <xs:enumeration value="HistogramsConf" />
+      <xs:enumeration value="TowingConf" />
+      <xs:enumeration value="GeoFenceConf" />
+      <xs:enumeration value="VehicleBatteryConf" />
+      <xs:enumeration value="FuelDropConf" />
+      <xs:enumeration value="IdlingConf" />
+      <xs:enumeration value="ObdConf" />
+      <xs:enumeration value="GeoPointProfileConf" />
+      <xs:enumeration value="SerialPortConf" />
+      <xs:enumeration value="CommunicationProtocolConf" />
+      <xs:enumeration value="EngineStartStopConf" />
+      <xs:enumeration value="GpsLossReturnConf" />
+      <xs:enumeration value="Gps3DFixConf" />
+      <xs:enumeration value="JourneySummaryConf" />
+      <xs:enumeration value="AGpsConf" />
+      <xs:enumeration value="AesKeyConf" />
+      <xs:enumeration value="InternalBatteryConf" />
+      <xs:enumeration value="TiltAlertConf" />
+      <xs:enumeration value="HistogramsBinConf" />
+      <xs:enumeration value="ObdProtocolConf" />
+      <xs:enumeration value="StationeryAlertConf" />
+      <xs:enumeration value="ForceUploadHistogram" />
+      <xs:enumeration value="RequestObdData" />
+      <xs:enumeration value="RequestLocationUpdate" />
+      <xs:enumeration value="ForceUploadGeoPointLast48Hrs" />
+      <xs:enumeration value="ForceUploadGeoPointInMemory" />
+      <xs:enumeration value="ForceUploadLastGeoPointsInMemory" />
+      <xs:enumeration value="ForceUploadRawAcceleration" />
+      <xs:enumeration value="EncryptionOption" />
+      <xs:enumeration value="CompressionOption" />
+      <xs:enumeration value="OtaUpgrade" />
+      <xs:enumeration value="ForceDownloadOfAgps" />
+      <xs:enumeration value="PairDeviceAndDongle" />
+      <xs:enumeration value="ClearDataOnDevice" />
+      <xs:enumeration value="ForceToChangeProfile" />
+      <xs:enumeration value="DeleteBinCountHistogram" />
+      <xs:enumeration value="ForceToUploadHealthAndInfo" />
+      <xs:enumeration value="RequestGsmCellDataOnMemory" />
+      <xs:enumeration value="ForceToChangeGpsReceptionOption" />
+      <xs:enumeration value="ForceToChangeObdProtocol" />
+      <xs:enumeration value="ForceRequestButton" />
+      <xs:enumeration value="FastDpCommand" />
+      <xs:enumeration value="ForceUploadPid" />
+      <xs:enumeration value="ForceToDumpFwConfigurationAndProfile" />
+      <xs:enumeration value="CasingOpeningAlert" />
+      <xs:enumeration value="PowerLossAlert" />
+      <xs:enumeration value="OtaHeaderRequest" />
+      <xs:enumeration value="OtaBinDataRequest" />
+      <xs:enumeration value="OtaConfirmationRequest" />
+      <xs:enumeration value="AgpsBlock" />
+      <xs:enumeration value="GsmCellIdCapture" />
+      <xs:enumeration value="GsmCellIdCaptureArray" />
+      <xs:enumeration value="Histograms" />
+      <xs:enumeration value="HistogramInfo" />
+      <xs:enumeration value="HistogramBinRawData" />
+      <xs:enumeration value="HistogramsArray" />
+      <xs:enumeration value="FastDPScore" />
+      <xs:enumeration value="TiltAlert" />
+      <xs:enumeration value="WakeAlert" />
+      <xs:enumeration value="StationeryStartStopAlert" />
+      <xs:enumeration value="KF3ButtonCombo" />
+      <xs:enumeration value="GpsFixAlert" />
+      <xs:enumeration value="AlertOta" />
+      <xs:enumeration value="AgpsRequest" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MessageType" nillable="true" type="tns:MessageType" />
+  <xs:complexType name="Packet">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Message">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AckState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConfsRevision" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceIp" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DevicePort" type="xs:int" />
+          <xs:element minOccurs="0" name="Ignore" nillable="true" type="xs:short" />
+          <xs:element minOccurs="0" name="LocalHeaderTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MessageTypeView" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PacketList" nillable="true" type="q2:ArrayOfunsignedByte" />
+          <xs:element minOccurs="0" name="RawPacket" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="RouteMessageTo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Packet" nillable="true" type="tns:Packet" />
+  <xs:complexType name="ArrayOfPacket">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Packet" nillable="true" type="tns:Packet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPacket" nillable="true" type="tns:ArrayOfPacket" />
+</xs:schema>

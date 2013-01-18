@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "DeviceEventAlert";
+}
+
+<script src="@Url.Content("~/app/model/DeviceEventAlert.js")" type="text/javascript"></script>
+
+@section script{
+<script type="text/javascript">
+    window.BaseUrl = '@Url.Action("", "Devices", null, null)';
+
+    Ext.Loader.setConfig({ enabled: true });
+    Ext.Loader.setPath('Ext.ux', '@Url.Content("~/Scripts/extjs/ux")');
+
+    Ext.require([
+        'Ext.window.*',
+        'Ext.ux.grid.FiltersFeature'
+    ]);
+
+    Ext.onReady(function () {
+        var deviceEventAlertStoreUrl = '@Url.Action("DeviceEventAlertPaging", "Devices", new {imei = ViewBag.Imei})';
+
+        var deviceEventAlertStore = new Ext.data.JsonStore({
+            model: 'DeviceCommunication.model.DeviceEventAlert',
+            autoLoad: true,
+            pageSize: 300,
+            proxy: {
+                type: 'ajax',
+                url: deviceEventAlertStoreUrl,
+                reader: {
+                    type: 'json',
+                    root: 'data',
+                    totalProperty: 'total'
+                },
+                timeout: 120000,
+                listeners: {
+                    exception: function (proxy, response, operation) {
+                        Ext.Msg.show({
+                            title: response.statusText,
+                            msg: Ext.decode(response.responseText).message,
+                            buttons: Ext.Msg.OK,
+                            icon: Ext.window.MessageBox.ERROR
+                        });
+                    }
+                }
+            }
+        });
+
+        var filters = {
+            ftype: 'filters',
+            encode: false,
+            local: false,
+            filters: [
+                 { type: 'string', dataIndex: 'MessageType' }
+            ]
+        };
+
+        var theStore = deviceEventAlertStore;
+
+        var items = [];
+        items.push(
+        { 
+            title: 'Messages [IMEI: ' + '@ViewBag.Imei' + ']',
+            id: "deviceEventAlertGridpanel",
+            region: 'center',
+            xtype: 'gridpanel',
+            store: theStore,
+            columnLines: true,
+            features: [filters],
+            autoScroll: true,
+            columns: [
+                { text: 'ID', width: 50, sortable: true, dataIndex: 'Id', hidden: true },
+                { text: 'CreatedTime(Local)', width: 150, sortable: true, dataIndex: 'CreateDate', renderer: Ext.util.Format.dateRenderer('d/m/Y H:i:s') },
+                { text: 'HeaderTime(UTC)', width: 150, sortable: true, dataIndex: 'HeaderTimeUtc', renderer: Ext.util.Format.dateRenderer('d/m/Y H:i:s') },
+                { text: 'IMEI', width: 130, sortable: true, dataIndex: 'Imei' },
+                { text: 'DeviceSn', width: 100, sortable: true, dataIndex: 'DeviceSn' },
+                { text: 'MessageType', width: 150, sortable: true, dataIndex: 'MessageType' },
+                { text: 'PacketId', width: 50, sortable: true, dataIndex: 'PacketId', hidden: true },
+                { text: 'EventType', width: 150, sortable: true, dataIndex: 'EventType' },
+                { text: 'Source', width: 200, sortable: true, dataIndex: 'Source' },
+                { text: 'Destination', width: 200, sortable: true, dataIndex: 'Destination' },
+                { text: 'Description', width: 500, sortable: true, dataIndex: 'Description' }
+                
+            ],
+            bbar: Ext.create('Ext.PagingToolbar', {
+                store: theStore,
+                displayInfo: true,
+                displayMsg: 'Displaying Device Event Alert {0} - {1} of {2}',
+                emptyMsg: "No devices to display"
+            })
+        }); //items.push
+
+        var main = Ext.create('Ext.container.Viewport', {
+            layout: {
+                type: 'border',
+                padding: 5
+            },
+            defaults: {
+                split: true,
+                frame: false
+            },
+            items: items
+        });
+
+    });//Ext.onReady
+</script>
+}

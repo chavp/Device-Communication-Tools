@@ -1,0 +1,2228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="deviceService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages.Values" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDeviceCommunicationService_DeployOtaHeaderRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployOtaHeaderRequest" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployOtaHeaderRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployOtaHeaderRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployOtaHeaderRequestFromFilePath_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployOtaHeaderRequestFromFilePath" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployOtaHeaderRequestFromFilePath_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployOtaHeaderRequestFromFilePathResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployOtaHeaderRequestFromGridFs_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployOtaHeaderRequestFromGridFs" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployOtaHeaderRequestFromGridFs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployOtaHeaderRequestFromGridFsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeployOtaState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeployOtaState" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeployOtaState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeployOtaStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_Deploy_InputMessage">
+    <wsdl:part name="parameters" element="tns:Deploy" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_Deploy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployAlgorithmConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployAlgorithmConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployAlgorithmConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployAlgorithmConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployHistogramsConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployHistogramsConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployHistogramsConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployHistogramsConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployHistogramsBinConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployHistogramsBinConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployHistogramsBinConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployHistogramsBinConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployTowingConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployTowingConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployTowingConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployTowingConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployObdConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployObdConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployObdConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployObdConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployGeoFenceConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployGeoFenceConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployGeoFenceConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployGeoFenceConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployVehicleBatteryConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployVehicleBatteryConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployVehicleBatteryConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployVehicleBatteryConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployFuelDropConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployFuelDropConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployFuelDropConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployFuelDropConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployIdlingConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployIdlingConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployIdlingConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployIdlingConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployGeoPointProfileConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployGeoPointProfileConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployGeoPointProfileConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployGeoPointProfileConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployCommunicationProtocolConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployCommunicationProtocolConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployCommunicationProtocolConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployCommunicationProtocolConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployEngineStartStopConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployEngineStartStopConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployEngineStartStopConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployEngineStartStopConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployGps3DFixConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployGps3DFixConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployGps3DFixConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployGps3DFixConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployJourneySummaryConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployJourneySummaryConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployJourneySummaryConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployJourneySummaryConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployAGpsConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployAGpsConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployAGpsConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployAGpsConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployAesKeyConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployAesKeyConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployAesKeyConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployAesKeyConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployInternalBatteryConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployInternalBatteryConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployInternalBatteryConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployInternalBatteryConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployTiltAlertConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployTiltAlertConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployTiltAlertConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployTiltAlertConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployStationeryAlertConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeployStationeryAlertConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeployStationeryAlertConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeployStationeryAlertConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployAlgorithmConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployAlgorithmConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployAlgorithmConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployAlgorithmConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployHistogramsConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployHistogramsConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployHistogramsConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployHistogramsConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployTowingConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployTowingConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployTowingConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployTowingConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployVehicleBatteryConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployVehicleBatteryConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployVehicleBatteryConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployVehicleBatteryConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployFuelDropConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployFuelDropConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployFuelDropConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployFuelDropConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployIdlingConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployIdlingConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployIdlingConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployIdlingConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployGeoPointProfileConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployGeoPointProfileConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployGeoPointProfileConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployGeoPointProfileConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployCommunicationProtocolConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployCommunicationProtocolConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployCommunicationProtocolConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployCommunicationProtocolConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployEngineStartStopConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployEngineStartStopConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployEngineStartStopConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployEngineStartStopConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployGps3DFixConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployGps3DFixConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployGps3DFixConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployGps3DFixConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployJourneySummaryConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployJourneySummaryConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployJourneySummaryConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployJourneySummaryConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployAGpsConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployAGpsConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployAGpsConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployAGpsConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployInternalBatteryConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployInternalBatteryConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployInternalBatteryConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployInternalBatteryConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployTiltAlertConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployTiltAlertConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployTiltAlertConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployTiltAlertConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployObdConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployObdConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployObdConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployObdConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployHistogramsBinConf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployHistogramsBinConf" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ScheduleDeployHistogramsBinConf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScheduleDeployHistogramsBinConfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeleteBinCountHistogram_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBinCountHistogram" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeleteBinCountHistogram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBinCountHistogramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadHistogram_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadHistogram" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadHistogram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadHistogramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_RequestObdData_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestObdData" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_RequestObdData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestObdDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_RequestLocationUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestLocationUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_RequestLocationUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestLocationUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadGeoPointLast48Hrs_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadGeoPointLast48Hrs" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadGeoPointLast48Hrs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadGeoPointLast48HrsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadGeoPointInMemory_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadGeoPointInMemory" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadGeoPointInMemory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadGeoPointInMemoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadLastGeoPointsInMemory_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadLastGeoPointsInMemory" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadLastGeoPointsInMemory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadLastGeoPointsInMemoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadRawAcceleration_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadRawAcceleration" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadRawAcceleration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadRawAccelerationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_EncryptionOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptionOption" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_EncryptionOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptionOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_CompressionOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:CompressionOption" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_CompressionOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CompressionOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceDownloadOfAGps_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceDownloadOfAGps" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceDownloadOfAGps_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceDownloadOfAGpsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceRequestButton_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceRequestButton" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceRequestButton_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceRequestButtonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_PairDeviceAndDongle_InputMessage">
+    <wsdl:part name="parameters" element="tns:PairDeviceAndDongle" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_PairDeviceAndDongle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PairDeviceAndDongleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ClearDataOnDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearDataOnDevice" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ClearDataOnDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearDataOnDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToChangeProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToChangeProfile" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToChangeProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToChangeProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToUploadHealthAndInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToUploadHealthAndInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToUploadHealthAndInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToUploadHealthAndInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_RequestGsmCellDataOnMemory_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestGsmCellDataOnMemory" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_RequestGsmCellDataOnMemory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestGsmCellDataOnMemoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToChangeGpsReceptionOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToChangeGpsReceptionOption" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToChangeGpsReceptionOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToChangeGpsReceptionOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadPid_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadPid" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceUploadPid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceUploadPidResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToDumpFwConfigurationAndProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToDumpFwConfigurationAndProfile" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_ForceToDumpFwConfigurationAndProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForceToDumpFwConfigurationAndProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_CancleRequestId_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancleRequestId" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_CancleRequestId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancleRequestIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeviceExistByDeviceSN_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceExistByDeviceSN" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_DeviceExistByDeviceSN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceExistByDeviceSNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetJourneyGpsFixAlertByDeviceSNAndJourneyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJourneyGpsFixAlertByDeviceSNAndJourneyList" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetJourneyGpsFixAlertByDeviceSNAndJourneyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJourneyGpsFixAlertByDeviceSNAndJourneyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentHealthInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentHealthInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentHealthInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentHealthInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentObdCore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentObdCore" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentObdCore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentObdCoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentJourneySummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentJourneySummary" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentJourneySummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentJourneySummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentCasingOpeningAlert_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCasingOpeningAlert" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentCasingOpeningAlert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCasingOpeningAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentGoodMorning_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentGoodMorning" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentGoodMorning_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentGoodMorningResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentButtonTriggered_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentButtonTriggered" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentButtonTriggered_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentButtonTriggeredResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentCalibrationInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCalibrationInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentCalibrationInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCalibrationInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentGpsAwakeArray_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentGpsAwakeArray" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentGpsAwakeArray_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentGpsAwakeArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentEngine_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentEngine" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentEngine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentEngineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentInternalBatterySoh_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentInternalBatterySoh" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCurrentInternalBatterySoh_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentInternalBatterySohResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_MustBeUpgrade_InputMessage">
+    <wsdl:part name="parameters" element="tns:MustBeUpgrade" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_MustBeUpgrade_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MustBeUpgradeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceConfById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceConfById" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceConfById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceConfByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetGeoFenceConfByPacketId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoFenceConfByPacketId" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetGeoFenceConfByPacketId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeoFenceConfByPacketIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceConfByDeviceSn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceConfByDeviceSn" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceConfByDeviceSn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceConfByDeviceSnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationsBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationsBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationsBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationsBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsWithHavDistance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithHavDistance" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsWithHavDistance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithHavDistanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDistance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistance" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDistance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDistancePerDay_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistancePerDay" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDistancePerDay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistancePerDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsForSpeedCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsForSpeedCheck" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsForSpeedCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsForSpeedCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetSpeedCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpeedCheck" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetSpeedCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpeedCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetSpeedCheckByBeginTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpeedCheckByBeginTime" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetSpeedCheckByBeginTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpeedCheckByBeginTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_EndTcpConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:EndTcpConnection" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_EndTcpConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EndTcpConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetNonGeoPointGsmInfoByPacketId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonGeoPointGsmInfoByPacketId" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetNonGeoPointGsmInfoByPacketId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNonGeoPointGsmInfoByPacketIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetGeofenceOverlapWith_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeofenceOverlapWith" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetGeofenceOverlapWith_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGeofenceOverlapWithResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocation" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocations" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationByImei_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationByImei" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationByImei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationByImeiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationByTop_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationByTop" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLastKnownLocationByTop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastKnownLocationByTopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsByMeters_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsByMeters" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsByMeters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsByMetersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsWithJourneyCompletedBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithJourneyCompletedBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsWithJourneyCompletedBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithJourneyCompletedBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsWithJourneyCompletedAndUsageBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithJourneyCompletedAndUsageBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsWithJourneyCompletedAndUsageBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsWithJourneyCompletedAndUsageBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsByJourney_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsByJourney" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetLocationsByJourney_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationsByJourneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceSnFileterByLastGoodNight_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceSnFileterByLastGoodNight" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceSnFileterByLastGoodNight_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceSnFileterByLastGoodNightResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_IsDeviceComunicated_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsDeviceComunicated" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_IsDeviceComunicated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsDeviceComunicatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetJourneyInfoBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJourneyInfoBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetJourneyInfoBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJourneyInfoBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetJourneyInfoByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJourneyInfoByDate" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetJourneyInfoByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJourneyInfoByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetTotalDistanceJourneyGroupByBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalDistanceJourneyGroupByBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetTotalDistanceJourneyGroupByBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalDistanceJourneyGroupByBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetTotalDistanceJourneyGroupByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalDistanceJourneyGroupByDate" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetTotalDistanceJourneyGroupByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTotalDistanceJourneyGroupByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetVehicleUsageInfoPerDay_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleUsageInfoPerDay" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetVehicleUsageInfoPerDay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleUsageInfoPerDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetVehicleUsageInfoPerMonth_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleUsageInfoPerMonth" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetVehicleUsageInfoPerMonth_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleUsageInfoPerMonthResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetVehicleUsageInfoBetween_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleUsageInfoBetween" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetVehicleUsageInfoBetween_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleUsageInfoBetweenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_Echo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Echo" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_Echo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EchoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_IsVehicleBatterLowAlertWithIn24Hourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsVehicleBatterLowAlertWithIn24Hourse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_IsVehicleBatterLowAlertWithIn24Hourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsVehicleBatterLowAlertWithIn24HourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetPowerLossAlert_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPowerLossAlert" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetPowerLossAlert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPowerLossAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCumulativeDuration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCumulativeDuration" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetCumulativeDuration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCumulativeDurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevice" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetAllDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDevices" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetAllDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDemoDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDemoDevices" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDemoDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDemoDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetActiveDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveDevices" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetActiveDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDemoOrActiveDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDemoOrActiveDevices" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDemoOrActiveDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDemoOrActiveDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceByImei_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceByImei" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceCommunicationService_GetDeviceByImei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceByImeiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDeviceCommunicationService">
+    <wsdl:operation name="DeployOtaHeaderRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployOtaHeaderRequest" message="tns:IDeviceCommunicationService_DeployOtaHeaderRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployOtaHeaderRequestResponse" message="tns:IDeviceCommunicationService_DeployOtaHeaderRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployOtaHeaderRequestFromFilePath">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployOtaHeaderRequestFromFilePath" message="tns:IDeviceCommunicationService_DeployOtaHeaderRequestFromFilePath_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployOtaHeaderRequestFromFilePathResponse" message="tns:IDeviceCommunicationService_DeployOtaHeaderRequestFromFilePath_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployOtaHeaderRequestFromGridFs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployOtaHeaderRequestFromGridFs" message="tns:IDeviceCommunicationService_DeployOtaHeaderRequestFromGridFs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployOtaHeaderRequestFromGridFsResponse" message="tns:IDeviceCommunicationService_DeployOtaHeaderRequestFromGridFs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeployOtaState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/GetDeployOtaState" message="tns:IDeviceCommunicationService_GetDeployOtaState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/GetDeployOtaStateResponse" message="tns:IDeviceCommunicationService_GetDeployOtaState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Deploy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/Deploy" message="tns:IDeviceCommunicationService_Deploy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployResponse" message="tns:IDeviceCommunicationService_Deploy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployAlgorithmConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployAlgorithmConf" message="tns:IDeviceCommunicationService_DeployAlgorithmConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployAlgorithmConfResponse" message="tns:IDeviceCommunicationService_DeployAlgorithmConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployHistogramsConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployHistogramsConf" message="tns:IDeviceCommunicationService_DeployHistogramsConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployHistogramsConfResponse" message="tns:IDeviceCommunicationService_DeployHistogramsConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployHistogramsBinConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployHistogramsBinConf" message="tns:IDeviceCommunicationService_DeployHistogramsBinConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployHistogramsBinConfResponse" message="tns:IDeviceCommunicationService_DeployHistogramsBinConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployTowingConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployTowingConf" message="tns:IDeviceCommunicationService_DeployTowingConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployTowingConfResponse" message="tns:IDeviceCommunicationService_DeployTowingConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployObdConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployObdConf" message="tns:IDeviceCommunicationService_DeployObdConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployObdConfResponse" message="tns:IDeviceCommunicationService_DeployObdConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployGeoFenceConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployGeoFenceConf" message="tns:IDeviceCommunicationService_DeployGeoFenceConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployGeoFenceConfResponse" message="tns:IDeviceCommunicationService_DeployGeoFenceConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployVehicleBatteryConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployVehicleBatteryConf" message="tns:IDeviceCommunicationService_DeployVehicleBatteryConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployVehicleBatteryConfResponse" message="tns:IDeviceCommunicationService_DeployVehicleBatteryConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployFuelDropConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployFuelDropConf" message="tns:IDeviceCommunicationService_DeployFuelDropConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployFuelDropConfResponse" message="tns:IDeviceCommunicationService_DeployFuelDropConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployIdlingConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployIdlingConf" message="tns:IDeviceCommunicationService_DeployIdlingConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployIdlingConfResponse" message="tns:IDeviceCommunicationService_DeployIdlingConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployGeoPointProfileConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployGeoPointProfileConf" message="tns:IDeviceCommunicationService_DeployGeoPointProfileConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployGeoPointProfileConfResponse" message="tns:IDeviceCommunicationService_DeployGeoPointProfileConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployCommunicationProtocolConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployCommunicationProtocolConf" message="tns:IDeviceCommunicationService_DeployCommunicationProtocolConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployCommunicationProtocolConfResponse" message="tns:IDeviceCommunicationService_DeployCommunicationProtocolConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployEngineStartStopConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployEngineStartStopConf" message="tns:IDeviceCommunicationService_DeployEngineStartStopConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployEngineStartStopConfResponse" message="tns:IDeviceCommunicationService_DeployEngineStartStopConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployGps3DFixConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployGps3DFixConf" message="tns:IDeviceCommunicationService_DeployGps3DFixConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployGps3DFixConfResponse" message="tns:IDeviceCommunicationService_DeployGps3DFixConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployJourneySummaryConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployJourneySummaryConf" message="tns:IDeviceCommunicationService_DeployJourneySummaryConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployJourneySummaryConfResponse" message="tns:IDeviceCommunicationService_DeployJourneySummaryConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployAGpsConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployAGpsConf" message="tns:IDeviceCommunicationService_DeployAGpsConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployAGpsConfResponse" message="tns:IDeviceCommunicationService_DeployAGpsConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployAesKeyConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployAesKeyConf" message="tns:IDeviceCommunicationService_DeployAesKeyConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployAesKeyConfResponse" message="tns:IDeviceCommunicationService_DeployAesKeyConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployInternalBatteryConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployInternalBatteryConf" message="tns:IDeviceCommunicationService_DeployInternalBatteryConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployInternalBatteryConfResponse" message="tns:IDeviceCommunicationService_DeployInternalBatteryConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployTiltAlertConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployTiltAlertConf" message="tns:IDeviceCommunicationService_DeployTiltAlertConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployTiltAlertConfResponse" message="tns:IDeviceCommunicationService_DeployTiltAlertConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeployStationeryAlertConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployService/DeployStationeryAlertConf" message="tns:IDeviceCommunicationService_DeployStationeryAlertConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployService/DeployStationeryAlertConfResponse" message="tns:IDeviceCommunicationService_DeployStationeryAlertConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployAlgorithmConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployAlgorithmConf" message="tns:IDeviceCommunicationService_ScheduleDeployAlgorithmConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployAlgorithmConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployAlgorithmConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployHistogramsConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployHistogramsConf" message="tns:IDeviceCommunicationService_ScheduleDeployHistogramsConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployHistogramsConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployHistogramsConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployTowingConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployTowingConf" message="tns:IDeviceCommunicationService_ScheduleDeployTowingConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployTowingConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployTowingConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployVehicleBatteryConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployVehicleBatteryConf" message="tns:IDeviceCommunicationService_ScheduleDeployVehicleBatteryConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployVehicleBatteryConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployVehicleBatteryConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployFuelDropConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployFuelDropConf" message="tns:IDeviceCommunicationService_ScheduleDeployFuelDropConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployFuelDropConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployFuelDropConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployIdlingConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployIdlingConf" message="tns:IDeviceCommunicationService_ScheduleDeployIdlingConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployIdlingConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployIdlingConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployGeoPointProfileConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployGeoPointProfileConf" message="tns:IDeviceCommunicationService_ScheduleDeployGeoPointProfileConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployGeoPointProfileConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployGeoPointProfileConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployCommunicationProtocolConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployCommunicationProtocolConf" message="tns:IDeviceCommunicationService_ScheduleDeployCommunicationProtocolConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployCommunicationProtocolConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployCommunicationProtocolConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployEngineStartStopConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployEngineStartStopConf" message="tns:IDeviceCommunicationService_ScheduleDeployEngineStartStopConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployEngineStartStopConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployEngineStartStopConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployGps3DFixConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployGps3DFixConf" message="tns:IDeviceCommunicationService_ScheduleDeployGps3DFixConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployGps3DFixConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployGps3DFixConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployJourneySummaryConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployJourneySummaryConf" message="tns:IDeviceCommunicationService_ScheduleDeployJourneySummaryConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployJourneySummaryConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployJourneySummaryConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployAGpsConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployAGpsConf" message="tns:IDeviceCommunicationService_ScheduleDeployAGpsConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployAGpsConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployAGpsConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployInternalBatteryConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployInternalBatteryConf" message="tns:IDeviceCommunicationService_ScheduleDeployInternalBatteryConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployInternalBatteryConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployInternalBatteryConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployTiltAlertConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployTiltAlertConf" message="tns:IDeviceCommunicationService_ScheduleDeployTiltAlertConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployTiltAlertConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployTiltAlertConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployObdConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployObdConf" message="tns:IDeviceCommunicationService_ScheduleDeployObdConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployObdConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployObdConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployHistogramsBinConf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployHistogramsBinConf" message="tns:IDeviceCommunicationService_ScheduleDeployHistogramsBinConf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeployScheduleService/ScheduleDeployHistogramsBinConfResponse" message="tns:IDeviceCommunicationService_ScheduleDeployHistogramsBinConf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBinCountHistogram">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/DeleteBinCountHistogram" message="tns:IDeviceCommunicationService_DeleteBinCountHistogram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/DeleteBinCountHistogramResponse" message="tns:IDeviceCommunicationService_DeleteBinCountHistogram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadHistogram">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceUploadHistogram" message="tns:IDeviceCommunicationService_ForceUploadHistogram_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceUploadHistogramResponse" message="tns:IDeviceCommunicationService_ForceUploadHistogram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestObdData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/RequestObdData" message="tns:IDeviceCommunicationService_RequestObdData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/RequestObdDataResponse" message="tns:IDeviceCommunicationService_RequestObdData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestLocationUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/RequestLocationUpdate" message="tns:IDeviceCommunicationService_RequestLocationUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/RequestLocationUpdateResponse" message="tns:IDeviceCommunicationService_RequestLocationUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadGeoPointLast48Hrs">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceUploadGeoPointLast48Hrs" message="tns:IDeviceCommunicationService_ForceUploadGeoPointLast48Hrs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceUploadGeoPointLast48HrsResponse" message="tns:IDeviceCommunicationService_ForceUploadGeoPointLast48Hrs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadGeoPointInMemory">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceUploadGeoPointInMemory" message="tns:IDeviceCommunicationService_ForceUploadGeoPointInMemory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceUploadGeoPointInMemoryResponse" message="tns:IDeviceCommunicationService_ForceUploadGeoPointInMemory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadLastGeoPointsInMemory">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceUploadLastGeoPointsInMemory" message="tns:IDeviceCommunicationService_ForceUploadLastGeoPointsInMemory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceUploadLastGeoPointsInMemoryResponse" message="tns:IDeviceCommunicationService_ForceUploadLastGeoPointsInMemory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadRawAcceleration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceUploadRawAcceleration" message="tns:IDeviceCommunicationService_ForceUploadRawAcceleration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceUploadRawAccelerationResponse" message="tns:IDeviceCommunicationService_ForceUploadRawAcceleration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptionOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/EncryptionOption" message="tns:IDeviceCommunicationService_EncryptionOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/EncryptionOptionResponse" message="tns:IDeviceCommunicationService_EncryptionOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CompressionOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/CompressionOption" message="tns:IDeviceCommunicationService_CompressionOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/CompressionOptionResponse" message="tns:IDeviceCommunicationService_CompressionOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceDownloadOfAGps">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceDownloadOfAGps" message="tns:IDeviceCommunicationService_ForceDownloadOfAGps_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceDownloadOfAGpsResponse" message="tns:IDeviceCommunicationService_ForceDownloadOfAGps_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceRequestButton">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceRequestButton" message="tns:IDeviceCommunicationService_ForceRequestButton_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceRequestButtonResponse" message="tns:IDeviceCommunicationService_ForceRequestButton_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PairDeviceAndDongle">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/PairDeviceAndDongle" message="tns:IDeviceCommunicationService_PairDeviceAndDongle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/PairDeviceAndDongleResponse" message="tns:IDeviceCommunicationService_PairDeviceAndDongle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearDataOnDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ClearDataOnDevice" message="tns:IDeviceCommunicationService_ClearDataOnDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ClearDataOnDeviceResponse" message="tns:IDeviceCommunicationService_ClearDataOnDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceToChangeProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceToChangeProfile" message="tns:IDeviceCommunicationService_ForceToChangeProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceToChangeProfileResponse" message="tns:IDeviceCommunicationService_ForceToChangeProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceToUploadHealthAndInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceToUploadHealthAndInfo" message="tns:IDeviceCommunicationService_ForceToUploadHealthAndInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceToUploadHealthAndInfoResponse" message="tns:IDeviceCommunicationService_ForceToUploadHealthAndInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestGsmCellDataOnMemory">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/RequestGsmCellDataOnMemory" message="tns:IDeviceCommunicationService_RequestGsmCellDataOnMemory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/RequestGsmCellDataOnMemoryResponse" message="tns:IDeviceCommunicationService_RequestGsmCellDataOnMemory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceToChangeGpsReceptionOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceToChangeGpsReceptionOption" message="tns:IDeviceCommunicationService_ForceToChangeGpsReceptionOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceToChangeGpsReceptionOptionResponse" message="tns:IDeviceCommunicationService_ForceToChangeGpsReceptionOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadPid">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceUploadPid" message="tns:IDeviceCommunicationService_ForceUploadPid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceUploadPidResponse" message="tns:IDeviceCommunicationService_ForceUploadPid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForceToDumpFwConfigurationAndProfile">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/ForceToDumpFwConfigurationAndProfile" message="tns:IDeviceCommunicationService_ForceToDumpFwConfigurationAndProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/ForceToDumpFwConfigurationAndProfileResponse" message="tns:IDeviceCommunicationService_ForceToDumpFwConfigurationAndProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancleRequestId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICommandService/CancleRequestId" message="tns:IDeviceCommunicationService_CancleRequestId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICommandService/CancleRequestIdResponse" message="tns:IDeviceCommunicationService_CancleRequestId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceExistByDeviceSN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/DeviceExistByDeviceSN" message="tns:IDeviceCommunicationService_DeviceExistByDeviceSN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/DeviceExistByDeviceSNResponse" message="tns:IDeviceCommunicationService_DeviceExistByDeviceSN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJourneyGpsFixAlertByDeviceSNAndJourneyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetJourneyGpsFixAlertByDeviceSNAndJourneyList" message="tns:IDeviceCommunicationService_GetJourneyGpsFixAlertByDeviceSNAndJourneyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetJourneyGpsFixAlertByDeviceSNAndJourneyListResponse" message="tns:IDeviceCommunicationService_GetJourneyGpsFixAlertByDeviceSNAndJourneyList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentHealthInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentHealthInfo" message="tns:IDeviceCommunicationService_GetCurrentHealthInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentHealthInfoResponse" message="tns:IDeviceCommunicationService_GetCurrentHealthInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentObdCore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentObdCore" message="tns:IDeviceCommunicationService_GetCurrentObdCore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentObdCoreResponse" message="tns:IDeviceCommunicationService_GetCurrentObdCore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentJourneySummary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentJourneySummary" message="tns:IDeviceCommunicationService_GetCurrentJourneySummary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentJourneySummaryResponse" message="tns:IDeviceCommunicationService_GetCurrentJourneySummary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentCasingOpeningAlert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentCasingOpeningAlert" message="tns:IDeviceCommunicationService_GetCurrentCasingOpeningAlert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentCasingOpeningAlertResponse" message="tns:IDeviceCommunicationService_GetCurrentCasingOpeningAlert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentGoodMorning">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentGoodMorning" message="tns:IDeviceCommunicationService_GetCurrentGoodMorning_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentGoodMorningResponse" message="tns:IDeviceCommunicationService_GetCurrentGoodMorning_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentButtonTriggered">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentButtonTriggered" message="tns:IDeviceCommunicationService_GetCurrentButtonTriggered_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentButtonTriggeredResponse" message="tns:IDeviceCommunicationService_GetCurrentButtonTriggered_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentCalibrationInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentCalibrationInformation" message="tns:IDeviceCommunicationService_GetCurrentCalibrationInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentCalibrationInformationResponse" message="tns:IDeviceCommunicationService_GetCurrentCalibrationInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentGpsAwakeArray">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentGpsAwakeArray" message="tns:IDeviceCommunicationService_GetCurrentGpsAwakeArray_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentGpsAwakeArrayResponse" message="tns:IDeviceCommunicationService_GetCurrentGpsAwakeArray_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentEngine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentEngine" message="tns:IDeviceCommunicationService_GetCurrentEngine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentEngineResponse" message="tns:IDeviceCommunicationService_GetCurrentEngine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentInternalBatterySoh">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentInternalBatterySoh" message="tns:IDeviceCommunicationService_GetCurrentInternalBatterySoh_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCurrentInternalBatterySohResponse" message="tns:IDeviceCommunicationService_GetCurrentInternalBatterySoh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MustBeUpgrade">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/MustBeUpgrade" message="tns:IDeviceCommunicationService_MustBeUpgrade_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/MustBeUpgradeResponse" message="tns:IDeviceCommunicationService_MustBeUpgrade_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceConfById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceConfById" message="tns:IDeviceCommunicationService_GetDeviceConfById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceConfByIdResponse" message="tns:IDeviceCommunicationService_GetDeviceConfById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoFenceConfByPacketId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetGeoFenceConfByPacketId" message="tns:IDeviceCommunicationService_GetGeoFenceConfByPacketId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetGeoFenceConfByPacketIdResponse" message="tns:IDeviceCommunicationService_GetGeoFenceConfByPacketId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceConfByDeviceSn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceConfByDeviceSn" message="tns:IDeviceCommunicationService_GetDeviceConfByDeviceSn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceConfByDeviceSnResponse" message="tns:IDeviceCommunicationService_GetDeviceConfByDeviceSn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationBetween" message="tns:IDeviceCommunicationService_GetLastKnownLocationBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationBetweenResponse" message="tns:IDeviceCommunicationService_GetLastKnownLocationBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationsBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationsBetween" message="tns:IDeviceCommunicationService_GetLastKnownLocationsBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationsBetweenResponse" message="tns:IDeviceCommunicationService_GetLastKnownLocationsBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithHavDistance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithHavDistance" message="tns:IDeviceCommunicationService_GetLocationsWithHavDistance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithHavDistanceResponse" message="tns:IDeviceCommunicationService_GetLocationsWithHavDistance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDistance" message="tns:IDeviceCommunicationService_GetDistance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDistanceResponse" message="tns:IDeviceCommunicationService_GetDistance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistancePerDay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDistancePerDay" message="tns:IDeviceCommunicationService_GetDistancePerDay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDistancePerDayResponse" message="tns:IDeviceCommunicationService_GetDistancePerDay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsForSpeedCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsForSpeedCheck" message="tns:IDeviceCommunicationService_GetLocationsForSpeedCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsForSpeedCheckResponse" message="tns:IDeviceCommunicationService_GetLocationsForSpeedCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpeedCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetSpeedCheck" message="tns:IDeviceCommunicationService_GetSpeedCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetSpeedCheckResponse" message="tns:IDeviceCommunicationService_GetSpeedCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpeedCheckByBeginTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetSpeedCheckByBeginTime" message="tns:IDeviceCommunicationService_GetSpeedCheckByBeginTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetSpeedCheckByBeginTimeResponse" message="tns:IDeviceCommunicationService_GetSpeedCheckByBeginTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EndTcpConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/EndTcpConnection" message="tns:IDeviceCommunicationService_EndTcpConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/EndTcpConnectionResponse" message="tns:IDeviceCommunicationService_EndTcpConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonGeoPointGsmInfoByPacketId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetNonGeoPointGsmInfoByPacketId" message="tns:IDeviceCommunicationService_GetNonGeoPointGsmInfoByPacketId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetNonGeoPointGsmInfoByPacketIdResponse" message="tns:IDeviceCommunicationService_GetNonGeoPointGsmInfoByPacketId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGeofenceOverlapWith">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetGeofenceOverlapWith" message="tns:IDeviceCommunicationService_GetGeofenceOverlapWith_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetGeofenceOverlapWithResponse" message="tns:IDeviceCommunicationService_GetGeofenceOverlapWith_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocation" message="tns:IDeviceCommunicationService_GetLastKnownLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationResponse" message="tns:IDeviceCommunicationService_GetLastKnownLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocations" message="tns:IDeviceCommunicationService_GetLastKnownLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationsResponse" message="tns:IDeviceCommunicationService_GetLastKnownLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationByImei">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationByImei" message="tns:IDeviceCommunicationService_GetLastKnownLocationByImei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationByImeiResponse" message="tns:IDeviceCommunicationService_GetLastKnownLocationByImei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationByTop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationByTop" message="tns:IDeviceCommunicationService_GetLastKnownLocationByTop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationByTopResponse" message="tns:IDeviceCommunicationService_GetLastKnownLocationByTop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByMeters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsByMeters" message="tns:IDeviceCommunicationService_GetLocationsByMeters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsByMetersResponse" message="tns:IDeviceCommunicationService_GetLocationsByMeters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsBetween" message="tns:IDeviceCommunicationService_GetLocationsBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsBetweenResponse" message="tns:IDeviceCommunicationService_GetLocationsBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithJourneyCompletedBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithJourneyCompletedBetween" message="tns:IDeviceCommunicationService_GetLocationsWithJourneyCompletedBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithJourneyCompletedBetweenResponse" message="tns:IDeviceCommunicationService_GetLocationsWithJourneyCompletedBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithJourneyCompletedAndUsageBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithJourneyCompletedAndUsageBetween" message="tns:IDeviceCommunicationService_GetLocationsWithJourneyCompletedAndUsageBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithJourneyCompletedAndUsageBetweenResponse" message="tns:IDeviceCommunicationService_GetLocationsWithJourneyCompletedAndUsageBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByJourney">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsByJourney" message="tns:IDeviceCommunicationService_GetLocationsByJourney_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetLocationsByJourneyResponse" message="tns:IDeviceCommunicationService_GetLocationsByJourney_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceSnFileterByLastGoodNight">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceSnFileterByLastGoodNight" message="tns:IDeviceCommunicationService_GetDeviceSnFileterByLastGoodNight_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceSnFileterByLastGoodNightResponse" message="tns:IDeviceCommunicationService_GetDeviceSnFileterByLastGoodNight_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsDeviceComunicated">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/IsDeviceComunicated" message="tns:IDeviceCommunicationService_IsDeviceComunicated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/IsDeviceComunicatedResponse" message="tns:IDeviceCommunicationService_IsDeviceComunicated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJourneyInfoBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetJourneyInfoBetween" message="tns:IDeviceCommunicationService_GetJourneyInfoBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetJourneyInfoBetweenResponse" message="tns:IDeviceCommunicationService_GetJourneyInfoBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJourneyInfoByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetJourneyInfoByDate" message="tns:IDeviceCommunicationService_GetJourneyInfoByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetJourneyInfoByDateResponse" message="tns:IDeviceCommunicationService_GetJourneyInfoByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalDistanceJourneyGroupByBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetTotalDistanceJourneyGroupByBetween" message="tns:IDeviceCommunicationService_GetTotalDistanceJourneyGroupByBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetTotalDistanceJourneyGroupByBetweenResponse" message="tns:IDeviceCommunicationService_GetTotalDistanceJourneyGroupByBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalDistanceJourneyGroupByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetTotalDistanceJourneyGroupByDate" message="tns:IDeviceCommunicationService_GetTotalDistanceJourneyGroupByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetTotalDistanceJourneyGroupByDateResponse" message="tns:IDeviceCommunicationService_GetTotalDistanceJourneyGroupByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleUsageInfoPerDay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoPerDay" message="tns:IDeviceCommunicationService_GetVehicleUsageInfoPerDay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoPerDayResponse" message="tns:IDeviceCommunicationService_GetVehicleUsageInfoPerDay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleUsageInfoPerMonth">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoPerMonth" message="tns:IDeviceCommunicationService_GetVehicleUsageInfoPerMonth_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoPerMonthResponse" message="tns:IDeviceCommunicationService_GetVehicleUsageInfoPerMonth_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleUsageInfoBetween">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoBetween" message="tns:IDeviceCommunicationService_GetVehicleUsageInfoBetween_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoBetweenResponse" message="tns:IDeviceCommunicationService_GetVehicleUsageInfoBetween_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/Echo" message="tns:IDeviceCommunicationService_Echo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/EchoResponse" message="tns:IDeviceCommunicationService_Echo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsVehicleBatterLowAlertWithIn24Hourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/IsVehicleBatterLowAlertWithIn24Hourse" message="tns:IDeviceCommunicationService_IsVehicleBatterLowAlertWithIn24Hourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/IsVehicleBatterLowAlertWithIn24HourseResponse" message="tns:IDeviceCommunicationService_IsVehicleBatterLowAlertWithIn24Hourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPowerLossAlert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetPowerLossAlert" message="tns:IDeviceCommunicationService_GetPowerLossAlert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetPowerLossAlertResponse" message="tns:IDeviceCommunicationService_GetPowerLossAlert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCumulativeDuration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCumulativeDuration" message="tns:IDeviceCommunicationService_GetCumulativeDuration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetCumulativeDurationResponse" message="tns:IDeviceCommunicationService_GetCumulativeDuration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDevice" message="tns:IDeviceCommunicationService_GetDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceResponse" message="tns:IDeviceCommunicationService_GetDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetAllDevices" message="tns:IDeviceCommunicationService_GetAllDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetAllDevicesResponse" message="tns:IDeviceCommunicationService_GetAllDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemoDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDemoDevices" message="tns:IDeviceCommunicationService_GetDemoDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDemoDevicesResponse" message="tns:IDeviceCommunicationService_GetDemoDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetActiveDevices" message="tns:IDeviceCommunicationService_GetActiveDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetActiveDevicesResponse" message="tns:IDeviceCommunicationService_GetActiveDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDemoOrActiveDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDemoOrActiveDevices" message="tns:IDeviceCommunicationService_GetDemoOrActiveDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDemoOrActiveDevicesResponse" message="tns:IDeviceCommunicationService_GetDemoOrActiveDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceByImei">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceByImei" message="tns:IDeviceCommunicationService_GetDeviceByImei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceCommunicationService/GetDeviceByImeiResponse" message="tns:IDeviceCommunicationService_GetDeviceByImei_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDeviceCommunicationService" type="tns:IDeviceCommunicationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeployOtaHeaderRequest">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployOtaHeaderRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployOtaHeaderRequestFromFilePath">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployOtaHeaderRequestFromFilePath" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployOtaHeaderRequestFromGridFs">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployOtaHeaderRequestFromGridFs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeployOtaState">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/GetDeployOtaState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deploy">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/Deploy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployAlgorithmConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployAlgorithmConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployHistogramsConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployHistogramsConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployHistogramsBinConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployHistogramsBinConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployTowingConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployTowingConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployObdConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployObdConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployGeoFenceConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployGeoFenceConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployVehicleBatteryConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployVehicleBatteryConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployFuelDropConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployFuelDropConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployIdlingConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployIdlingConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployGeoPointProfileConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployGeoPointProfileConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployCommunicationProtocolConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployCommunicationProtocolConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployEngineStartStopConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployEngineStartStopConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployGps3DFixConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployGps3DFixConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployJourneySummaryConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployJourneySummaryConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployAGpsConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployAGpsConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployAesKeyConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployAesKeyConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployInternalBatteryConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployInternalBatteryConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployTiltAlertConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployTiltAlertConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeployStationeryAlertConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployService/DeployStationeryAlertConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployAlgorithmConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployAlgorithmConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployHistogramsConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployHistogramsConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployTowingConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployTowingConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployVehicleBatteryConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployVehicleBatteryConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployFuelDropConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployFuelDropConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployIdlingConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployIdlingConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployGeoPointProfileConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployGeoPointProfileConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployCommunicationProtocolConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployCommunicationProtocolConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployEngineStartStopConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployEngineStartStopConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployGps3DFixConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployGps3DFixConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployJourneySummaryConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployJourneySummaryConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployAGpsConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployAGpsConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployInternalBatteryConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployInternalBatteryConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployTiltAlertConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployTiltAlertConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployObdConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployObdConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScheduleDeployHistogramsBinConf">
+      <soap:operation soapAction="http://tempuri.org/IDeployScheduleService/ScheduleDeployHistogramsBinConf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBinCountHistogram">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/DeleteBinCountHistogram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadHistogram">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceUploadHistogram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestObdData">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/RequestObdData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestLocationUpdate">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/RequestLocationUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadGeoPointLast48Hrs">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceUploadGeoPointLast48Hrs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadGeoPointInMemory">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceUploadGeoPointInMemory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadLastGeoPointsInMemory">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceUploadLastGeoPointsInMemory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadRawAcceleration">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceUploadRawAcceleration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptionOption">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/EncryptionOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompressionOption">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/CompressionOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceDownloadOfAGps">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceDownloadOfAGps" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceRequestButton">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceRequestButton" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PairDeviceAndDongle">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/PairDeviceAndDongle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearDataOnDevice">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ClearDataOnDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceToChangeProfile">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceToChangeProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceToUploadHealthAndInfo">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceToUploadHealthAndInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestGsmCellDataOnMemory">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/RequestGsmCellDataOnMemory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceToChangeGpsReceptionOption">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceToChangeGpsReceptionOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceUploadPid">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceUploadPid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForceToDumpFwConfigurationAndProfile">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/ForceToDumpFwConfigurationAndProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancleRequestId">
+      <soap:operation soapAction="http://tempuri.org/ICommandService/CancleRequestId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeviceExistByDeviceSN">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/DeviceExistByDeviceSN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJourneyGpsFixAlertByDeviceSNAndJourneyList">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetJourneyGpsFixAlertByDeviceSNAndJourneyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentHealthInfo">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentHealthInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentObdCore">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentObdCore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentJourneySummary">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentJourneySummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentCasingOpeningAlert">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentCasingOpeningAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentGoodMorning">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentGoodMorning" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentButtonTriggered">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentButtonTriggered" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentCalibrationInformation">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentCalibrationInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentGpsAwakeArray">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentGpsAwakeArray" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentEngine">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentEngine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentInternalBatterySoh">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCurrentInternalBatterySoh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MustBeUpgrade">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/MustBeUpgrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceConfById">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDeviceConfById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoFenceConfByPacketId">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetGeoFenceConfByPacketId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceConfByDeviceSn">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDeviceConfByDeviceSn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationsBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationsBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithHavDistance">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithHavDistance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistance">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDistance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistancePerDay">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDistancePerDay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsForSpeedCheck">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLocationsForSpeedCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpeedCheck">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetSpeedCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpeedCheckByBeginTime">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetSpeedCheckByBeginTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndTcpConnection">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/EndTcpConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonGeoPointGsmInfoByPacketId">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetNonGeoPointGsmInfoByPacketId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeofenceOverlapWith">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetGeofenceOverlapWith" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocation">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocations">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationByImei">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationByImei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastKnownLocationByTop">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLastKnownLocationByTop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByMeters">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLocationsByMeters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLocationsBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithJourneyCompletedBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithJourneyCompletedBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsWithJourneyCompletedAndUsageBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLocationsWithJourneyCompletedAndUsageBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationsByJourney">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetLocationsByJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceSnFileterByLastGoodNight">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDeviceSnFileterByLastGoodNight" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsDeviceComunicated">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/IsDeviceComunicated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJourneyInfoBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetJourneyInfoBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJourneyInfoByDate">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetJourneyInfoByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalDistanceJourneyGroupByBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetTotalDistanceJourneyGroupByBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalDistanceJourneyGroupByDate">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetTotalDistanceJourneyGroupByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleUsageInfoPerDay">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoPerDay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleUsageInfoPerMonth">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoPerMonth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleUsageInfoBetween">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetVehicleUsageInfoBetween" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/Echo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsVehicleBatterLowAlertWithIn24Hourse">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/IsVehicleBatterLowAlertWithIn24Hourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPowerLossAlert">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetPowerLossAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCumulativeDuration">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetCumulativeDuration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevice">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDevices">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetAllDevices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemoDevices">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDemoDevices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveDevices">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetActiveDevices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDemoOrActiveDevices">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDemoOrActiveDevices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceByImei">
+      <soap:operation soapAction="http://tempuri.org/IDeviceCommunicationService/GetDeviceByImei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="deviceService">
+    <wsdl:port name="BasicHttpBinding_IDeviceCommunicationService" binding="tns:BasicHttpBinding_IDeviceCommunicationService">
+      <soap:address location="http://appsit01:9991/DeviceAgentServer/DeviceService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

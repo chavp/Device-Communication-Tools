@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="gpsCommunicationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGpsCommunicationContract_GetRequestAckCommandStackMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestAckCommandStackMessage" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetRequestAckCommandStackMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestAckCommandStackMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetMessageDescriptionByPacketId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageDescriptionByPacketId" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetMessageDescriptionByPacketId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageDescriptionByPacketIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketDtoByPacketId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketDtoByPacketId" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketDtoByPacketId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketDtoByPacketIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketIdAround_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketIdAround" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketIdAround_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketIdAroundResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketIdAfter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketIdAfter" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketIdAfter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketIdAfterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketDtoAfter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketDtoAfter" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPacketDtoAfter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPacketDtoAfterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPendingAckRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingAckRequest" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPendingAckRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingAckRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPendingAckRequestNyImeiAndMessageType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingAckRequestNyImeiAndMessageType" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_GetPendingAckRequestNyImeiAndMessageType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingAckRequestNyImeiAndMessageTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_RemoveAckRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAckRequest" />
+  </wsdl:message>
+  <wsdl:message name="IGpsCommunicationContract_RemoveAckRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveAckRequestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGpsCommunicationContract">
+    <wsdl:operation name="GetRequestAckCommandStackMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetRequestAckCommandStackMessage" message="tns:IGpsCommunicationContract_GetRequestAckCommandStackMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetRequestAckCommandStackMessageResponse" message="tns:IGpsCommunicationContract_GetRequestAckCommandStackMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageDescriptionByPacketId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetMessageDescriptionByPacketId" message="tns:IGpsCommunicationContract_GetMessageDescriptionByPacketId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetMessageDescriptionByPacketIdResponse" message="tns:IGpsCommunicationContract_GetMessageDescriptionByPacketId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketDtoByPacketId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketDtoByPacketId" message="tns:IGpsCommunicationContract_GetPacketDtoByPacketId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketDtoByPacketIdResponse" message="tns:IGpsCommunicationContract_GetPacketDtoByPacketId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketIdAround">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketIdAround" message="tns:IGpsCommunicationContract_GetPacketIdAround_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketIdAroundResponse" message="tns:IGpsCommunicationContract_GetPacketIdAround_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketIdAfter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketIdAfter" message="tns:IGpsCommunicationContract_GetPacketIdAfter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketIdAfterResponse" message="tns:IGpsCommunicationContract_GetPacketIdAfter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketDtoAfter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketDtoAfter" message="tns:IGpsCommunicationContract_GetPacketDtoAfter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPacketDtoAfterResponse" message="tns:IGpsCommunicationContract_GetPacketDtoAfter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingAckRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPendingAckRequest" message="tns:IGpsCommunicationContract_GetPendingAckRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPendingAckRequestResponse" message="tns:IGpsCommunicationContract_GetPendingAckRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingAckRequestNyImeiAndMessageType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPendingAckRequestNyImeiAndMessageType" message="tns:IGpsCommunicationContract_GetPendingAckRequestNyImeiAndMessageType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/GetPendingAckRequestNyImeiAndMessageTypeResponse" message="tns:IGpsCommunicationContract_GetPendingAckRequestNyImeiAndMessageType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAckRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGpsCommunicationContract/RemoveAckRequest" message="tns:IGpsCommunicationContract_RemoveAckRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGpsCommunicationContract/RemoveAckRequestResponse" message="tns:IGpsCommunicationContract_RemoveAckRequest_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IGpsCommunicationContract" type="tns:IGpsCommunicationContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRequestAckCommandStackMessage">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetRequestAckCommandStackMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageDescriptionByPacketId">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetMessageDescriptionByPacketId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketDtoByPacketId">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetPacketDtoByPacketId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketIdAround">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetPacketIdAround" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketIdAfter">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetPacketIdAfter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPacketDtoAfter">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetPacketDtoAfter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingAckRequest">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetPendingAckRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingAckRequestNyImeiAndMessageType">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/GetPendingAckRequestNyImeiAndMessageType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAckRequest">
+      <soap:operation soapAction="http://tempuri.org/IGpsCommunicationContract/RemoveAckRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="gpsCommunicationService">
+    <wsdl:port name="BasicHttpBinding_IGpsCommunicationContract" binding="tns:BasicHttpBinding_IGpsCommunicationContract">
+      <soap:address location="http://localhost:8881/GpsCommunicationServer/GpsCommunicationService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,4889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimulationScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Messages>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>556</Seq>
+      <HeaderTime>2012-02-28T16:59:40</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiwCFtEi1elAATj8zA8EBwAGAPzMDwQAplcIHMAvJAXKAQJpAAfz1NFhAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:59:51</CreateDate>
+      <PacketId>07e2c3ac-583e-49aa-b642-ac3ec0cc230b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:59:40</UtcTime>
+      <Latitude>47.0308774</Latitude>
+      <Longitude>8.6257600</Longitude>
+      <Altitude>458</Altitude>
+      <GroundSpeed>2</GroundSpeed>
+      <Heading>105</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GoodNightMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GoodNight</MessageType>
+      <Seq>555</Seq>
+      <HeaderTime>2012-02-28T16:59:40</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AisCFtEi1elAATj8zA8EAQDHjFojAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:59:55</CreateDate>
+      <PacketId>aee973ae-595b-46d5-96bc-b33f27314e3f</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>1</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <DataByte>0</DataByte>
+    </Message>
+    <Message xsi:type="JourneySummaryMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>JourneySummary</MessageType>
+      <Seq>554</Seq>
+      <HeaderTime>2012-02-28T16:59:40</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AioCFtEi1elAATj8zA8EEAEGABEBCwQAEgGFAgATATUAABQBCAAAFQGQBgAWAQAAABcBnnABGAH///8ZAf///yABAAAAIQEPBgAiAf///yMB////JAGAlpglAR8AJgGRhCFAAwAAAAMAAAAAAAA2BFJzADcEx3EAMwXCZQM=</UdpPacket>
+      <CreateDate>2012-02-28T23:59:59</CreateDate>
+      <PacketId>47e16559-82e6-41f7-aafe-3ffd94ef7596</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8210</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <JourneyId>6</JourneyId>
+      <DrivingCumulativeDulation>1035</DrivingCumulativeDulation>
+      <IdlingCumulativeDulation>645</IdlingCumulativeDulation>
+      <TowingCumulativeDulation>53</TowingCumulativeDulation>
+      <MissingGpsSignalDulation>8</MissingGpsSignalDulation>
+      <TotalJourneyDuration>1680</TotalJourneyDuration>
+      <PartialIntegrationOfObdSpeedOverTime>0</PartialIntegrationOfObdSpeedOverTime>
+      <PartialHarversine>94366</PartialHarversine>
+      <DrivenPidx31>16777215</DrivenPidx31>
+      <TruOdometer>16777215</TruOdometer>
+      <TowedObdSpeed>0</TowedObdSpeed>
+      <TowedHarversine>1551</TowedHarversine>
+      <TowedPidx31>16777215</TowedPidx31>
+      <TowedRealOdoPid>16777215</TowedRealOdoPid>
+      <DrValue>1</DrValue>
+      <DrNumberReadings>31</DrNumberReadings>
+      <DrStandardDeviation>0.21966249999999998</DrStandardDeviation>
+      <CumulativeDistanceForMissingGpsSignal>0</CumulativeDistanceForMissingGpsSignal>
+      <UtcTime>2010-01-01T00:00:00</UtcTime>
+      <FullHarvesine>29522</FullHarvesine>
+      <FullIntegrationOfObdSpeedOverTime>29127</FullIntegrationOfObdSpeedOverTime>
+    </Message>
+    <Message xsi:type="HistogramBinRawDataMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>HistogramBinRawData</MessageType>
+      <Seq>553</Seq>
+      <HeaderTime>2012-02-28T16:59:37</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AikCFtEi1elAATj5zA8EQAQDAFMEAEEEmwkAEAAADwAALgAAHwAAHgAAMQAAKAAAXQAATwAAFwAAIQAAQgAAJwAAHQAAKAAAXwAAhQAAkgAAtwAAFgEAqQAAVAAAvwEAIQIAMgMABQEAHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqh6iCQM=</UdpPacket>
+      <CreateDate>2012-02-28T23:59:40</CreateDate>
+      <PacketId>17adf51f-3e5d-403d-bb26-3e10b65b25df</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8240</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniquedIdNumberForHistogram>3</UniquedIdNumberForHistogram>
+      <SequenceCounterForFragmentation>0</SequenceCounterForFragmentation>
+      <RawData>mwkAEAAADwAALgAAHwAAHgAAMQAAKAAAXQAATwAAFwAAIQAAQgAAJwAAHQAAKAAAXwAAhQAAkgAAtwAAFgEAqQAAVAAAvwEAIQIAMgMABQEAHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</RawData>
+    </Message>
+    <Message xsi:type="HistogramInfoMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>HistogramInfo</MessageType>
+      <Seq>552</Seq>
+      <HeaderTime>2012-02-28T16:59:37</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AigCFtEi1elAATj5zA8EQAQDAEIEBEMEAAAAMgBEBP///wBFBDIAAAAd6QZnAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:59:43</CreateDate>
+      <PacketId>16bf1184-6fdb-403c-ad47-75f6d0e6af6f</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8229</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniquedIdNumberForHistogram>3</UniquedIdNumberForHistogram>
+      <HistogramType>4</HistogramType>
+      <TheSizeOfEachAssociatedDimension>AAAAMgA=</TheSizeOfEachAssociatedDimension>
+      <HistogramBinDefinitionIndexKey>16777215</HistogramBinDefinitionIndexKey>
+      <RawBinSize>50</RawBinSize>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>551</Seq>
+      <HeaderTime>2012-02-28T16:55:24</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AicCFtEi1elAATj8yw8EBwAGAHfKDwQAqUoIHBxCJAWpAScpAQctJ/w8Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:55:29</CreateDate>
+      <PacketId>ebba2a08-b1ec-47da-826b-bf3ec191fb10</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:48:55</UtcTime>
+      <Latitude>47.0305449</Latitude>
+      <Longitude>8.6262300</Longitude>
+      <Altitude>425</Altitude>
+      <GroundSpeed>39</GroundSpeed>
+      <Heading>297</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="EulerAnglesArrayMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>EulerAnglesArray</MessageType>
+      <Seq>550</Seq>
+      <HeaderTime>2012-02-28T16:51:07</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiYCFtEi1elAATj7yg8EAP8BAAEABQAPMgOGATIDhwEyA4gBAwBmAIYBAwBmAIcBAwBmAIgBAi4ABUf/BcL/AAAAAAAAAC0AAAAAAAAAAEf/AAAAAAAAAML/Ai4ABUf/BcL/U60PBAAAAC8A8QAAAAAAAEj/8QAAAAAAABMAAi4ABUf/BcL/AAAAAAAAAAAAUq0PBAAAAEL/Uq0PBAAAAMj/Ai4ABUf/BcL/AAAAAAAAAAAALrsPBAAAAEj/LrsPBAAAAMb/Ai4ABUf/BcL/AAAAAAAAAAAA+soPBAAAAET/+soPBAAAAL3/Boo9dgM=</UdpPacket>
+      <CreateDate>2012-02-28T23:51:10</CreateDate>
+      <PacketId>cf193af8-1b90-4fd3-8a8e-bc62c5e0bdd1</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8213</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <MsgId>65280</MsgId>
+      <TotalMsg>1</TotalMsg>
+      <MsgNumber>1</MsgNumber>
+      <Rows>5</Rows>
+      <Cols>15</Cols>
+      <DataDef>
+        <unsignedShort>818</unsignedShort>
+        <unsignedShort>390</unsignedShort>
+        <unsignedShort>818</unsignedShort>
+        <unsignedShort>391</unsignedShort>
+        <unsignedShort>818</unsignedShort>
+        <unsignedShort>392</unsignedShort>
+        <unsignedShort>3</unsignedShort>
+        <unsignedShort>102</unsignedShort>
+        <unsignedShort>390</unsignedShort>
+        <unsignedShort>3</unsignedShort>
+        <unsignedShort>102</unsignedShort>
+        <unsignedShort>391</unsignedShort>
+        <unsignedShort>3</unsignedShort>
+        <unsignedShort>102</unsignedShort>
+        <unsignedShort>392</unsignedShort>
+      </DataDef>
+      <BinData>
+        <unsignedByte>2</unsignedByte>
+        <unsignedByte>46</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>71</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>194</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>45</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>71</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>194</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>2</unsignedByte>
+        <unsignedByte>46</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>71</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>194</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>83</unsignedByte>
+        <unsignedByte>173</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>4</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>47</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>241</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>72</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>241</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>19</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>2</unsignedByte>
+        <unsignedByte>46</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>71</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>194</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>82</unsignedByte>
+        <unsignedByte>173</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>4</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>66</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>82</unsignedByte>
+        <unsignedByte>173</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>4</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>200</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>2</unsignedByte>
+        <unsignedByte>46</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>71</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>194</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>46</unsignedByte>
+        <unsignedByte>187</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>4</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>72</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>46</unsignedByte>
+        <unsignedByte>187</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>4</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>198</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>2</unsignedByte>
+        <unsignedByte>46</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>71</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>194</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>250</unsignedByte>
+        <unsignedByte>202</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>4</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>68</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+        <unsignedByte>250</unsignedByte>
+        <unsignedByte>202</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>4</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>189</unsignedByte>
+        <unsignedByte>255</unsignedByte>
+      </BinData>
+      <MessageCollection />
+    </Message>
+    <Message xsi:type="EngineStartStopAlertMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>EngineStartStopAlert</MessageType>
+      <Seq>549</Seq>
+      <HeaderTime>2012-02-28T16:49:08</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiUCFtEi1elAATiEyg8EMQMABwAGAIXKDwQAslEIHGAxJAWxAQA7AQcZAf///xgB//8AkwAAlAAAAIa3h3sD</UdpPacket>
+      <CreateDate>2012-02-28T23:49:12</CreateDate>
+      <PacketId>677b472c-24da-4475-9f49-b6b2f759385d</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>12309</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <StartStop>0</StartStop>
+      <GeoPoint>
+        <Imei>unknown</Imei>
+        <MessageType>GeoPoint</MessageType>
+        <Seq>0</Seq>
+        <HeaderTime>2012-02-29T10:11:13.9238003+07:00</HeaderTime>
+        <Version>1</Version>
+        <CreateDate>0001-01-01T00:00:00</CreateDate>
+        <Id>7</Id>
+        <TotalSeq>0</TotalSeq>
+        <ServerTime>0001-01-01T00:00:00</ServerTime>
+        <SourcePort>0</SourcePort>
+        <Priority>0</Priority>
+        <ServerId>0</ServerId>
+        <UniqueJouneyId>6</UniqueJouneyId>
+        <UtcTime>2012-02-28T16:49:09</UtcTime>
+        <Latitude>47.0307250</Latitude>
+        <Longitude>8.6258016</Longitude>
+        <Altitude>433</Altitude>
+        <GroundSpeed>0</GroundSpeed>
+        <Heading>315</Heading>
+        <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+        <StartJney xsi:nil="true" />
+        <MessageHeaderTime xsi:nil="true" />
+        <Delta>0</Delta>
+        <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+        <ImpliedVelocity>0</ImpliedVelocity>
+        <MapId xsi:nil="true" />
+        <LocalUtcTime xsi:nil="true" />
+      </GeoPoint>
+      <TruOdometer>////</TruOdometer>
+      <DrivenPidx31>//8A</DrivenPidx31>
+      <ObdSpeedPidx0D>0</ObdSpeedPidx0D>
+      <EngineRpmPidx0C>0</EngineRpmPidx0C>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>548</Seq>
+      <HeaderTime>2012-02-28T16:48:55</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiQCFtEi1elAATh3yg8EBwAGAGzKDwQA0kYIHFRlJAWjARCKAAYjLUD6Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:49:02</CreateDate>
+      <PacketId>dd336f9e-a13a-4a2f-9b7a-1d8f12138aca</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:48:44</UtcTime>
+      <Latitude>47.0304466</Latitude>
+      <Longitude>8.6271316</Longitude>
+      <Altitude>419</Altitude>
+      <GroundSpeed>16</GroundSpeed>
+      <Heading>138</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>547</Seq>
+      <HeaderTime>2012-02-28T16:48:44</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiMCFtEi1elAAThsyg8EBwAGAFfKDwQAryUIHA0jJAWmASs9AAdDVvW4Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:48:49</CreateDate>
+      <PacketId>2cae07e7-d017-4cf4-bbb1-90422dc4ca79</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:48:23</UtcTime>
+      <Latitude>47.0295983</Latitude>
+      <Longitude>8.6254349</Longitude>
+      <Altitude>422</Altitude>
+      <GroundSpeed>43</GroundSpeed>
+      <Heading>61</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>546</Seq>
+      <HeaderTime>2012-02-28T16:48:22</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiICFtEi1elAAThWyg8EBwAGAE7KDwQAFiAIHIvqIwWpATFvAAfFJ6/HAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:48:27</CreateDate>
+      <PacketId>b39ca249-3d60-4c9f-8918-faad5aa630ce</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:48:14</UtcTime>
+      <Latitude>47.0294550</Latitude>
+      <Longitude>8.6239883</Longitude>
+      <Altitude>425</Altitude>
+      <GroundSpeed>49</GroundSpeed>
+      <Heading>111</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>545</Seq>
+      <HeaderTime>2012-02-28T16:48:14</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiECFtEi1elAAThOyg8EBwAGADzKDwQAoXUIHODZIwWoAVyhAAfoAxXzAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:48:17</CreateDate>
+      <PacketId>47cdbf8c-55b9-48e4-b39d-b6f481811264</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:56</UtcTime>
+      <Latitude>47.0316449</Latitude>
+      <Longitude>8.6235616</Longitude>
+      <Altitude>424</Altitude>
+      <GroundSpeed>92</GroundSpeed>
+      <Heading>161</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>544</Seq>
+      <HeaderTime>2012-02-28T16:47:55</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AiACFtEi1elAATg7yg8EBwAGADPKDwQA6NAIHBmyIwWpAXibAAc3QsJhAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:59</CreateDate>
+      <PacketId>453269db-6802-40fe-b9d1-4cf0ae507c41</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:47</UtcTime>
+      <Latitude>47.0339816</Latitude>
+      <Longitude>8.6225433</Longitude>
+      <Altitude>425</Altitude>
+      <GroundSpeed>120</GroundSpeed>
+      <Heading>155</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>543</Seq>
+      <HeaderTime>2012-02-28T16:47:46</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ah8CFtEi1elAATgyyg8EBwAGACvKDwQANCAJHL1iIwWvAYGFAAdj93IZAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:55</CreateDate>
+      <PacketId>65e74f37-bc39-4651-80b2-47f7d5ce5aed</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:39</UtcTime>
+      <Latitude>47.0360116</Latitude>
+      <Longitude>8.6205117</Longitude>
+      <Altitude>431</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>133</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>542</Seq>
+      <HeaderTime>2012-02-28T16:47:39</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ah4CFtEi1elAATgryg8EBwAGACTKDwQAkFkJHFT8IgW0AYV7AAc9+p4eAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:51</CreateDate>
+      <PacketId>f32eb432-8b08-44c8-a391-2a218ebce63e</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:32</UtcTime>
+      <Latitude>47.0374800</Latitude>
+      <Longitude>8.6178900</Longitude>
+      <Altitude>436</Altitude>
+      <GroundSpeed>133</GroundSpeed>
+      <Heading>123</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>541</Seq>
+      <HeaderTime>2012-02-28T16:47:31</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ah0CFtEi1elAATgjyg8EBwAGAB3KDwQASIkJHAKHIgW8AYh2AAffiSSDAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:37</CreateDate>
+      <PacketId>7ea338fb-80d6-47c7-b36f-f14f5baf9f43</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:25</UtcTime>
+      <Latitude>47.0387016</Latitude>
+      <Longitude>8.6148866</Longitude>
+      <Altitude>444</Altitude>
+      <GroundSpeed>136</GroundSpeed>
+      <Heading>118</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>540</Seq>
+      <HeaderTime>2012-02-28T16:47:24</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhwCFtEi1elAATgcyg8EBwAGABbKDwQA0rIJHPAMIgXEAYVyAAcdDgRuAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:29</CreateDate>
+      <PacketId>86a5f3f8-19dc-4128-b7d5-007f754557c2</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:18</UtcTime>
+      <Latitude>47.0397650</Latitude>
+      <Longitude>8.6117616</Longitude>
+      <Altitude>452</Altitude>
+      <GroundSpeed>133</GroundSpeed>
+      <Heading>114</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>539</Seq>
+      <HeaderTime>2012-02-28T16:47:18</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhsCFtEi1elAATgWyg8EBwAGAA/KDwQA8tkJHGWQIQXKAYZyAAhTGl+RAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:22</CreateDate>
+      <PacketId>5c8821c7-0b85-45b7-9eee-661e72382baf</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:11</UtcTime>
+      <Latitude>47.0407666</Latitude>
+      <Longitude>8.6085733</Longitude>
+      <Altitude>458</Altitude>
+      <GroundSpeed>134</GroundSpeed>
+      <Heading>114</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>538</Seq>
+      <HeaderTime>2012-02-28T16:47:10</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhoCFtEi1elAATgOyg8EBwAGAAjKDwQAOQMKHN4VIQXPAYN2AAgFgnqUAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:18</CreateDate>
+      <PacketId>3c11e8fb-e94c-4fa2-a937-14ca80703f8b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:47:04</UtcTime>
+      <Latitude>47.0418233</Latitude>
+      <Longitude>8.6054366</Longitude>
+      <Altitude>463</Altitude>
+      <GroundSpeed>131</GroundSpeed>
+      <Heading>118</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>537</Seq>
+      <HeaderTime>2012-02-28T16:47:04</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhkCFtEi1elAATgIyg8EBwAGAAHKDwQAiDMKHLikIAXLAYZ+AAkNqcWEAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:14</CreateDate>
+      <PacketId>88e1ba81-1b02-41d5-bffb-9af6ea8115f5</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:57</UtcTime>
+      <Latitude>47.0430600</Latitude>
+      <Longitude>8.6025400</Longitude>
+      <Altitude>459</Altitude>
+      <GroundSpeed>134</GroundSpeed>
+      <Heading>126</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>536</Seq>
+      <HeaderTime>2012-02-28T16:46:57</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhgCFtEi1elAATgByg8EBwAGAPrJDwQAxm4KHHE7IAXCAYaBAAkudADGAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:00</CreateDate>
+      <PacketId>64ccd742-a6ef-420a-a416-33b1322fff2b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:50</UtcTime>
+      <Latitude>47.0445766</Latitude>
+      <Longitude>8.5998449</Longitude>
+      <Altitude>450</Altitude>
+      <GroundSpeed>134</GroundSpeed>
+      <Heading>129</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>535</Seq>
+      <HeaderTime>2012-02-28T16:46:49</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhcCFtEi1elAATj5yQ8EBwAGAPPJDwQAuKgKHJDSHwW+AYh9AAiAjULHAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:52</CreateDate>
+      <PacketId>42012730-ae25-4cd6-9a84-21db9d73b2d5</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:43</UtcTime>
+      <Latitude>47.0460600</Latitude>
+      <Longitude>8.5971600</Longitude>
+      <Altitude>446</Altitude>
+      <GroundSpeed>136</GroundSpeed>
+      <Heading>125</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="InternalBatterySohMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>InternalBatterySoh</MessageType>
+      <Seq>534</Seq>
+      <HeaderTime>2012-02-28T16:46:45</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhYCFtEi1elAATj1yQ8EBADzyQ8EZQAAAGcAAABmAAAABAD1yQ8EZQAAAGcAAABmAAAAFPG4lQM=</UdpPacket>
+      <CreateDate>2012-02-28T23:46:49</CreateDate>
+      <PacketId>62ddb6f2-a07c-40a2-91c8-a8e34bc766d5</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8228</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <InternalDateTime1>2012-02-28T16:46:43</InternalDateTime1>
+      <BatteryVoltage1>0</BatteryVoltage1>
+      <BatteryCurrent1>0</BatteryCurrent1>
+      <Temperature1>0</Temperature1>
+      <InternalDateTime2>2012-02-28T16:46:45</InternalDateTime2>
+      <BatteryVoltage2>0</BatteryVoltage2>
+      <BatteryCurrent2>0</BatteryCurrent2>
+      <Temperature2>0</Temperature2>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>533</Seq>
+      <HeaderTime>2012-02-28T16:46:42</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhUCFtEi1elAATjyyQ8EBwAGAOzJDwQAs9gKHAFcHwW9AYdxAAiNF8eeAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:56</CreateDate>
+      <PacketId>eccb729e-aed7-469f-8f5b-7d22eb615f5f</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:36</UtcTime>
+      <Latitude>47.0472883</Latitude>
+      <Longitude>8.5941249</Longitude>
+      <Altitude>445</Altitude>
+      <GroundSpeed>135</GroundSpeed>
+      <Heading>113</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>532</Seq>
+      <HeaderTime>2012-02-28T16:46:36</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhQCFtEi1elAATjsyQ8EBwAGAOXJDwQABvIKHKPdHgXAAYNfAAhjedjfAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:41</CreateDate>
+      <PacketId>b3457853-c931-46f3-a7a4-d802ecc3fab3</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:29</UtcTime>
+      <Latitude>47.0479366</Latitude>
+      <Longitude>8.5908899</Longitude>
+      <Altitude>448</Altitude>
+      <GroundSpeed>131</GroundSpeed>
+      <Heading>95</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>531</Seq>
+      <HeaderTime>2012-02-28T16:46:29</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhMCFtEi1elAATjlyQ8EBwAGAN7JDwQATekKHEdcHgXDAX9LAAerqgkLAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:45</CreateDate>
+      <PacketId>e6690104-c1f2-4e7a-bf53-64145840566d</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:22</UtcTime>
+      <Latitude>47.0477133</Latitude>
+      <Longitude>8.5875783</Longitude>
+      <Altitude>451</Altitude>
+      <GroundSpeed>127</GroundSpeed>
+      <Heading>75</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>530</Seq>
+      <HeaderTime>2012-02-28T16:46:22</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhICFtEi1elAATjeyQ8EBwAGANbJDwQA+LkKHKbdHQXIAXU6AAetM5fDAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:27</CreateDate>
+      <PacketId>3913f67a-dd18-49a6-a518-292ced23fbeb</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:14</UtcTime>
+      <Latitude>47.0465016</Latitude>
+      <Longitude>8.5843366</Longitude>
+      <Altitude>456</Altitude>
+      <GroundSpeed>117</GroundSpeed>
+      <Heading>58</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>529</Seq>
+      <HeaderTime>2012-02-28T16:46:14</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhECFtEi1elAATjWyQ8EBwAGAM7JDwQAo5gKHCpkHQXJAW5WAAf+MDtSAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:19</CreateDate>
+      <PacketId>842961b8-456f-4d5e-9d63-a574ca6ecca4</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:46:06</UtcTime>
+      <Latitude>47.0456483</Latitude>
+      <Longitude>8.5812266</Longitude>
+      <Altitude>457</Altitude>
+      <GroundSpeed>110</GroundSpeed>
+      <Heading>86</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>528</Seq>
+      <HeaderTime>2012-02-28T16:46:05</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AhACFtEi1elAATjNyQ8EBwAGAMbJDwQAaaoKHELjHAXHAXV9AAfnwXQGAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:11</CreateDate>
+      <PacketId>51bf8d09-e412-4e2f-bc8b-9d7e08b87e97</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:58</UtcTime>
+      <Latitude>47.0461033</Latitude>
+      <Longitude>8.5779266</Longitude>
+      <Altitude>455</Altitude>
+      <GroundSpeed>117</GroundSpeed>
+      <Heading>125</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>527</Seq>
+      <HeaderTime>2012-02-28T16:45:57</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ag8CFtEi1elAATjFyQ8EBwAGAL7JDwQAuu0KHFCFHAXAAXiNAAfbl19xAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:04</CreateDate>
+      <PacketId>43c5759a-49c6-413c-b561-04a966393312</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:50</UtcTime>
+      <Latitude>47.0478266</Latitude>
+      <Longitude>8.5755216</Longitude>
+      <Altitude>448</Altitude>
+      <GroundSpeed>120</GroundSpeed>
+      <Heading>141</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>526</Seq>
+      <HeaderTime>2012-02-28T16:45:50</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ag4CFtEi1elAATi+yQ8EBwAGALbJDwQA2y0LHFkaHAXEAX1zAAe17JqkAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:00</CreateDate>
+      <PacketId>73277bbc-123f-4b93-90a5-ed12b09e3b1a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:42</UtcTime>
+      <Latitude>47.0494683</Latitude>
+      <Longitude>8.5727833</Longitude>
+      <Altitude>452</Altitude>
+      <GroundSpeed>125</GroundSpeed>
+      <Heading>115</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>525</Seq>
+      <HeaderTime>2012-02-28T16:45:42</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ag0CFtEi1elAATi2yQ8EBwAGAK7JDwQAbz8LHMqNGwXMAYFSAAetBglUAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:08</CreateDate>
+      <PacketId>569095b7-917b-45cc-949a-f5f6330cf121</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:34</UtcTime>
+      <Latitude>47.0499183</Latitude>
+      <Longitude>8.5691850</Longitude>
+      <Altitude>460</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>82</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>524</Seq>
+      <HeaderTime>2012-02-28T16:45:33</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgwCFtEi1elAATityQ8EBwAGAKbJDwQAoRgLHEgHGwXaAYMxAAeMU/oRAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:45:50</CreateDate>
+      <PacketId>5683d7d7-27d3-4c9e-a850-074f3ac7d11a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:26</UtcTime>
+      <Latitude>47.0489249</Latitude>
+      <Longitude>8.5657416</Longitude>
+      <Altitude>474</Altitude>
+      <GroundSpeed>131</GroundSpeed>
+      <Heading>49</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>523</Seq>
+      <HeaderTime>2012-02-28T16:45:26</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgsCFtEi1elAATimyQ8EBwAGAJ/JDwQAT9gKHFapGgXgAYIsAAd3RyQtAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:45:31</CreateDate>
+      <PacketId>cd21e579-6ba9-4a8a-9788-cf5bf92e47ce</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:19</UtcTime>
+      <Latitude>47.0472783</Latitude>
+      <Longitude>8.5633366</Longitude>
+      <Altitude>480</Altitude>
+      <GroundSpeed>130</GroundSpeed>
+      <Heading>44</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>522</Seq>
+      <HeaderTime>2012-02-28T16:45:19</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgoCFtEi1elAATifyQ8EBwAGAJjJDwQAj54KHNdDGgXqAYI4AAfy/LBqAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:45:27</CreateDate>
+      <PacketId>d159a828-6ed8-469d-98cc-f4d8eb098635</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:12</UtcTime>
+      <Latitude>47.0457999</Latitude>
+      <Longitude>8.5607383</Longitude>
+      <Altitude>490</Altitude>
+      <GroundSpeed>130</GroundSpeed>
+      <Heading>56</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>521</Seq>
+      <HeaderTime>2012-02-28T16:45:11</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgkCFtEi1elAATiXyQ8EBwAGAJHJDwQAengKHJzNGQXzAYJIAAfxgbn5Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:45:35</CreateDate>
+      <PacketId>cbf7e9e3-1386-4079-a18e-3f2d1d1c2b29</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:45:05</UtcTime>
+      <Latitude>47.0448250</Latitude>
+      <Longitude>8.5577116</Longitude>
+      <Altitude>499</Altitude>
+      <GroundSpeed>130</GroundSpeed>
+      <Heading>72</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>520</Seq>
+      <HeaderTime>2012-02-28T16:45:05</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AggCFtEi1elAATiRyQ8EBwAGAIrJDwQARVcKHM1TGQX4AYE/AAevUKRoAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:15</CreateDate>
+      <PacketId>ce1d9131-9543-436c-90e3-cb99aa11090a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:44:58</UtcTime>
+      <Latitude>47.0439749</Latitude>
+      <Longitude>8.5545933</Longitude>
+      <Altitude>504</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>63</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>519</Seq>
+      <HeaderTime>2012-02-28T16:44:58</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgcCFtEi1elAATiKyQ8EBwAGAILJDwQAkCwKHHPXGAX3AWpGAAfGnTEXAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:45:23</CreateDate>
+      <PacketId>b237e862-8dbe-4330-ac05-5a2eef29eb2d</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:44:50</UtcTime>
+      <Latitude>47.0428816</Latitude>
+      <Longitude>8.5514099</Longitude>
+      <Altitude>503</Altitude>
+      <GroundSpeed>106</GroundSpeed>
+      <Heading>70</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>518</Seq>
+      <HeaderTime>2012-02-28T16:44:49</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgYCFtEi1elAATiByQ8EBwAGAHjJDwQAricKHLZMGAXpAV9sAAbLPDuUAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:23</CreateDate>
+      <PacketId>8a9d99b1-b3f6-4365-baca-9a49cc2c4233</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:44:40</UtcTime>
+      <Latitude>47.0427566</Latitude>
+      <Longitude>8.5478582</Longitude>
+      <Altitude>489</Altitude>
+      <GroundSpeed>95</GroundSpeed>
+      <Heading>108</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>517</Seq>
+      <HeaderTime>2012-02-28T16:44:39</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgUCFtEi1elAATh3yQ8EBwAGAG7JDwQA+l0KHD/jFwXWAWKNAAePVP5MAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:46:37</CreateDate>
+      <PacketId>43a4e9d3-7dd0-4f86-b155-dbc4c80f6c55</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:44:30</UtcTime>
+      <Latitude>47.0441466</Latitude>
+      <Longitude>8.5451583</Longitude>
+      <Altitude>470</Altitude>
+      <GroundSpeed>98</GroundSpeed>
+      <Heading>141</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>516</Seq>
+      <HeaderTime>2012-02-28T16:44:30</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgQCFtEi1elAAThuyQ8EBwAGAGXJDwQA3aoKHFyhFwXGAWaXAAb/JHF7Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:04</CreateDate>
+      <PacketId>9ca50a29-af26-459e-9a23-76873fd34b8d</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:44:21</UtcTime>
+      <Latitude>47.0461149</Latitude>
+      <Longitude>8.5434716</Longitude>
+      <Altitude>454</Altitude>
+      <GroundSpeed>102</GroundSpeed>
+      <Heading>151</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>515</Seq>
+      <HeaderTime>2012-02-28T16:44:20</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgMCFtEi1elAAThkyQ8EBwAGAF3JDwQAYgQLHF5sFwW7AWl1AAcdwhsfAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:44:29</CreateDate>
+      <PacketId>566731bc-0fd0-4969-93b3-01528f1e72b7</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:44:13</UtcTime>
+      <Latitude>47.0484066</Latitude>
+      <Longitude>8.5421150</Longitude>
+      <Altitude>443</Altitude>
+      <GroundSpeed>105</GroundSpeed>
+      <Heading>117</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>514</Seq>
+      <HeaderTime>2012-02-28T16:44:12</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgICFtEi1elAAThcyQ8EBwAGAFTJDwQA5i4LHEzyFgW0AWtwAAfSXnvCAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:44:25</CreateDate>
+      <PacketId>87fa45ca-b95d-4933-a1b2-56c15b6eb910</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:44:04</UtcTime>
+      <Latitude>47.0494950</Latitude>
+      <Longitude>8.5389900</Longitude>
+      <Altitude>436</Altitude>
+      <GroundSpeed>107</GroundSpeed>
+      <Heading>112</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>513</Seq>
+      <HeaderTime>2012-02-28T16:44:04</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgECFtEi1elAAThUyQ8EBwAGAEvJDwQAoEILHLprFgWhAWxmAAf2uXSKAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:44:15</CreateDate>
+      <PacketId>2624f4b1-a850-47ff-9abe-ee1b205379d2</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:55</UtcTime>
+      <Latitude>47.0500000</Latitude>
+      <Longitude>8.5355450</Longitude>
+      <Altitude>417</Altitude>
+      <GroundSpeed>108</GroundSpeed>
+      <Heading>102</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>512</Seq>
+      <HeaderTime>2012-02-28T16:43:55</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AgACFtEi1elAAThLyQ8EBwAGAEHJDwQAZ1wLHIjgFQWWAWJnAAcYd78uAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:26</CreateDate>
+      <PacketId>4c8ee92a-a6bb-45d0-a1ae-be6b92049786</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:45</UtcTime>
+      <Latitude>47.0506599</Latitude>
+      <Longitude>8.5319816</Longitude>
+      <Altitude>406</Altitude>
+      <GroundSpeed>98</GroundSpeed>
+      <Heading>103</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>511</Seq>
+      <HeaderTime>2012-02-28T16:43:44</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Av8BFtEi1elAAThAyQ8EBwAGADjJDwQA0HcLHHlgFQWbAWRuAAV0c7rfAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:33</CreateDate>
+      <PacketId>582af121-b321-45b8-8bdd-4ae8e47a4026</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:36</UtcTime>
+      <Latitude>47.0513616</Latitude>
+      <Longitude>8.5287033</Longitude>
+      <Altitude>411</Altitude>
+      <GroundSpeed>100</GroundSpeed>
+      <Heading>110</Heading>
+      <NumberOfSatellitesUsed>5</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>510</Seq>
+      <HeaderTime>2012-02-28T16:43:35</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Av4BFtEi1elAATg3yQ8EBwAGAC/JDwQAJqQLHHvrFAWfAWVxAAXwIiEJAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:47:41</CreateDate>
+      <PacketId>51a066e2-e369-4a70-884e-2cb8c0490798</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:27</UtcTime>
+      <Latitude>47.0524966</Latitude>
+      <Longitude>8.5257083</Longitude>
+      <Altitude>415</Altitude>
+      <GroundSpeed>101</GroundSpeed>
+      <Heading>113</Heading>
+      <NumberOfSatellitesUsed>5</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>509</Seq>
+      <HeaderTime>2012-02-28T16:43:27</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Av0BFtEi1elAATgvyQ8EBwAGACbJDwQA+8YLHE1zFAWhAWRvAAaCCgVxAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:48:03</CreateDate>
+      <PacketId>8f11ac68-5976-4dfb-b59f-287317a58dfb</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:18</UtcTime>
+      <Latitude>47.0533883</Latitude>
+      <Longitude>8.5226317</Longitude>
+      <Altitude>417</Altitude>
+      <GroundSpeed>100</GroundSpeed>
+      <Heading>111</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>508</Seq>
+      <HeaderTime>2012-02-28T16:43:17</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvwBFtEi1elAATglyQ8EBwAGABzJDwQA/uQLHEzrEwWgAW93AAZBHx9rAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:43:57</CreateDate>
+      <PacketId>67597c5b-5e2c-4bd8-943e-089a0b7f7391</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:08</UtcTime>
+      <Latitude>47.0541566</Latitude>
+      <Longitude>8.5191500</Longitude>
+      <Altitude>416</Altitude>
+      <GroundSpeed>111</GroundSpeed>
+      <Heading>119</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>508</Seq>
+      <HeaderTime>2012-02-28T16:43:17</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvwBFtEi1elAATglyQ8EBwAGABzJDwQA/uQLHEzrEwWgAW93AAZBHx9rAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:48:07</CreateDate>
+      <PacketId>79226270-0e4b-4ea9-a725-46937094eb46</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.45</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:08</UtcTime>
+      <Latitude>47.0541566</Latitude>
+      <Longitude>8.5191500</Longitude>
+      <Altitude>416</Altitude>
+      <GroundSpeed>111</GroundSpeed>
+      <Heading>119</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>507</Seq>
+      <HeaderTime>2012-02-28T16:43:08</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvsBFtEi1elAATgcyQ8EBwAGABTJDwQAdhwMHDCGEwWqAXeNAAZ/YAxRAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:43:11</CreateDate>
+      <PacketId>074bf993-343e-4a9d-9538-af98ce9f05af</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:43:00</UtcTime>
+      <Latitude>47.0555766</Latitude>
+      <Longitude>8.5165616</Longitude>
+      <Altitude>426</Altitude>
+      <GroundSpeed>119</GroundSpeed>
+      <Heading>141</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>506</Seq>
+      <HeaderTime>2012-02-28T16:43:00</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvoBFtEi1elAATgUyQ8EBwAGAAzJDwQAhWoMHJE2EwW0AXuSAAYsxH9sAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:43:04</CreateDate>
+      <PacketId>a23f18f6-6960-4869-847a-71b7c72ea32b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:42:52</UtcTime>
+      <Latitude>47.0575749</Latitude>
+      <Longitude>8.5145233</Longitude>
+      <Altitude>436</Altitude>
+      <GroundSpeed>123</GroundSpeed>
+      <Heading>146</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>505</Seq>
+      <HeaderTime>2012-02-28T16:42:51</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvkBFtEi1elAATgLyQ8EBwAGAATJDwQAILgMHBbsEgW5AXiWAAZHTuySAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:57</CreateDate>
+      <PacketId>9e6f5736-4b2a-4d39-97e7-e6b1f2c088b3</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:42:44</UtcTime>
+      <Latitude>47.0595616</Latitude>
+      <Longitude>8.5126166</Longitude>
+      <Altitude>441</Altitude>
+      <GroundSpeed>120</GroundSpeed>
+      <Heading>150</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>504</Seq>
+      <HeaderTime>2012-02-28T16:42:43</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvgBFtEi1elAATgDyQ8EBwAGAPzIDwQAdA4NHE28EgW8AXmeAAZ72YKjAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:50</CreateDate>
+      <PacketId>1f1b2b7d-86af-483c-8fa7-563b56268dff</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:42:36</UtcTime>
+      <Latitude>47.0617716</Latitude>
+      <Longitude>8.5113933</Longitude>
+      <Altitude>444</Altitude>
+      <GroundSpeed>121</GroundSpeed>
+      <Heading>158</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>503</Seq>
+      <HeaderTime>2012-02-28T16:42:36</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvcBFtEi1elAATj8yA8EBwAGAPTIDwQAz2ANHKN2EgW7AXmSAAbYC6DoAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:40</CreateDate>
+      <PacketId>d1acb6c1-cc28-4f53-9be1-61fe346c7d27</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:42:28</UtcTime>
+      <Latitude>47.0638799</Latitude>
+      <Longitude>8.5096099</Longitude>
+      <Altitude>443</Altitude>
+      <GroundSpeed>121</GroundSpeed>
+      <Heading>146</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>502</Seq>
+      <HeaderTime>2012-02-28T16:42:27</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvYBFtEi1elAATjzyA8EBwAGAOzIDwQAgbgNHIJEEgW5AXyiAAYt/QDlAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:30</CreateDate>
+      <PacketId>1b906585-1da8-4499-95fe-bff14ce6c055</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:42:20</UtcTime>
+      <Latitude>47.0661249</Latitude>
+      <Longitude>8.5083266</Longitude>
+      <Altitude>441</Altitude>
+      <GroundSpeed>124</GroundSpeed>
+      <Heading>162</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>501</Seq>
+      <HeaderTime>2012-02-28T16:42:19</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvUBFtEi1elAATjryA8EBwAGAOTIDwQAcBEOHJUBEgW9AYOJAAYDmMEdAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:23</CreateDate>
+      <PacketId>112a3fa9-4fa1-46a8-bea7-4a85bcd44613</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:42:12</UtcTime>
+      <Latitude>47.0684016</Latitude>
+      <Longitude>8.5066133</Longitude>
+      <Altitude>445</Altitude>
+      <GroundSpeed>131</GroundSpeed>
+      <Heading>137</Heading>
+      <NumberOfSatellitesUsed>6</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>500</Seq>
+      <HeaderTime>2012-02-28T16:42:12</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvQBFtEi1elAATjkyA8EBwAGANzIDwQAbUkOHLiMEQXCAXhzAAcZZ7H0Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:18</CreateDate>
+      <PacketId>a2b39284-3389-46c7-ab9e-052a5ea7d684</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:42:04</UtcTime>
+      <Latitude>47.0698349</Latitude>
+      <Longitude>8.5036216</Longitude>
+      <Altitude>450</Altitude>
+      <GroundSpeed>120</GroundSpeed>
+      <Heading>115</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>499</Seq>
+      <HeaderTime>2012-02-28T16:42:04</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvMBFtEi1elAATjcyA8EBwAGANTIDwQAYX0OHB8VEQXGAYF9AAde/dtDAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:14</CreateDate>
+      <PacketId>c5bf260b-2e2c-4e82-a4d6-6b0d343286ae</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:56</UtcTime>
+      <Latitude>47.0711649</Latitude>
+      <Longitude>8.5005599</Longitude>
+      <Altitude>454</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>125</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>498</Seq>
+      <HeaderTime>2012-02-28T16:41:55</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvIBFtEi1elAATjTyA8EBwAGAM3IDwQA36gOHG6kEAXGAYF7AAdtxT/HAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:42:04</CreateDate>
+      <PacketId>37a7eada-ac99-499a-82df-70d70179999b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:49</UtcTime>
+      <Latitude>47.0722783</Latitude>
+      <Longitude>8.4976750</Longitude>
+      <Altitude>454</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>123</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>497</Seq>
+      <HeaderTime>2012-02-28T16:41:49</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvEBFtEi1elAATjNyA8EBwAGAMbIDwQAsdwOHB06EAXDAYB/AAe/dFzaAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:54</CreateDate>
+      <PacketId>ea3b8f0e-f487-422b-8d8d-c2ed9e16b631</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:42</UtcTime>
+      <Latitude>47.0736049</Latitude>
+      <Longitude>8.4949533</Longitude>
+      <Altitude>451</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>127</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>496</Seq>
+      <HeaderTime>2012-02-28T16:41:41</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AvABFtEi1elAATjFyA8EBwAGAL7IDwQAPhkPHNzEDwW8AX5/AAfdmdRXAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:44</CreateDate>
+      <PacketId>5ae31bcb-bc7e-48fc-8e77-76f32625bdd7</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:34</UtcTime>
+      <Latitude>47.0751550</Latitude>
+      <Longitude>8.4919516</Longitude>
+      <Altitude>444</Altitude>
+      <GroundSpeed>126</GroundSpeed>
+      <Heading>127</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>495</Seq>
+      <HeaderTime>2012-02-28T16:41:33</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Au8BFtEi1elAATi9yA8EBwAGALbIDwQAUV4PHORcDwW0AYGLAAjjUJtWAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:40</CreateDate>
+      <PacketId>a9c83f22-8277-4495-ba5b-6f557526ca5c</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:26</UtcTime>
+      <Latitude>47.0769233</Latitude>
+      <Longitude>8.4892900</Longitude>
+      <Altitude>436</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>139</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>494</Seq>
+      <HeaderTime>2012-02-28T16:41:26</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Au4BFtEi1elAATi2yA8EBwAGAK7IDwQAHp4PHIvrDgWuAYB7AAj+qiLYAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:36</CreateDate>
+      <PacketId>903aeb10-74ed-4d37-94f9-cdbc3a70d1e0</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:18</UtcTime>
+      <Latitude>47.0785566</Latitude>
+      <Longitude>8.4863883</Longitude>
+      <Altitude>430</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>123</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>493</Seq>
+      <HeaderTime>2012-02-28T16:41:17</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Au0BFtEi1elAATityA8EBwAGAKbIDwQAMeMPHDqBDgWpAYGOAAgIBWd8Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:22</CreateDate>
+      <PacketId>b90168a3-889d-4cd8-881b-62866e4793ee</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:10</UtcTime>
+      <Latitude>47.0803249</Latitude>
+      <Longitude>8.4836666</Longitude>
+      <Altitude>425</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>142</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>492</Seq>
+      <HeaderTime>2012-02-28T16:41:09</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuwBFtEi1elAATilyA8EBwAGAJ/IDwQAUiMQHJQnDgWuAYB/AAij99d3Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:14</CreateDate>
+      <PacketId>4a9788a2-5ba8-4efb-93d3-fdb148016bd2</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:41:03</UtcTime>
+      <Latitude>47.0819666</Latitude>
+      <Longitude>8.4813716</Longitude>
+      <Altitude>430</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>127</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>491</Seq>
+      <HeaderTime>2012-02-28T16:41:03</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AusBFtEi1elAATifyA8EBwAGAJjIDwQAjVkQHBy+DQWxAYCDAAhiAq7VAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:07</CreateDate>
+      <PacketId>c7bb06e2-decd-4283-8d28-d040fe468f62</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:56</UtcTime>
+      <Latitude>47.0833549</Latitude>
+      <Longitude>8.4786716</Longitude>
+      <Altitude>433</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>131</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>490</Seq>
+      <HeaderTime>2012-02-28T16:40:56</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuoBFtEi1elAATiYyA8EBwAGAJHIDwQAV5QQHG5dDQWxAYB7AAjjLpw/Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:03</CreateDate>
+      <PacketId>304313f9-4f8e-4e8b-881c-c027d1cabba7</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:49</UtcTime>
+      <Latitude>47.0848599</Latitude>
+      <Longitude>8.4761966</Longitude>
+      <Altitude>433</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>123</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>489</Seq>
+      <HeaderTime>2012-02-28T16:40:48</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AukBFtEi1elAATiQyA8EBwAGAIrIDwQAmbsQHCPnDAWtAYBzAAip4TaDAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:59</CreateDate>
+      <PacketId>66ab0f46-802f-47af-a5ed-d741864d4fc9</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:42</UtcTime>
+      <Latitude>47.0858649</Latitude>
+      <Longitude>8.4731683</Longitude>
+      <Altitude>429</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>115</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>488</Seq>
+      <HeaderTime>2012-02-28T16:40:42</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AugBFtEi1elAATiKyA8EBwAGAILIDwQA8u8QHL5sDAWvAX+EAAgpFkyyAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:45</CreateDate>
+      <PacketId>82bd496c-ef2d-4ffa-a9ae-fd04ec3d4dc5</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:34</UtcTime>
+      <Latitude>47.0872050</Latitude>
+      <Longitude>8.4700350</Longitude>
+      <Altitude>431</Altitude>
+      <GroundSpeed>127</GroundSpeed>
+      <Heading>132</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>487</Seq>
+      <HeaderTime>2012-02-28T16:40:34</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AucBFtEi1elAATiCyA8EBwAGAHvIDwQADDERHJEVDAWwAYGNAAihfFy3Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:41</CreateDate>
+      <PacketId>6660b583-ceea-439c-9594-7f4d3afd3b75</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:27</UtcTime>
+      <Latitude>47.0888716</Latitude>
+      <Longitude>8.4678033</Longitude>
+      <Altitude>432</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>141</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>486</Seq>
+      <HeaderTime>2012-02-28T16:40:26</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuYBFtEi1elAATh6yA8EBwAGAHTIDwQAanIRHL+6CwW1AX+BAAiFasNDAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:33</CreateDate>
+      <PacketId>e1059e21-defa-4ce2-ac1a-9f125ee46d8d</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:20</UtcTime>
+      <Latitude>47.0905450</Latitude>
+      <Longitude>8.4654783</Longitude>
+      <Altitude>437</Altitude>
+      <GroundSpeed>127</GroundSpeed>
+      <Heading>129</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>485</Seq>
+      <HeaderTime>2012-02-28T16:40:19</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuUBFtEi1elAAThzyA8EBwAGAG3IDwQAzKcRHJ9TCwW5AYiCAAhcJ0rNAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:25</CreateDate>
+      <PacketId>09c1da0c-ea6b-410e-94f5-9afad062fa2f</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:13</UtcTime>
+      <Latitude>47.0919116</Latitude>
+      <Longitude>8.4628383</Longitude>
+      <Altitude>441</Altitude>
+      <GroundSpeed>136</GroundSpeed>
+      <Heading>130</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>484</Seq>
+      <HeaderTime>2012-02-28T16:40:13</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuQBFtEi1elAAThtyA8EBwAGAGbIDwQAkusRHGP5CgW3AYORAAiZon5IAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:29</CreateDate>
+      <PacketId>f45962f0-ac44-4efe-bebc-b6180243c27b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:40:06</UtcTime>
+      <Latitude>47.0936466</Latitude>
+      <Longitude>8.4605283</Longitude>
+      <Altitude>439</Altitude>
+      <GroundSpeed>131</GroundSpeed>
+      <Heading>145</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>483</Seq>
+      <HeaderTime>2012-02-28T16:40:06</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuMBFtEi1elAAThmyA8EBwAGAF7IDwQAOEUSHDC8CgWzAX2jAAjo9JAvAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:11</CreateDate>
+      <PacketId>d46184ac-cb62-4a66-abd3-20847637df37</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:58</UtcTime>
+      <Latitude>47.0959416</Latitude>
+      <Longitude>8.4589616</Longitude>
+      <Altitude>435</Altitude>
+      <GroundSpeed>125</GroundSpeed>
+      <Heading>163</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>482</Seq>
+      <HeaderTime>2012-02-28T16:39:57</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuIBFtEi1elAAThdyA8EBwAGAFbIDwQAYqISHHmJCgWtAXWOAAiTJ2jZAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:04</CreateDate>
+      <PacketId>37ea219c-7749-4e0a-8186-9e8e5b56208a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:50</UtcTime>
+      <Latitude>47.0983266</Latitude>
+      <Longitude>8.4576633</Longitude>
+      <Altitude>429</Altitude>
+      <GroundSpeed>117</GroundSpeed>
+      <Heading>142</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>481</Seq>
+      <HeaderTime>2012-02-28T16:39:49</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuEBFtEi1elAAThVyA8EBwAGAE7IDwQAL+ISHCEjCgWqAXqDAAiEg1GGAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:56</CreateDate>
+      <PacketId>42512a4a-74bf-4ef6-94ed-8241081358ca</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:42</UtcTime>
+      <Latitude>47.0999599</Latitude>
+      <Longitude>8.4550433</Longitude>
+      <Altitude>426</Altitude>
+      <GroundSpeed>122</GroundSpeed>
+      <Heading>131</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>480</Seq>
+      <HeaderTime>2012-02-28T16:39:42</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AuABFtEi1elAAThOyA8EBwAGAEbIDwQAICoTHDLKCQWlAXWZAAjXyLDGAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:50</CreateDate>
+      <PacketId>ea1dfd38-3bb5-47bb-b59e-6ff25bb85d04</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:34</UtcTime>
+      <Latitude>47.1018016</Latitude>
+      <Longitude>8.4527666</Longitude>
+      <Altitude>421</Altitude>
+      <GroundSpeed>117</GroundSpeed>
+      <Heading>153</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>479</Seq>
+      <HeaderTime>2012-02-28T16:39:34</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>At8BFtEi1elAAThGyA8EBwAGAD7IDwQAkIETHAalCQWhAXeqAAj8RIISAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:47</CreateDate>
+      <PacketId>7dad1969-45ef-4f5f-9a1d-5c48742c9b3b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:26</UtcTime>
+      <Latitude>47.1040400</Latitude>
+      <Longitude>8.4518150</Longitude>
+      <Altitude>417</Altitude>
+      <GroundSpeed>119</GroundSpeed>
+      <Heading>170</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>478</Seq>
+      <HeaderTime>2012-02-28T16:39:25</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>At4BFtEi1elAATg9yA8EBwAGADbIDwQAr90THK6UCQWcAXiyAAnCxfnCAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:29</CreateDate>
+      <PacketId>2c15af45-1b24-4059-b5ce-d257888b2c55</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:18</UtcTime>
+      <Latitude>47.1063983</Latitude>
+      <Longitude>8.4513966</Longitude>
+      <Altitude>412</Altitude>
+      <GroundSpeed>120</GroundSpeed>
+      <Heading>178</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>477</Seq>
+      <HeaderTime>2012-02-28T16:39:17</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>At0BFtEi1elAATg1yA8EBwAGAC7IDwQAADoUHCunCQWZAXPGAAmZ0aw8Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:21</CreateDate>
+      <PacketId>582309b4-83eb-416a-a8d3-ffadfd50cdc4</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:10</UtcTime>
+      <Latitude>47.1087616</Latitude>
+      <Longitude>8.4518699</Longitude>
+      <Altitude>409</Altitude>
+      <GroundSpeed>115</GroundSpeed>
+      <Heading>198</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>476</Seq>
+      <HeaderTime>2012-02-28T16:39:10</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtwBFtEi1elAATguyA8EBwAGACbIDwQAj4kUHDjiCQWbAXLOAAger12BAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:13</CreateDate>
+      <PacketId>d2f62cc5-98ae-4ddb-a8f2-f8b0e06a9d58</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:39:02</UtcTime>
+      <Latitude>47.1107983</Latitude>
+      <Longitude>8.4533816</Longitude>
+      <Altitude>411</Altitude>
+      <GroundSpeed>114</GroundSpeed>
+      <Heading>206</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>475</Seq>
+      <HeaderTime>2012-02-28T16:39:01</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtsBFtEi1elAATglyA8EBwAGAB7IDwQAHuQUHPgNCgWhAYK4AAmrtEzeAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:17</CreateDate>
+      <PacketId>02162559-7e34-4077-b165-732fc46fbb8d</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:38:54</UtcTime>
+      <Latitude>47.1131166</Latitude>
+      <Longitude>8.4545016</Longitude>
+      <Altitude>417</Altitude>
+      <GroundSpeed>130</GroundSpeed>
+      <Heading>184</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>474</Seq>
+      <HeaderTime>2012-02-28T16:38:54</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtoBFtEi1elAATgeyA8EBwAGABfIDwQA0DsVHML9CQWqAX+lAAj0FooVAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:09</CreateDate>
+      <PacketId>e503690f-37f5-49be-abef-52d952de7729</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:38:47</UtcTime>
+      <Latitude>47.1153616</Latitude>
+      <Longitude>8.4540866</Longitude>
+      <Altitude>426</Altitude>
+      <GroundSpeed>127</GroundSpeed>
+      <Heading>165</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>473</Seq>
+      <HeaderTime>2012-02-28T16:38:47</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtkBFtEi1elAATgXyA8EBwAGAA/IDwQAXpkVHLfYCQW6AXilAAgJEKGEAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:25</CreateDate>
+      <PacketId>d9984d6b-a4f3-4f1d-a074-11b622f0f684</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:38:39</UtcTime>
+      <Latitude>47.1177566</Latitude>
+      <Longitude>8.4531383</Longitude>
+      <Altitude>442</Altitude>
+      <GroundSpeed>120</GroundSpeed>
+      <Heading>165</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>472</Seq>
+      <HeaderTime>2012-02-28T16:38:39</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtgBFtEi1elAATgPyA8EBwAGAAfIDwQAQfQVHCW2CQW9AXalAAkJIN0zAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:33</CreateDate>
+      <PacketId>0c383e47-7f0a-42e0-8ae0-34e9cfde0db6</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:38:31</UtcTime>
+      <Latitude>47.1200833</Latitude>
+      <Longitude>8.4522533</Longitude>
+      <Altitude>445</Altitude>
+      <GroundSpeed>118</GroundSpeed>
+      <Heading>165</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>471</Seq>
+      <HeaderTime>2012-02-28T16:38:30</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtcBFtEi1elAATgGyA8EBwAGAP/HDwQA9lAWHKyaCQW+AX2sAAmmo4yjAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:39:37</CreateDate>
+      <PacketId>9b26115a-f280-4ed8-9b92-0747fd14250a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:38:23</UtcTime>
+      <Latitude>47.1224566</Latitude>
+      <Longitude>8.4515500</Longitude>
+      <Altitude>446</Altitude>
+      <GroundSpeed>125</GroundSpeed>
+      <Heading>172</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>470</Seq>
+      <HeaderTime>2012-02-28T16:38:23</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtYBFtEi1elAATj/xw8EBwAGAPfHDwQAu7AWHGyGCQXAAXmrAAmoHqUEAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:38:26</CreateDate>
+      <PacketId>4d37abaf-8ade-4236-b750-8fd88210aa3c</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:38:15</UtcTime>
+      <Latitude>47.1249083</Latitude>
+      <Longitude>8.4510316</Longitude>
+      <Altitude>448</Altitude>
+      <GroundSpeed>121</GroundSpeed>
+      <Heading>171</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>469</Seq>
+      <HeaderTime>2012-02-28T16:38:15</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtUBFtEi1elAATj3xw8EBwAGAO/HDwQA+wwXHCdzCQXCAXerAAkqtzx2Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:38:22</CreateDate>
+      <PacketId>331662df-c33f-400d-af9a-f2f24e605578</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:38:07</UtcTime>
+      <Latitude>47.1272699</Latitude>
+      <Longitude>8.4505383</Longitude>
+      <Altitude>450</Altitude>
+      <GroundSpeed>119</GroundSpeed>
+      <Heading>171</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>468</Seq>
+      <HeaderTime>2012-02-28T16:38:06</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtQBFtEi1elAATjuxw8EBwAGAOfHDwQAUWsXHCRgCQXGAXysAAmsXBLVAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:38:18</CreateDate>
+      <PacketId>e2f77ba3-bc20-4c2a-8529-8f500455ce6f</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:59</UtcTime>
+      <Latitude>47.1296849</Latitude>
+      <Longitude>8.4500516</Longitude>
+      <Altitude>454</Altitude>
+      <GroundSpeed>124</GroundSpeed>
+      <Heading>172</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>467</Seq>
+      <HeaderTime>2012-02-28T16:37:59</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtMBFtEi1elAATjnxw8EBwAGAN/HDwQA5MoXHFlMCQXGAXurAAnciyfsAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:38:04</CreateDate>
+      <PacketId>5a176080-ae4f-41b0-8038-8daabc6c24e3</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:51</UtcTime>
+      <Latitude>47.1321316</Latitude>
+      <Longitude>8.4495449</Longitude>
+      <Altitude>454</Altitude>
+      <GroundSpeed>123</GroundSpeed>
+      <Heading>171</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>466</Seq>
+      <HeaderTime>2012-02-28T16:37:51</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtIBFtEi1elAATjfxw8EBwAGANfHDwQAmCoYHBs1CQXIAXyoAAngrSo6Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:38:08</CreateDate>
+      <PacketId>01364e38-051c-4c59-bc05-8a5517f39937</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:43</UtcTime>
+      <Latitude>47.1345816</Latitude>
+      <Longitude>8.4489499</Longitude>
+      <Altitude>456</Altitude>
+      <GroundSpeed>124</GroundSpeed>
+      <Heading>168</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>465</Seq>
+      <HeaderTime>2012-02-28T16:37:42</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtEBFtEi1elAATjWxw8EBwAGAM/HDwQAIIkYHN0SCQXEAX2jAAn7F54zAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:00</CreateDate>
+      <PacketId>76f0eac7-9d63-445d-b611-c21fb627ad2d</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:35</UtcTime>
+      <Latitude>47.1370016</Latitude>
+      <Longitude>8.4480733</Longitude>
+      <Altitude>452</Altitude>
+      <GroundSpeed>125</GroundSpeed>
+      <Heading>163</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>464</Seq>
+      <HeaderTime>2012-02-28T16:37:36</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AtABFtEi1elAATjQxw8EAwMABwAGANHHDwQAsHEYHOMcCQXGAXukAAk9LwysAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:08</CreateDate>
+      <PacketId>6252d568-16b8-477b-a9b0-aa4182813b6e</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMABwAGANHHDwQAsHEYHOMcCQXGAXukAAk=</RawPacket>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>463</Seq>
+      <HeaderTime>2012-02-28T16:37:35</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>As8BFtEi1elAATjPxw8EBwAGAMfHDwQAqOcYHGfjCAW/AX+eAAkkS461Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:21</CreateDate>
+      <PacketId>1624fa96-9cc1-45e1-ae60-6394d1d0a7e0</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:27</UtcTime>
+      <Latitude>47.1394216</Latitude>
+      <Longitude>8.4468583</Longitude>
+      <Altitude>447</Altitude>
+      <GroundSpeed>127</GroundSpeed>
+      <Heading>158</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>462</Seq>
+      <HeaderTime>2012-02-28T16:37:27</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>As4BFtEi1elAATjHxw8EBwAGAMDHDwQAGjkZHEuwCAW8AYCaAAhATouKAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:38:00</CreateDate>
+      <PacketId>49ff9df6-03ea-4305-8b0b-300b2ca28147</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:20</UtcTime>
+      <Latitude>47.1415066</Latitude>
+      <Longitude>8.4455499</Longitude>
+      <Altitude>444</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>154</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>461</Seq>
+      <HeaderTime>2012-02-28T16:37:25</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>As0BFtEi1elAATjFxw8EAwMBBwAGAMbHDwQAT/MYHKHcCAW/AX+eAAggzSPUAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:37</CreateDate>
+      <PacketId>a2141eaf-9bea-468e-b2d9-63bac64c64a1</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMBBwAGAMbHDwQAT/MYHKHcCAW/AX+eAAg=</RawPacket>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>460</Seq>
+      <HeaderTime>2012-02-28T16:37:19</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AswBFtEi1elAATi/xw8EBwAGALnHDwQAd4gZHMp0CAW9AYCWAAlXHiRsAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:40:49</CreateDate>
+      <PacketId>9154dba6-5b1b-4103-9d46-7ded3652e637</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:13</UtcTime>
+      <Latitude>47.1435383</Latitude>
+      <Longitude>8.4440266</Longitude>
+      <Altitude>445</Altitude>
+      <GroundSpeed>128</GroundSpeed>
+      <Heading>150</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>459</Seq>
+      <HeaderTime>2012-02-28T16:37:12</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AssBFtEi1elAATi4xw8EBwAGALHHDwQAD9wZHKkpCAW4AX2TAAlvWKAIAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:10</CreateDate>
+      <PacketId>c6eebb1b-29af-4806-8561-4942e1a53d64</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:37:05</UtcTime>
+      <Latitude>47.1456783</Latitude>
+      <Longitude>8.4421033</Longitude>
+      <Altitude>440</Altitude>
+      <GroundSpeed>125</GroundSpeed>
+      <Heading>147</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>458</Seq>
+      <HeaderTime>2012-02-28T16:37:05</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsoBFtEi1elAATixxw8EBwAGAKnHDwQAIi8aHHjbBwWvAX+SAAlCxgLwAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:19</CreateDate>
+      <PacketId>41cdce7e-e9d2-47ba-825c-2a24b130bd4e</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:36:57</UtcTime>
+      <Latitude>47.1478050</Latitude>
+      <Longitude>8.4401016</Longitude>
+      <Altitude>431</Altitude>
+      <GroundSpeed>127</GroundSpeed>
+      <Heading>146</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>457</Seq>
+      <HeaderTime>2012-02-28T16:36:56</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AskBFtEi1elAATioxw8EBwAGAKDHDwQAE4IaHOWJBwWkAWKRAAlOArhGAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:41:27</CreateDate>
+      <PacketId>5abb5dcc-018b-4a95-8ecf-040b2ff9f922</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:36:48</UtcTime>
+      <Latitude>47.1499283</Latitude>
+      <Longitude>8.4380133</Longitude>
+      <Altitude>420</Altitude>
+      <GroundSpeed>98</GroundSpeed>
+      <Heading>145</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>456</Seq>
+      <HeaderTime>2012-02-28T16:36:47</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsgBFtEi1elAATifxw8EBwAGAJbHDwQAcssaHG9BBwWdAVCSAAghzf6LAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:36:57</CreateDate>
+      <PacketId>b356a318-6a0e-4eef-b1d4-eeecf879ba80</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:36:38</UtcTime>
+      <Latitude>47.1518066</Latitude>
+      <Longitude>8.4361583</Longitude>
+      <Altitude>413</Altitude>
+      <GroundSpeed>80</GroundSpeed>
+      <Heading>146</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>455</Seq>
+      <HeaderTime>2012-02-28T16:36:38</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AscBFtEi1elAATiWxw8EBwAGAIrHDwQA1hYbHJv3BgWUAT6HAAh57FUWAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:36:41</CreateDate>
+      <PacketId>db48a5e6-3438-42f6-965c-8369d036491a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:36:26</UtcTime>
+      <Latitude>47.1537366</Latitude>
+      <Longitude>8.4342683</Longitude>
+      <Altitude>404</Altitude>
+      <GroundSpeed>62</GroundSpeed>
+      <Heading>135</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>454</Seq>
+      <HeaderTime>2012-02-28T16:36:25</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsYBFtEi1elAATiJxw8EBwAGAITHDwQASSgbHEDJBgWaATZYAAm0NF9NAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:36:28</CreateDate>
+      <PacketId>748c0bbe-e68f-4386-84a1-fccf66aacc1e</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:36:20</UtcTime>
+      <Latitude>47.1541833</Latitude>
+      <Longitude>8.4330816</Longitude>
+      <Altitude>410</Altitude>
+      <GroundSpeed>54</GroundSpeed>
+      <Heading>88</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>453</Seq>
+      <HeaderTime>2012-02-28T16:36:19</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsUBFtEi1elAATiDxw8EBwAGAHXHDwQA/+AaHFh6BgWaAUkbAAmrZ681Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:36:25</CreateDate>
+      <PacketId>7cc1cd5d-7b06-4031-931f-c42aec915a85</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:36:05</UtcTime>
+      <Latitude>47.1523583</Latitude>
+      <Longitude>8.4310616</Longitude>
+      <Altitude>410</Altitude>
+      <GroundSpeed>73</GroundSpeed>
+      <Heading>27</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>452</Seq>
+      <HeaderTime>2012-02-28T16:36:04</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsQBFtEi1elAATh0xw8EBwAGAGnHDwQA45QaHDwxBgWSAVIlAAk0A3a9Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:36:09</CreateDate>
+      <PacketId>2ebb8904-0aeb-4679-8d36-3b69d3d6f1ce</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:35:53</UtcTime>
+      <Latitude>47.1504099</Latitude>
+      <Longitude>8.4291900</Longitude>
+      <Altitude>402</Altitude>
+      <GroundSpeed>82</GroundSpeed>
+      <Heading>37</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>451</Seq>
+      <HeaderTime>2012-02-28T16:35:53</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsMBFtEi1elAAThpxw8EBwAGAF7HDwQA4U8aHD7VBQWSAWEvAAmtHWnIAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:35:59</CreateDate>
+      <PacketId>93911a8c-94ca-40d8-aa6e-54dd0904db98</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:35:42</UtcTime>
+      <Latitude>47.1486433</Latitude>
+      <Longitude>8.4268350</Longitude>
+      <Altitude>402</Altitude>
+      <GroundSpeed>97</GroundSpeed>
+      <Heading>47</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>450</Seq>
+      <HeaderTime>2012-02-28T16:35:41</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsIBFtEi1elAAThdxw8EBwAGAFTHDwQAgRQaHPplBQWSAV07AAl0oixMAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:35:46</CreateDate>
+      <PacketId>46e06acc-f5a9-4548-adb6-06cbe9fdba5b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:35:32</UtcTime>
+      <Latitude>47.1471233</Latitude>
+      <Longitude>8.4239866</Longitude>
+      <Altitude>402</Altitude>
+      <GroundSpeed>93</GroundSpeed>
+      <Heading>59</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>449</Seq>
+      <HeaderTime>2012-02-28T16:35:32</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsEBFtEi1elAAThUxw8EBwAGAErHDwQAL+oZHHPrBAWPAWNCAAmqDKejAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:35:36</CreateDate>
+      <PacketId>d9b1f48f-d0fd-4fc9-8c55-d990274f33df</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:35:22</UtcTime>
+      <Latitude>47.1460399</Latitude>
+      <Longitude>8.4208499</Longitude>
+      <Altitude>399</Altitude>
+      <GroundSpeed>99</GroundSpeed>
+      <Heading>66</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>448</Seq>
+      <HeaderTime>2012-02-28T16:35:22</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AsABFtEi1elAAThKxw8EBwAGAEHHDwQASscZHJllBAV7AXVDAAlQFcchAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:35:26</CreateDate>
+      <PacketId>f1262f7e-c6b2-4a5f-b8cb-25a673cb8955</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:35:13</UtcTime>
+      <Latitude>47.1451466</Latitude>
+      <Longitude>8.4174233</Longitude>
+      <Altitude>379</Altitude>
+      <GroundSpeed>117</GroundSpeed>
+      <Heading>67</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>447</Seq>
+      <HeaderTime>2012-02-28T16:35:13</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ar8BFtEi1elAAThBxw8EBwAGADnHDwQAqp4ZHHTjAwV2AX06AAnYxMNCAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:35:16</CreateDate>
+      <PacketId>bd8b2e0a-56fe-49b9-bb35-45d3cc243e9c</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:35:05</UtcTime>
+      <Latitude>47.1441066</Latitude>
+      <Longitude>8.4140916</Longitude>
+      <Altitude>374</Altitude>
+      <GroundSpeed>125</GroundSpeed>
+      <Heading>58</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>446</Seq>
+      <HeaderTime>2012-02-28T16:35:04</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ar4BFtEi1elAATg4xw8EBwAGADHHDwQA3GEZHERuAwVzAYEsAAl4o95zAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:35:12</CreateDate>
+      <PacketId>bb669396-9ebf-482d-86b0-9f4d96595db2</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:34:57</UtcTime>
+      <Latitude>47.1425500</Latitude>
+      <Longitude>8.4110916</Longitude>
+      <Altitude>371</Altitude>
+      <GroundSpeed>129</GroundSpeed>
+      <Heading>44</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>445</Seq>
+      <HeaderTime>2012-02-28T16:34:56</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Ar0BFtEi1elAATgwxw8EBwAGACnHDwQAKRgZHK0MAwVwAX0oAAlP1E/VAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:35:02</CreateDate>
+      <PacketId>2ec19c73-bdf1-4629-928e-0dd44e26358f</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:34:49</UtcTime>
+      <Latitude>47.1406633</Latitude>
+      <Longitude>8.4085933</Longitude>
+      <Altitude>368</Altitude>
+      <GroundSpeed>125</GroundSpeed>
+      <Heading>40</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>444</Seq>
+      <HeaderTime>2012-02-28T16:34:49</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArwBFtEi1elAATgpxw8EBwAGACDHDwQA49IYHCWuAgV0AVgvAAnwjH4vAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:52</CreateDate>
+      <PacketId>67928fb5-96b4-4b12-9ad7-b84133b92fbf</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:34:40</UtcTime>
+      <Latitude>47.1388899</Latitude>
+      <Longitude>8.4061733</Longitude>
+      <Altitude>372</Altitude>
+      <GroundSpeed>88</GroundSpeed>
+      <Heading>47</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>443</Seq>
+      <HeaderTime>2012-02-28T16:34:40</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArsBFtEi1elAATggxw8EBwAGABXHDwQAwJgYHMY9AgWDAVgzAAny+b+4Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:44</CreateDate>
+      <PacketId>4e72e585-7aa9-4fc4-9399-af3630d2b4c7</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:34:29</UtcTime>
+      <Latitude>47.1374016</Latitude>
+      <Longitude>8.4032966</Longitude>
+      <Altitude>387</Altitude>
+      <GroundSpeed>88</GroundSpeed>
+      <Heading>51</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>442</Seq>
+      <HeaderTime>2012-02-28T16:34:40</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AroBFtEi1elAATggxw8EAwMABwAGACHHDwQA0NgYHLe3AgVzAVkuAAkiH0lhAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:48</CreateDate>
+      <PacketId>d7ee82aa-5c0d-40de-a06e-f516221d773c</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMABwAGACHHDwQA0NgYHLe3AgVzAVkuAAk=</RawPacket>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>441</Seq>
+      <HeaderTime>2012-02-28T16:34:29</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArkBFtEi1elAATgVxw8EBwAGAAvHDwQA4lgYHHHcAQWNAWMnAAlUbkvwAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:37</CreateDate>
+      <PacketId>a7f8a834-84c1-410d-b911-68957dcc9397</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:34:19</UtcTime>
+      <Latitude>47.1357666</Latitude>
+      <Longitude>8.4008049</Longitude>
+      <Altitude>397</Altitude>
+      <GroundSpeed>99</GroundSpeed>
+      <Heading>39</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>440</Seq>
+      <HeaderTime>2012-02-28T16:34:28</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArgBFtEi1elAATgUxw8EAwMBBwAGABXHDwQAwJgYHMY9AgWDAVgzAAn/V5JRAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:33</CreateDate>
+      <PacketId>e09134bb-29ef-4cab-84b0-43955c678363</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMBBwAGABXHDwQAwJgYHMY9AgWDAVgzAAk=</RawPacket>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>439</Seq>
+      <HeaderTime>2012-02-28T16:34:18</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArcBFtEi1elAATgKxw8EBwAGAALHDwQANg4YHAyUAQWaAWQZAAgHBf+gAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:23</CreateDate>
+      <PacketId>9f82c1a4-4dcb-4327-9005-2abd605aac08</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:34:10</UtcTime>
+      <Latitude>47.1338550</Latitude>
+      <Longitude>8.3989516</Longitude>
+      <Altitude>410</Altitude>
+      <GroundSpeed>100</GroundSpeed>
+      <Heading>25</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>438</Seq>
+      <HeaderTime>2012-02-28T16:34:17</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArYBFtEi1elAATgJxw8EAwMABwAGAArHDwQAVVEYHCLTAQWPAWUlAAk7/lP+Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:20</CreateDate>
+      <PacketId>0c78fa3f-3d81-4f08-b425-440d53971beb</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMABwAGAArHDwQAVVEYHCLTAQWPAWUlAAk=</RawPacket>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>437</Seq>
+      <HeaderTime>2012-02-28T16:34:10</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArUBFtEi1elAATgCxw8EBwAGAPnGDwQA/LsXHFpjAQWjAWkTAAi52tZdAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:13</CreateDate>
+      <PacketId>eab7c5d1-3497-425c-8073-58db947d841c</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:34:01</UtcTime>
+      <Latitude>47.1317500</Latitude>
+      <Longitude>8.3977050</Longitude>
+      <Altitude>419</Altitude>
+      <GroundSpeed>105</GroundSpeed>
+      <Heading>19</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>436</Seq>
+      <HeaderTime>2012-02-28T16:34:06</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArQBFtEi1elAATj+xg8EAwMBBwAGAP/GDwQA1/MXHF2BAQWeAWUVAAf0FKSUAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:09</CreateDate>
+      <PacketId>d1fdb65c-bf2c-4b83-817e-97ea42798a6b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMBBwAGAP/GDwQA1/MXHF2BAQWeAWUVAAc=</RawPacket>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>435</Seq>
+      <HeaderTime>2012-02-28T16:34:00</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArMBFtEi1elAATj4xg8EBwAGAPDGDwQAnmEXHKEzAQWmAWsTAAheKe6PAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:34:05</CreateDate>
+      <PacketId>0e516b83-9f56-41f9-b3ed-72c54e98b9f9</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:33:52</UtcTime>
+      <Latitude>47.1294366</Latitude>
+      <Longitude>8.3964833</Longitude>
+      <Altitude>422</Altitude>
+      <GroundSpeed>107</GroundSpeed>
+      <Heading>19</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>434</Seq>
+      <HeaderTime>2012-02-28T16:33:51</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArIBFtEi1elAATjvxg8EBwAGAOfGDwQA7QYXHBQFAQWjAWYSAAg389ypAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:58</CreateDate>
+      <PacketId>7e6ae2e0-e549-42a2-a61b-d7227bbebe7a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:33:43</UtcTime>
+      <Latitude>47.1271149</Latitude>
+      <Longitude>8.3952916</Longitude>
+      <Altitude>419</Altitude>
+      <GroundSpeed>102</GroundSpeed>
+      <Heading>18</Heading>
+      <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>433</Seq>
+      <HeaderTime>2012-02-28T16:33:43</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArEBFtEi1elAATjnxg8EBwAGAN3GDwQARbMWHDnYAAWaATYLAAnBLfI6Aw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:48</CreateDate>
+      <PacketId>e8271901-714f-4c73-9f8a-9efc27056fde</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:33:33</UtcTime>
+      <Latitude>47.1249733</Latitude>
+      <Longitude>8.3941433</Longitude>
+      <Altitude>410</Altitude>
+      <GroundSpeed>54</GroundSpeed>
+      <Heading>11</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>432</Seq>
+      <HeaderTime>2012-02-28T16:33:33</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>ArABFtEi1elAATjdxg8EBwAGANnGDwQArZwWHOPPAAWZASA9AQlAKB1MAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:38</CreateDate>
+      <PacketId>f0180e30-5793-48c6-a8db-a207efcac59b</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:33:29</UtcTime>
+      <Latitude>47.1243949</Latitude>
+      <Longitude>8.3939299</Longitude>
+      <Altitude>409</Altitude>
+      <GroundSpeed>32</GroundSpeed>
+      <Heading>317</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>431</Seq>
+      <HeaderTime>2012-02-28T16:33:29</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Aq8BFtEi1elAATjZxg8EBwAGANLGDwQA648WHMDuAAWWASL/AAlkETpcAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:34</CreateDate>
+      <PacketId>1b541509-f6a7-46c9-a28f-70473f5ca29a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:33:22</UtcTime>
+      <Latitude>47.1240683</Latitude>
+      <Longitude>8.3947200</Longitude>
+      <Altitude>406</Altitude>
+      <GroundSpeed>34</GroundSpeed>
+      <Heading>255</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>430</Seq>
+      <HeaderTime>2012-02-28T16:33:21</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Aq4BFtEi1elAATjRxg8EBwAGAMnGDwQA4aQWHKEBAQWVARaPAAn4ClGbAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:25</CreateDate>
+      <PacketId>520fd375-75a2-4db7-87a8-112c8738239a</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:33:13</UtcTime>
+      <Latitude>47.1246049</Latitude>
+      <Longitude>8.3952033</Longitude>
+      <Altitude>405</Altitude>
+      <GroundSpeed>22</GroundSpeed>
+      <Heading>143</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>429</Seq>
+      <HeaderTime>2012-02-28T16:33:13</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>Aq0BFtEi1elAATjJxg8EBwAGALrGDwQA4bIWHBm8AAWQASlbAAnuHhkIAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:21</CreateDate>
+      <PacketId>4347491f-2359-4c5b-98e2-6b9fb1ee0fc7</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:32:58</UtcTime>
+      <Latitude>47.1249633</Latitude>
+      <Longitude>8.3934233</Longitude>
+      <Altitude>400</Altitude>
+      <GroundSpeed>41</GroundSpeed>
+      <Heading>91</Heading>
+      <NumberOfSatellitesUsed>9</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>428</Seq>
+      <HeaderTime>2012-02-28T16:32:58</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqwBFtEi1elAATi6xg8EBwAGAIvGDwQAGr0WHDc6AAWRAVZXAAdL8ErKAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:03</CreateDate>
+      <PacketId>c60664ae-7f6e-435d-bfc0-8083e8a48ce5</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:32:11</UtcTime>
+      <Latitude>47.1252250</Latitude>
+      <Longitude>8.3900983</Longitude>
+      <Altitude>401</Altitude>
+      <GroundSpeed>86</GroundSpeed>
+      <Heading>87</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>427</Seq>
+      <HeaderTime>2012-02-28T16:32:58</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqsBFtEi1elAATi6xg8EAwMABwAGALvGDwQAjrIWHNTBAAWQASlcAAlVl/olAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:33:07</CreateDate>
+      <PacketId>6bf6d049-49e7-45bb-83a5-bd47fee694f4</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMABwAGALvGDwQAjrIWHNTBAAWQASlcAAk=</RawPacket>
+    </Message>
+    <Message xsi:type="UndefinedMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>Undefined</MessageType>
+      <Seq>426</Seq>
+      <HeaderTime>2012-02-28T16:32:47</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqoBFtEi1elAATivxg8EAwMBBwAGALDGDwQAI7MWHI6KAAWUARBdAAgQsp6qAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:32:51</CreateDate>
+      <PacketId>115e3e26-1c7e-41e8-82dc-7cfacda62fb8</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>65535</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <RawPacket>AwMBBwAGALDGDwQAI7MWHI6KAAWUARBdAAg=</RawPacket>
+    </Message>
+    <Message xsi:type="ObdCoreMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>ObdCore</MessageType>
+      <Seq>425</Seq>
+      <HeaderTime>2012-02-28T16:32:42</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqkBFtEi1elAATiqxg8EkQAAAABZUzNFSDU5RzEyMzAzNjIyMgAAAAAAkgD//5MAAJQAVAOVAP+WAP////+XAP////+YAAaZAP8AAf//MwMQuD++NAMAAAAANQMAAAAANgP//zcD/wcABgCrxg8EAIG0FhyPhwAFlQEAXwAIVQQDAQH///////8CAf///////y2/A9gD</UdpPacket>
+      <CreateDate>2012-02-28T23:32:48</CreateDate>
+      <PacketId>a8663a9f-b0ea-483d-9aba-fe201021f83c</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8197</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <Vin>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>89</unsignedByte>
+        <unsignedByte>83</unsignedByte>
+        <unsignedByte>51</unsignedByte>
+        <unsignedByte>69</unsignedByte>
+        <unsignedByte>72</unsignedByte>
+        <unsignedByte>53</unsignedByte>
+        <unsignedByte>57</unsignedByte>
+        <unsignedByte>71</unsignedByte>
+        <unsignedByte>49</unsignedByte>
+        <unsignedByte>50</unsignedByte>
+        <unsignedByte>51</unsignedByte>
+        <unsignedByte>48</unsignedByte>
+        <unsignedByte>51</unsignedByte>
+        <unsignedByte>54</unsignedByte>
+        <unsignedByte>50</unsignedByte>
+        <unsignedByte>50</unsignedByte>
+        <unsignedByte>50</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+      </Vin>
+      <DistanceTravelled>65535</DistanceTravelled>
+      <ObdSpeed>0</ObdSpeed>
+      <Rpm>852</Rpm>
+      <Fuel>255</Fuel>
+      <BitwiseEncodePidMode01x01>4294967295</BitwiseEncodePidMode01x01>
+      <BitwiseEncodePidMode01x41>4294967295</BitwiseEncodePidMode01x41>
+      <ObdStandard>6</ObdStandard>
+      <FuelType>255</FuelType>
+      <DistanceTravelledWithMilLightOn>65535</DistanceTravelledWithMilLightOn>
+      <PidSupport00>3191846928</PidSupport00>
+      <PidSupport20>0</PidSupport20>
+      <PidSupport40>0</PidSupport40>
+      <FuelSystemStatus>65535</FuelSystemStatus>
+      <OxygenSensor>255</OxygenSensor>
+      <GeoPoint>
+        <Imei>unknown</Imei>
+        <MessageType>GeoPoint</MessageType>
+        <Seq>0</Seq>
+        <HeaderTime>2012-02-29T10:11:37.3265624+07:00</HeaderTime>
+        <Version>1</Version>
+        <CreateDate>0001-01-01T00:00:00</CreateDate>
+        <Id>7</Id>
+        <TotalSeq>0</TotalSeq>
+        <ServerTime>0001-01-01T00:00:00</ServerTime>
+        <SourceIP>178.197.234.35</SourceIP>
+        <SourcePort>0</SourcePort>
+        <Priority>0</Priority>
+        <ServerId>0</ServerId>
+        <UniqueJouneyId>6</UniqueJouneyId>
+        <UtcTime>2012-02-28T16:32:43</UtcTime>
+        <Latitude>47.1250049</Latitude>
+        <Longitude>8.3920783</Longitude>
+        <Altitude>405</Altitude>
+        <GroundSpeed>0</GroundSpeed>
+        <Heading>95</Heading>
+        <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+        <StartJney xsi:nil="true" />
+        <MessageHeaderTime xsi:nil="true" />
+        <Delta>0</Delta>
+        <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+        <ImpliedVelocity>0</ImpliedVelocity>
+        <MapId xsi:nil="true" />
+        <LocalUtcTime xsi:nil="true" />
+      </GeoPoint>
+      <DtcCodesStored />
+      <DtcCodesPending />
+      <DecodeVin>YS3EH59G123036222</DecodeVin>
+    </Message>
+    <Message xsi:type="EngineStartStopAlertMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>EngineStartStopAlert</MessageType>
+      <Seq>424</Seq>
+      <HeaderTime>2012-02-28T16:32:26</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqgBFtEi1elAATiaxg8EMQMBBwAGAJrGDwQAHrQWHNyIAAWSAQdeAAgZAf///xgB//8AkwAAlABwA7BWSkwD</UdpPacket>
+      <CreateDate>2012-02-28T23:32:30</CreateDate>
+      <PacketId>ae67ea61-402e-4c83-9141-89369bb188fa</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>12309</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <StartStop>1</StartStop>
+      <GeoPoint>
+        <Imei>unknown</Imei>
+        <MessageType>GeoPoint</MessageType>
+        <Seq>0</Seq>
+        <HeaderTime>2012-02-29T10:11:37.4355573+07:00</HeaderTime>
+        <Version>1</Version>
+        <CreateDate>0001-01-01T00:00:00</CreateDate>
+        <Id>7</Id>
+        <TotalSeq>0</TotalSeq>
+        <ServerTime>0001-01-01T00:00:00</ServerTime>
+        <SourcePort>0</SourcePort>
+        <Priority>0</Priority>
+        <ServerId>0</ServerId>
+        <UniqueJouneyId>6</UniqueJouneyId>
+        <UtcTime>2012-02-28T16:32:26</UtcTime>
+        <Latitude>47.1249950</Latitude>
+        <Longitude>8.3921116</Longitude>
+        <Altitude>402</Altitude>
+        <GroundSpeed>7</GroundSpeed>
+        <Heading>94</Heading>
+        <NumberOfSatellitesUsed>8</NumberOfSatellitesUsed>
+        <StartJney xsi:nil="true" />
+        <MessageHeaderTime xsi:nil="true" />
+        <Delta>0</Delta>
+        <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+        <ImpliedVelocity>0</ImpliedVelocity>
+        <MapId xsi:nil="true" />
+        <LocalUtcTime xsi:nil="true" />
+      </GeoPoint>
+      <TruOdometer>////</TruOdometer>
+      <DrivenPidx31>//8A</DrivenPidx31>
+      <ObdSpeedPidx0D>0</ObdSpeedPidx0D>
+      <EngineRpmPidx0C>880</EngineRpmPidx0C>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>423</Seq>
+      <HeaderTime>2012-02-28T16:32:11</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqcBFtEi1elAATiLxg8EBwAGAIDGDwQAr70WHJm1/wSRAVpBAAcoQlEaAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:32:14</CreateDate>
+      <PacketId>0ef824fb-1e82-4bd8-9712-e87e23a43dda</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:32:00</UtcTime>
+      <Latitude>47.1252399</Latitude>
+      <Longitude>8.3867033</Longitude>
+      <Altitude>401</Altitude>
+      <GroundSpeed>90</GroundSpeed>
+      <Heading>65</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GsmInfoArrayMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GsmInfoArray</MessageType>
+      <Seq>422</Seq>
+      <HeaderTime>2012-02-28T16:32:10</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqYBFtEi1elAATiKxg8EAP8BAAEAAQAGKAApADAAMQAyADMACFgBLwEBCgBVArzuEWMD</UdpPacket>
+      <CreateDate>2012-02-28T23:32:18</CreateDate>
+      <PacketId>936b2be8-49f8-4a25-89e0-4ed5834ad1fd</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8194</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <MsgId>65280</MsgId>
+      <TotalMsg>1</TotalMsg>
+      <MsgNumber>1</MsgNumber>
+      <Rows>1</Rows>
+      <Cols>6</Cols>
+      <DataDef>
+        <unsignedShort>40</unsignedShort>
+        <unsignedShort>41</unsignedShort>
+        <unsignedShort>48</unsignedShort>
+        <unsignedShort>49</unsignedShort>
+        <unsignedShort>50</unsignedShort>
+        <unsignedShort>51</unsignedShort>
+      </DataDef>
+      <BinData>
+        <unsignedByte>8</unsignedByte>
+        <unsignedByte>88</unsignedByte>
+        <unsignedByte>1</unsignedByte>
+        <unsignedByte>47</unsignedByte>
+        <unsignedByte>1</unsignedByte>
+        <unsignedByte>1</unsignedByte>
+        <unsignedByte>10</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>85</unsignedByte>
+        <unsignedByte>2</unsignedByte>
+      </BinData>
+      <MessageCollection />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>421</Seq>
+      <HeaderTime>2012-02-28T16:32:00</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqUBFtEi1elAATiAxg8EBwAGAHXGDwQAb6wWHOQx/wSVAVZRAAc7A7czAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:32:10</CreateDate>
+      <PacketId>b4ce15fb-7d11-4f7b-9e30-27fe53211a97</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:31:49</UtcTime>
+      <Latitude>47.1247983</Latitude>
+      <Longitude>8.3833316</Longitude>
+      <Altitude>405</Altitude>
+      <GroundSpeed>86</GroundSpeed>
+      <Heading>81</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>420</Seq>
+      <HeaderTime>2012-02-28T16:31:51</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqQBFtEi1elAATh3xg8EBwAGAHTGDwQAp6sWHKcl/wSVAVVSAAdvaspwAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:32:06</CreateDate>
+      <PacketId>b42e6d69-6223-4c5c-9e48-081a32e49ced</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>6</UniqueJouneyId>
+      <UtcTime>2012-02-28T16:31:48</UtcTime>
+      <Latitude>47.1247783</Latitude>
+      <Longitude>8.3830183</Longitude>
+      <Altitude>405</Altitude>
+      <GroundSpeed>85</GroundSpeed>
+      <Heading>82</Heading>
+      <NumberOfSatellitesUsed>7</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+    <Message xsi:type="HealthAndInfoMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>HealthAndInfo</MessageType>
+      <Seq>419</Seq>
+      <HeaderTime>2012-02-28T16:31:50</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqMBFtEi1elAATh2xg8EMQEBMgEBMwEBJQDXgK+mYM8AJgDXtRxP5NkUfAAAAAAAAAAAOQMAAGUAAABmAAAAZwAAAGgAAABpAABwAAAAcQAAggD/iAAAAAAAAAAAAIcAAIQA/4UAAIYA5iQE/0YBAIoHBkcBOwEASAEaAABJAQAAALXnr3kD</UdpPacket>
+      <CreateDate>2012-02-28T23:32:22</CreateDate>
+      <PacketId>552630db-768a-45c8-bdbb-87647fc02857</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8193</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <Description>HEALTH &amp; INFO</Description>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <Profile>1</Profile>
+      <PowerSourceType>1</PowerSourceType>
+      <ShortcutObd>1</ShortcutObd>
+      <Imsi>228014020329687</Imsi>
+      <Iccid>17UcT+TZFHwAAAAAAAAAAA==</Iccid>
+      <SetOfKeyHealthFlag>0</SetOfKeyHealthFlag>
+      <BatteryVoltage>0</BatteryVoltage>
+      <Temperature>0</Temperature>
+      <BatteryCurrent>0</BatteryCurrent>
+      <BatteryCurrentAccumulation>0</BatteryCurrentAccumulation>
+      <BatteryCellCapacity>0</BatteryCellCapacity>
+      <InitialBatteryVoltageReading>0</InitialBatteryVoltageReading>
+      <NewBatteryCapacityLearning>0</NewBatteryCapacityLearning>
+      <KeyfobProximityDetected>255</KeyfobProximityDetected>
+      <KeyfobIdWhichPaired>0</KeyfobIdWhichPaired>
+      <KeyfobPairingStatus>0</KeyfobPairingStatus>
+      <KeyfobBatteryVoltage>255</KeyfobBatteryVoltage>
+      <LowKeyfobBatteryVoltage>0</LowKeyfobBatteryVoltage>
+      <KeyfobRssi>230</KeyfobRssi>
+      <KeyfobFirmwareVersion>255</KeyfobFirmwareVersion>
+      <FlashMemoryAvailable>101157376</FlashMemoryAvailable>
+      <NumberOfGeopointInNandMemory>80640</NumberOfGeopointInNandMemory>
+      <NumberOfAlertsInNandMemory>6656</NumberOfAlertsInNandMemory>
+      <NumberOfImpactInNandMemory>0</NumberOfImpactInNandMemory>
+    </Message>
+    <Message xsi:type="GpsAwakeArrayMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GpsAwakeArray</MessageType>
+      <Seq>418</Seq>
+      <HeaderTime>2012-02-28T16:31:50</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqIBFtEi1elAATh2xg8EAP8BAAEACwAFFgAYABkAIAAhABoAGT8zAQgAFzw0AAUAHTrZABwAHTKKACUAACKiAAcAFRc8AA8AFBUmARsAABL3AAoAABCkABUAAAhBARMAEQUsAHLC2n4D</UdpPacket>
+      <CreateDate>2012-02-28T23:32:26</CreateDate>
+      <PacketId>aded9b79-1abb-437c-b637-8f145ad7fa95</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8194</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <MsgId>65280</MsgId>
+      <TotalMsg>1</TotalMsg>
+      <MsgNumber>1</MsgNumber>
+      <Rows>11</Rows>
+      <Cols>5</Cols>
+      <DataDef>
+        <unsignedShort>22</unsignedShort>
+        <unsignedShort>24</unsignedShort>
+        <unsignedShort>25</unsignedShort>
+        <unsignedShort>32</unsignedShort>
+        <unsignedShort>33</unsignedShort>
+      </DataDef>
+      <BinData>
+        <unsignedByte>26</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>25</unsignedByte>
+        <unsignedByte>63</unsignedByte>
+        <unsignedByte>51</unsignedByte>
+        <unsignedByte>1</unsignedByte>
+        <unsignedByte>8</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>23</unsignedByte>
+        <unsignedByte>60</unsignedByte>
+        <unsignedByte>52</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>29</unsignedByte>
+        <unsignedByte>58</unsignedByte>
+        <unsignedByte>217</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>28</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>29</unsignedByte>
+        <unsignedByte>50</unsignedByte>
+        <unsignedByte>138</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>37</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>34</unsignedByte>
+        <unsignedByte>162</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>7</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>21</unsignedByte>
+        <unsignedByte>23</unsignedByte>
+        <unsignedByte>60</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>15</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>20</unsignedByte>
+        <unsignedByte>21</unsignedByte>
+        <unsignedByte>38</unsignedByte>
+        <unsignedByte>1</unsignedByte>
+        <unsignedByte>27</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>18</unsignedByte>
+        <unsignedByte>247</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>10</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>16</unsignedByte>
+        <unsignedByte>164</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>21</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>8</unsignedByte>
+        <unsignedByte>65</unsignedByte>
+        <unsignedByte>1</unsignedByte>
+        <unsignedByte>19</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+        <unsignedByte>17</unsignedByte>
+        <unsignedByte>5</unsignedByte>
+        <unsignedByte>44</unsignedByte>
+        <unsignedByte>0</unsignedByte>
+      </BinData>
+      <MessageCollection />
+    </Message>
+    <Message xsi:type="GpsFirstFixMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GpsFirstFix</MessageType>
+      <Seq>417</Seq>
+      <HeaderTime>2012-02-28T16:31:50</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqEBFtEi1elAATh2xg8EEwABFQACAJpSiqMD</UdpPacket>
+      <CreateDate>2012-02-28T23:32:34</CreateDate>
+      <PacketId>3df485fc-f4f6-48d1-ba01-66c5a80be040</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8201</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <GpsFixType>1</GpsFixType>
+      <TimeToFirstFix>2</TimeToFirstFix>
+    </Message>
+    <Message xsi:type="GoodMorningMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GoodMorning</MessageType>
+      <Seq>416</Seq>
+      <HeaderTime>2012-02-28T16:31:50</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AqABFtEi1elAATh2xg8EAACpPoHYAw==</UdpPacket>
+      <CreateDate>2012-02-28T23:32:44</CreateDate>
+      <PacketId>24e5686c-aadf-4a63-8824-a6f0f73d6b43</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>0</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.234.35</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <DataByte>0</DataByte>
+    </Message>
+  </Messages>
+</SimulationScript>

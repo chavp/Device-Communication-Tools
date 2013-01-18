@@ -1,0 +1,100 @@
+﻿
+
+    .icon-find {
+        background-image: url(icons/find.png);
+    }
+    .icon-reset {
+        background-image: url(icons/reset.png) !important;
+    }
+    .icon-save {
+        background-image: url(icons/save.gif) !important;
+    }
+    .icon-saving {
+        background-image: url(icons/saving.gif) !important;
+    }
+    .icon-cancel {
+        background-image: url(icons/cancel.gif) !important;
+    }
+    .icon-x {
+        background-image: url(icons/x.png) !important;
+    }
+    .icon-accept {
+        background-image: url(icons/accept.gif) !important;
+    }
+    .icon-cross {
+        background-image: url(icons/cross.gif) !important;
+    }
+    
+    .icon-add {
+        background-image: url(icons/add.png) !important;
+    }
+    .icon-delete {
+        background-image: url(icons/delete.png) !important;
+    }
+    .icon-edit {
+        background-image: url(icons/edit.png) !important;
+    }
+    
+    .icon-details {
+        background-image: url(icons/details.gif) !important;
+    }
+    .icon-view-list {
+        background-image: url(icons/view_list.png) !important;
+    }     
+    .icon-grid {
+        background-image: url(icons/grid.png) !important;
+    }   
+    .icon-exclamation {
+        background-image: url(icons/exclamation.gif) !important;
+    }    
+    
+    .icon-reload {
+        background-image: url(icons/reload.png) !important;
+    }
+    
+    .icon-nowait {
+        background-image: url(icons/nowait.gif) !important;
+    }
+    .icon-refresh {
+        background-image: url(icons/refresh.gif) !important;
+    }
+    .icon-refresh-blue {
+        background-image: url(icons/refresh-blue.gif) !important;
+    }
+    .icon-refresh-disabled {
+        background-image: url(icons/refresh-disabled.gif) !important;
+    }
+    .icon-loading {
+        background-image: url(icons/loading.gif) !important;
+    }    
+    .icon-stop {
+        background-image: url(icons/stop.png) !important;
+    }
+    .icon-tabs {
+        background-image: url(icons/tabs.gif) !important;
+    }
+    .icon-chart {
+        background-image: url(icons/chart.png) !important;
+    } 
+    .icon-equals {
+        background-image: url(icons/equals.png) !important;
+    }
+    .icon-greater-than {
+        background-image: url(icons/greater_than.png) !important;
+    }
+    .icon-less-than {
+        background-image: url(icons/less_than.png) !important;
+    }
+    
+    .icon-folder {
+        background-image: url(icons/folder.gif) !important;
+    }
+    .icon-folder-open {
+        background-image: url(icons/folder_open.gif) !important;
+    }
+    .icon-upload {
+        background-image: url(icons/upload.png) !important;
+    }
+    .icon-excel {
+        background-image: url(icons/excel.jpg) !important;
+    }

@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="OperationResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Completed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="OtaHeaderRequestMessageResult" nillable="true" type="q1:OtaHeaderRequestMessage" />
+      <xs:element minOccurs="0" name="RequestId" type="xs:unsignedInt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResult" nillable="true" type="tns:OperationResult" />
+  <xs:complexType name="DeployOtaStateResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OperationResult">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeployOtaStateResult" nillable="true" type="tns:DeployOtaStateResult" />
+  <xs:complexType name="ArrayOfReqConfAndCmd">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReqConfAndCmd" nillable="true" type="tns:ReqConfAndCmd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReqConfAndCmd" nillable="true" type="tns:ArrayOfReqConfAndCmd" />
+  <xs:complexType name="ReqConfAndCmd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageJson" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReqDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReqID" type="xs:unsignedInt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReqConfAndCmd" nillable="true" type="tns:ReqConfAndCmd" />
+  <xs:complexType name="DeviceDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeviceSn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Iccid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Imei" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Imsi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastestAccessIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastestAccessTcpPort" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="LastestAccessTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastestAccessUdpPort" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Mode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Problems" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ServerID" type="xs:int" />
+      <xs:element minOccurs="0" name="VehicleState" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeviceDto" nillable="true" type="tns:DeviceDto" />
+  <xs:complexType name="ArrayOfJourneyGpsFixAlertDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JourneyGpsFixAlertDto" nillable="true" type="tns:JourneyGpsFixAlertDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJourneyGpsFixAlertDto" nillable="true" type="tns:ArrayOfJourneyGpsFixAlertDto" />
+  <xs:complexType name="JourneyGpsFixAlertDto">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GpsFixAlertList" nillable="true" type="q3:ArrayOfGpsFixAlertMessage" />
+      <xs:element minOccurs="0" name="JourneyId" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="StartJourney" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StopJourney" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JourneyGpsFixAlertDto" nillable="true" type="tns:JourneyGpsFixAlertDto" />
+  <xs:complexType name="HealthInfoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DeviceBattery" nillable="true" type="tns:DeviceBattery" />
+      <xs:element minOccurs="0" name="DeviceHealth" nillable="true" type="tns:DeviceHealth" />
+      <xs:element minOccurs="0" name="DeviceProfile" nillable="true" type="tns:DeviceProfile" />
+      <xs:element minOccurs="0" name="HeaderTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="KeyHealth" nillable="true" type="tns:KeyHealth" />
+      <xs:element minOccurs="0" name="MemInfo" nillable="true" type="tns:MemInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HealthInfoDto" nillable="true" type="tns:HealthInfoDto" />
+  <xs:complexType name="DeviceBattery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BatteryCellCapacity" type="xs:double" />
+      <xs:element minOccurs="0" name="BatteryCurrent" type="xs:double" />
+      <xs:element minOccurs="0" name="BatteryCurrentAccumulation" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="BatteryVoltage" type="xs:double" />
+      <xs:element minOccurs="0" name="InitialBatteryVoltageReading" type="xs:double" />
+      <xs:element minOccurs="0" name="NewBatteryCapacityLearning" type="xs:double" />
+      <xs:element minOccurs="0" name="Temperature" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeviceBattery" nillable="true" type="tns:DeviceBattery" />
+  <xs:complexType name="DeviceHealth">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HealthyAccelerometer" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyFuelGauge" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyGPSDeviceBattery" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyGPSModule" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyGSMModule" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyNandFlashMemory" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyOBDChip" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyPowerSwitch" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyRFIDChip" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthySIMCard" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthySerialPort" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HealthyUSBPort" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Healthy_MicroController" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeviceHealth" nillable="true" type="tns:DeviceHealth" />
+  <xs:complexType name="DeviceProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ICCID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IMSI" type="xs:unsignedLong" />
+      <xs:element minOccurs="0" name="PowerSourceType" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Profile_Firmware" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ShortcutOBD" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeviceProfile" nillable="true" type="tns:DeviceProfile" />
+  <xs:complexType name="KeyHealth">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KeyfobBatteryVoltage" type="xs:double" />
+      <xs:element minOccurs="0" name="KeyfobFirmwareVersion" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="KeyfobIDWhichPaired" type="xs:unsignedLong" />
+      <xs:element minOccurs="0" name="KeyfobPairingStatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="KeyfobProximityDetected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="KeyfobRSSI" type="xs:short" />
+      <xs:element minOccurs="0" name="LowKeyfobBatteryVoltage" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyHealth" nillable="true" type="tns:KeyHealth" />
+  <xs:complexType name="MemInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FlashMemoryAvailable" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="NumberOfAlertInNandMemory" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="NumberOfGeopointInNandMemory" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="NumberOfImpactInNandMemory" type="xs:unsignedInt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemInfo" nillable="true" type="tns:MemInfo" />
+  <xs:complexType name="ObdCoreDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bitwisex01" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Bitwisex04" type="xs:unsignedInt" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DtcCodesPending" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DtcCodesStored" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element minOccurs="0" name="FuelSystemStatus" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="FuelType" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Geopoint" nillable="true" type="tns:GeoPointDto" />
+      <xs:element minOccurs="0" name="OBDStandard" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ObdSpeed" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="OxygenSensor" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="PIDx21DistanceTravelled" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="PIDx31DistanceTravelled" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="PercentFuel" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="PidSupport00" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="PidSupport20" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="PidSupport40" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="RPM" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="VIN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ObdCoreDto" nillable="true" type="tns:ObdCoreDto" />
+  <xs:complexType name="GeoPointDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Altitude" type="xs:short" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DeviceSn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FromMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromMessageJson" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroundSpeed" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="HavDistanceMeters" type="xs:double" />
+      <xs:element minOccurs="0" name="Heading" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="Imei" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MapId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfSatellitesUsed" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Seq" type="xs:int" />
+      <xs:element minOccurs="0" name="ToDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UniqueJournyId" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="UtcTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VehicleState" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeoPointDto" nillable="true" type="tns:GeoPointDto" />
+  <xs:complexType name="JourneySummaryDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DrNumberReadings" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DrStandardDeviation" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DrValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DrivenHarversine" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DrivenObdSpeed" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DrivenPidx31" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DrivenRealOdoPid" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DrivingCumulativeDulation" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Dummy" type="xs:int" />
+      <xs:element minOccurs="0" name="IdlingCumulativeDulation" type="xs:decimal" />
+      <xs:element minOccurs="0" name="JourneyId" type="xs:short" />
+      <xs:element minOccurs="0" name="MissingGpsSignalDulation" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalJourneyDuration" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TowedHarversine" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TowedObdSpeed" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TowedPidx31" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TowedRealOdoPid" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TowingCumulativeDulation" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JourneySummaryDto" nillable="true" type="tns:JourneySummaryDto" />
+  <xs:complexType name="ArrayOfEngineStartStopDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EngineStartStopDto" nillable="true" type="tns:EngineStartStopDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEngineStartStopDto" nillable="true" type="tns:ArrayOfEngineStartStopDto" />
+  <xs:complexType name="EngineStartStopDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EngineType" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Geopoint" nillable="true" type="tns:GeoPointDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EngineStartStopDto" nillable="true" type="tns:EngineStartStopDto" />
+  <xs:complexType name="ArrayOfGeoPointDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GeoPointDto" nillable="true" type="tns:GeoPointDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGeoPointDto" nillable="true" type="tns:ArrayOfGeoPointDto" />
+  <xs:complexType name="ArrayOfMileageDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MileageDto" nillable="true" type="tns:MileageDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMileageDto" nillable="true" type="tns:ArrayOfMileageDto" />
+  <xs:complexType name="MileageDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HavDistanceMeters" type="xs:double" />
+      <xs:element minOccurs="0" name="Imei" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MileageDto" nillable="true" type="tns:MileageDto" />
+  <xs:complexType name="LocationsForSpeedCheck">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OperationResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsDriving" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Locations" nillable="true" type="tns:ArrayOfGeoPointDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LocationsForSpeedCheck" nillable="true" type="tns:LocationsForSpeedCheck" />
+  <xs:complexType name="ArrayOfSpeedCheckDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SpeedCheckDto" nillable="true" type="tns:SpeedCheckDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSpeedCheckDto" nillable="true" type="tns:ArrayOfSpeedCheckDto" />
+  <xs:complexType name="SpeedCheckDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvgSpeed" type="xs:double" />
+      <xs:element minOccurs="0" name="Duration" type="ser:duration" />
+      <xs:element minOccurs="0" name="MaxSpeed" type="xs:double" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SeqOfGeopointList" nillable="true" type="q6:ArrayOfint" />
+      <xs:element minOccurs="0" name="TotalDistanceMeters" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SpeedCheckDto" nillable="true" type="tns:SpeedCheckDto" />
+  <xs:complexType name="GeoPointHistoryDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GeoPoints" nillable="true" type="tns:ArrayOfGeoPointDto" />
+      <xs:element minOccurs="0" name="TotalDrivingDuration" type="ser:duration" />
+      <xs:element minOccurs="0" name="TotalIdlingDuration" type="ser:duration" />
+      <xs:element minOccurs="0" name="TotalJourneyDuration" type="ser:duration" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeoPointHistoryDto" nillable="true" type="tns:GeoPointHistoryDto" />
+  <xs:complexType name="ArrayOfJourneyDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JourneyDto" nillable="true" type="tns:JourneyDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJourneyDto" nillable="true" type="tns:ArrayOfJourneyDto" />
+  <xs:complexType name="JourneyDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvgSpeed" type="xs:double" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CumulativeDistance" type="xs:double" />
+      <xs:element minOccurs="0" name="CumulativeDuration" type="ser:duration" />
+      <xs:element minOccurs="0" name="DistanceTravelled" type="xs:double" />
+      <xs:element minOccurs="0" name="GeopointLength" type="xs:int" />
+      <xs:element minOccurs="0" name="IdlingDuration" type="ser:duration" />
+      <xs:element minOccurs="0" name="JourneyDuration" type="ser:duration" />
+      <xs:element minOccurs="0" name="JourneyId" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="MaxSpeed" type="xs:double" />
+      <xs:element minOccurs="0" name="SpeedZeroMax" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SpeedZeroMin" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Start" nillable="true" type="tns:GeoPointDto" />
+      <xs:element minOccurs="0" name="StartJourneyUtc" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Stop" nillable="true" type="tns:GeoPointDto" />
+      <xs:element minOccurs="0" name="StopJourneyUtc" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JourneyDto" nillable="true" type="tns:JourneyDto" />
+  <xs:complexType name="ArrayOfTotalDistanceJourneyDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TotalDistanceJourneyDto" nillable="true" type="tns:TotalDistanceJourneyDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTotalDistanceJourneyDto" nillable="true" type="tns:ArrayOfTotalDistanceJourneyDto" />
+  <xs:complexType name="TotalDistanceJourneyDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DrivingDuration" type="ser:duration" />
+      <xs:element minOccurs="0" name="IdlingDuration" type="ser:duration" />
+      <xs:element minOccurs="0" name="JourneyId" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="StartGeoPointHeaderTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StartJourney" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StopGeoPointHeaderTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StopJourney" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TotalDistance" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TotalDistanceJourneyDto" nillable="true" type="tns:TotalDistanceJourneyDto" />
+  <xs:complexType name="VehicleUsageInfoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeviceSn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DrivingTime" type="ser:duration" />
+      <xs:element minOccurs="0" name="IdlingTime" type="ser:duration" />
+      <xs:element minOccurs="0" name="ParkedTime" type="ser:duration" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SplitDrivingTimesBySpeed" nillable="true" type="q7:ArrayOfduration" />
+      <xs:element minOccurs="0" name="UsageFromTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UsageToTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleUsageInfoDto" nillable="true" type="tns:VehicleUsageInfoDto" />
+  <xs:complexType name="ArrayOfVehicleUsageInfoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleUsageInfoDto" nillable="true" type="tns:VehicleUsageInfoDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleUsageInfoDto" nillable="true" type="tns:ArrayOfVehicleUsageInfoDto" />
+  <xs:complexType name="PowerLossAlert">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MessageID" type="xs:int" />
+      <xs:element minOccurs="0" name="PowerLossFlag" type="tns:PowerLoss" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PowerLossAlert" nillable="true" type="tns:PowerLossAlert" />
+  <xs:simpleType name="PowerLoss">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Loss" />
+      <xs:enumeration value="Powered" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PowerLoss" nillable="true" type="tns:PowerLoss" />
+  <xs:complexType name="CummulativeDuration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cummulative" type="tns:CummulativeType" />
+      <xs:element minOccurs="0" name="JourneyID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageID" type="xs:int" />
+      <xs:element minOccurs="0" name="MissingGPSSignalDuration" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CummulativeDuration" nillable="true" type="tns:CummulativeDuration" />
+  <xs:simpleType name="CummulativeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="_3kms">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="_10kms">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CummulativeType" nillable="true" type="tns:CummulativeType" />
+  <xs:complexType name="ArrayOfDeviceDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DeviceDto" nillable="true" type="tns:DeviceDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeviceDto" nillable="true" type="tns:ArrayOfDeviceDto" />
+</xs:schema>

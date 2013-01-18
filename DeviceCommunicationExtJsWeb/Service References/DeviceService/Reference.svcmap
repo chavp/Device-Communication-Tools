@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e1c9bfa9-3dd5-4e9c-8aed-56f915fb3e29" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service11.wsdl" MetadataType="Wsdl" ID="86ada059-569c-4f58-b528-6ad43d0ac9e3" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+    <MetadataFile FileName="service22.xsd" MetadataType="Schema" ID="e556be9c-76a2-46a7-bdee-eec612c137c6" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+    <MetadataFile FileName="service23.xsd" MetadataType="Schema" ID="8e4351f6-feb9-4a3a-8965-5672fa4b8b57" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+    <MetadataFile FileName="CarPass.Domains.Communications.Messages11.xsd" MetadataType="Schema" ID="8799252e-f628-4ec9-9c7d-448aaea33b34" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+    <MetadataFile FileName="Arrays11.xsd" MetadataType="Schema" ID="f62e6b56-a75d-4f66-96fd-3b9afa23cc99" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+    <MetadataFile FileName="CarPass.Services.Communications.Contracts.Dtos11.xsd" MetadataType="Schema" ID="5f55edea-c671-4b06-8d5a-5a9f5d101d56" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+    <MetadataFile FileName="CarPass.Domains.Communications.Messages.Values1.xsd" MetadataType="Schema" ID="a34a0467-9ab1-4b07-8543-b7f729181930" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+    <MetadataFile FileName="CarPass.Domains.Communications.ValueObjects11.xsd" MetadataType="Schema" ID="18905b8f-7359-483e-b3c1-bc0eb4d61ceb" SourceId="1" SourceUrl="http://appsit01:9991/DeviceAgentServer/DeviceService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

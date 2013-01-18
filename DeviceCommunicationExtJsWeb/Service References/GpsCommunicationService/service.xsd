@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="GetRequestAckCommandStackMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestAckCommandStackMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetRequestAckCommandStackMessageResult" nillable="true" type="q1:ArrayOfRequestAckCommandMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessageDescriptionByPacketId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="packetId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessageDescriptionByPacketIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetMessageDescriptionByPacketIdResult" nillable="true" type="q2:Packet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketDtoByPacketId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="packetId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketDtoByPacketIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetPacketDtoByPacketIdResult" nillable="true" type="q3:PacketDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketIdAround">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="packetId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="durationTime" type="q4:duration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketIdAroundResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetPacketIdAroundResult" nillable="true" type="q5:ArrayOfPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketIdAfter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="packetId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="afterTime" type="q6:duration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketIdAfterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetPacketIdAfterResult" nillable="true" type="q7:ArrayOfPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketDtoAfter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="packetId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="afterTime" type="q8:duration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPacketDtoAfterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetPacketDtoAfterResult" nillable="true" type="q9:ArrayOfPacketDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAckRequest">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAckRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetPendingAckRequestResult" nillable="true" type="q10:ArrayOfRequestAckCommandMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAckRequestNyImeiAndMessageType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAckRequestNyImeiAndMessageTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetPendingAckRequestNyImeiAndMessageTypeResult" nillable="true" type="q11:ArrayOfRequestAckCommandMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveAckRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveAckRequestResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

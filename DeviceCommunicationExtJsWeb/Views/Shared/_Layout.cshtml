@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title (v.2.11)</title>
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")">
+
+    <link href="@Url.Content("~/Scripts/extjs/resources/css/ext-standard-scoped.css")" rel="stylesheet" type="text/css" />
+
+    <link href="@Url.Content("~/Content/icons.css")" rel="stylesheet" type="text/css" />
+
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/dateFormat.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/extjs/bootstrap.js")" type="text/javascript"></script>
+
+    <style rel="stylesheet">
+        .geopoint { background-color:#99FFCC; }
+        .start-journey { background-color:#00FF00; }
+        .journey-summary { background-color:#FF9479; }
+        .geo-fence-alert { background-color:#FFFF99; }
+        .button-triggered { background-color:#FFCC66; }
+
+        .obd-dtc-codes-alert { background-color:#CC99FF; }
+
+        .histogram-bin-raw-data { background-color:#38B8BF; }
+        .impact-alert-1 { background-color:#a30000; }
+        .impact-alert-2 { background-color:#ff4753; }
+    </style>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23731666-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</head>
+
+<body>
+    @RenderBody()
+</body>
+</html>
+
+
+@RenderSection("script", false)
+
+<script>
+    var renderMsgColor = function (value, metadata) {
+        var height = "height:23px;";
+        if (value == "GoodNight") {
+            metadata.style = "background-color:#000000;color:#eeeded;" + height;
+        }
+        if (value == "GoodMorning") {
+            metadata.style = "background-color:#ffff24;" + height;
+        }
+        if (value == "GeoPoint") {
+            metadata.style = "background-color:#99FFCC;" + height;
+        }
+        if (value == "StartJourney") {
+            metadata.style = "background-color:#00FF00;" + height;
+        }
+        if (value == "JourneySummary") {
+            metadata.style = "background-color:#fc88bc;" + height;
+        }
+        if (value == "GeoFenceAlert") {
+            metadata.style = "background-color:#FFFF99;" + height;
+        }
+        if (value == "ButtonTriggered") {
+            metadata.style = "background-color:#FFCC66;" + height;
+        }
+        if (value == "ObdDtcCodesAlert") {
+            metadata.tdAttr = 'data-qtip = "You can double click!"';
+            metadata.style = "background-color:#CC99FF;" + height;
+        }
+        if (value == "ObdCore") {
+            metadata.tdAttr = 'data-qtip = "You can double click!"';
+            metadata.style = "background-color:#e3c7ff;" + height;
+        }
+        if (value == "HistogramBinRawData") {
+            metadata.tdAttr = 'data-qtip = "You can double click!"';
+            metadata.style = "background-color:#38B8BF;" + height;
+        }
+        if (value === "ImpactAlert1Array") {
+            metadata.tdAttr = 'data-qtip = "You can double click!"';
+            metadata.style = "background-color:#a30000;color:#e8e3e5;" + height;
+        }
+        if (value === "ImpactAlert2Array") {
+            metadata.tdAttr = 'data-qtip = "You can double click!"';
+            metadata.style = "background-color:#ff4753;color:#e8e3e5;" + height;
+        }
+        if (value == "GpsAwakeArray") {
+            metadata.tdAttr = 'data-qtip = "You can double click!"';
+            metadata.style = "background-color:#c1c68b;" + height;
+        }
+        return value;
+    }
+    </script>

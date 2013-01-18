@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimulationScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Messages>
+    <Message xsi:type="StartJourneyMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>StartJourney</MessageType>
+      <Seq>312</Seq>
+      <HeaderTime>2012-02-28T06:47:45</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AjgBFtEi1elAATiRPQ8EEAEFAFZPJKsD</UdpPacket>
+      <CreateDate>2012-02-28T14:25:56</CreateDate>
+      <PacketId>b738fd65-4682-4e58-b965-9d598d4763c3</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8224</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.233.85</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <JourneyId>5</JourneyId>
+    </Message>
+    <Message xsi:type="GprsStatsMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GprsStats</MessageType>
+      <Seq>311</Seq>
+      <HeaderTime>2012-02-27T18:19:44</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AjcBFtEi1elAAThAjg4EAwDziQ4EAAMAPo4OBAA1ACMAADYAIwAANwABAAA4AAEAADkAgAkAAEAAYAQAAEEAIAAAAEIAkAcAAEMAAAAARAAAAABFAAAAAEYA////RwD///9IAP///0kA////UAD///9RAP///yoBwu0D</UdpPacket>
+      <CreateDate>2012-02-28T01:19:52</CreateDate>
+      <PacketId>30c39fb6-da70-484e-9c83-239ec3de64f2</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>8211</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.232.7</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UtcTimeStartToRecordingData>2012-02-27T18:01:23</UtcTimeStartToRecordingData>
+      <UtcTimeEndToRecordingData>2012-02-27T18:19:42</UtcTimeEndToRecordingData>
+      <NumberOfUdpPacketsSentForACertainPeriod>35</NumberOfUdpPacketsSentForACertainPeriod>
+      <NumberOfUdpPacketsReceivedForACertainPeriod>35</NumberOfUdpPacketsReceivedForACertainPeriod>
+      <NumberOfTcpPacketsSentForACertainPeriod>1</NumberOfTcpPacketsSentForACertainPeriod>
+      <NumberOfTcpPacketsReceivedForACertainPeriod>1</NumberOfTcpPacketsReceivedForACertainPeriod>
+      <NumberOfUdpBytesUploadedForACertainPeriod>2432</NumberOfUdpBytesUploadedForACertainPeriod>
+      <NumberOfUdpBytesDownloadedForACertainPeriod>1120</NumberOfUdpBytesDownloadedForACertainPeriod>
+      <NumberOfTcpBytesUploadedForACertainPeriod>32</NumberOfTcpBytesUploadedForACertainPeriod>
+      <NumberOfTcpBytesDownloadedForACertainPeriod>1936</NumberOfTcpBytesDownloadedForACertainPeriod>
+      <NumberOfRetriesUdpPacketsForACertainPeriod>0</NumberOfRetriesUdpPacketsForACertainPeriod>
+      <NumberOfRetriesTcpPacketsForACertainPeriod>0</NumberOfRetriesTcpPacketsForACertainPeriod>
+      <NumberOfTcpPacketTimeoutForACertainPeriod>0</NumberOfTcpPacketTimeoutForACertainPeriod>
+      <NumberOfPdpSessionsActivatedForACertainPeriod>16777215</NumberOfPdpSessionsActivatedForACertainPeriod>
+      <NumberOfPdpSessionsDeActivatedForACertainPeriod>16777215</NumberOfPdpSessionsDeActivatedForACertainPeriod>
+      <NumberOfPdpSessonsTimeoutForACertainPeriod>16777215</NumberOfPdpSessonsTimeoutForACertainPeriod>
+      <NumberOfSmsSentForACertainPeriod>16777215</NumberOfSmsSentForACertainPeriod>
+      <NumberOfSmsReceivedForACertainPeriod>16777215</NumberOfSmsReceivedForACertainPeriod>
+      <NumberOfMessagesNotYetAcknowledgeByServerYetForACertainPeriod>16777215</NumberOfMessagesNotYetAcknowledgeByServerYetForACertainPeriod>
+    </Message>
+    <Message xsi:type="GoodNightMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GoodNight</MessageType>
+      <Seq>310</Seq>
+      <HeaderTime>2012-02-27T18:19:43</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AjYBFtEi1elAATg/jg4EAQAvmrnQAw==</UdpPacket>
+      <CreateDate>2012-02-28T01:19:56</CreateDate>
+      <PacketId>33e7919d-3bc3-4621-bb25-f43bd322f2a4</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>1</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.232.7</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <DataByte>0</DataByte>
+    </Message>
+    <Message xsi:type="GeoPointMessage">
+      <Imei>352848024097046</Imei>
+      <MessageType>GeoPoint</MessageType>
+      <Seq>309</Seq>
+      <HeaderTime>2012-02-27T18:19:42</HeaderTime>
+      <Version>56</Version>
+      <UdpPacket>AjUBFtEi1elAATg+jg4EBwAEAD+ODgQAC2UQHGucQgVwAwKtAARz145qAw==</UdpPacket>
+      <CreateDate>2012-02-28T01:20:00</CreateDate>
+      <PacketId>15e2cdd0-b9f4-4610-b8c1-5b080b7de531</PacketId>
+      <DeviceMode>Active</DeviceMode>
+      <Id>7</Id>
+      <TotalSeq>0</TotalSeq>
+      <ServerTime>0001-01-01T00:00:00</ServerTime>
+      <SourceIP>178.197.232.7</SourceIP>
+      <SourcePort>0</SourcePort>
+      <Priority>0</Priority>
+      <ServerId>0</ServerId>
+      <UniqueJouneyId>4</UniqueJouneyId>
+      <UtcTime>2012-02-27T18:19:43</UtcTime>
+      <Latitude>47.0836491</Latitude>
+      <Longitude>8.8251499</Longitude>
+      <Altitude>880</Altitude>
+      <GroundSpeed>2</GroundSpeed>
+      <Heading>173</Heading>
+      <NumberOfSatellitesUsed>4</NumberOfSatellitesUsed>
+      <StartJney xsi:nil="true" />
+      <MessageHeaderTime xsi:nil="true" />
+      <Delta>0</Delta>
+      <TimeDifferenceSeconds>0</TimeDifferenceSeconds>
+      <ImpliedVelocity>0</ImpliedVelocity>
+      <MapId xsi:nil="true" />
+      <LocalUtcTime xsi:nil="true" />
+    </Message>
+  </Messages>
+</SimulationScript>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" />
+  <xs:complexType name="PacketDto">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="MessageType" type="q1:MessageType" />
+      <xs:element minOccurs="0" name="PacketId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawPacket" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PacketDto" nillable="true" type="tns:PacketDto" />
+  <xs:complexType name="ArrayOfPacketDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PacketDto" nillable="true" type="tns:PacketDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPacketDto" nillable="true" type="tns:ArrayOfPacketDto" />
+</xs:schema>

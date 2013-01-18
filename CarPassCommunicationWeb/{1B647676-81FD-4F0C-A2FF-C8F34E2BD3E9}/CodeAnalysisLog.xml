@@ -1,0 +1,1698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="D:\Documents and Settings\parinya.c.CARPASSAD\Local Settings\Temp\tmp20C.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="CarPassCommunicationService" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">'CarPassCommunicationService' should be declared inside a namespace.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\App_Code" File="CarPassCommunicationService.cs" Line="23">In method 'CarPassCommunicationService.CarPassCommunicationService()', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDeviceByDeviceID(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\App_Code" File="CarPassCommunicationService.cs" Line="37">Correct the casing of 'ID' in member name 'CarPassCommunicationService.GetDeviceByDeviceID(string)' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLastKnownLocationByDeviceID(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\App_Code" File="CarPassCommunicationService.cs" Line="47">Correct the casing of 'ID' in member name 'CarPassCommunicationService.GetLastKnownLocationByDeviceID(string)' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EventLogEntryModel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">'EventLogEntryModel' should be declared inside a namespace.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Geopoint" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">'Geopoint' should be declared inside a namespace.</Issue>
+          </Message>
+          <Message Id="Geopoint" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Geopoint' in type name 'Geopoint'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IDeviceConf" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">'IDeviceConf' should be declared inside a namespace.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DeviceID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in member name 'IDeviceConf.DeviceID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MessageData" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">'MessageData' should be declared inside a namespace.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="D:\Documents and Settings\parinya.c.CARPASSAD\Local Settings\Temp\tmp20C.tmp.cadir\bin\App_Web_2fp2ncvf.dll">
+   <Modules>
+    <Module Name="app_web_2fp2ncvf.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="DeviceConfTestPage" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#currTab" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="curr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'curr' in member name 'DeviceConfTestPage.currTab' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UCGeofenceConf1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Geofence" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Geofence' in member name 'DeviceConfTestPage.UCGeofenceConf1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DeviceRealtimeTracking" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Realtime" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Realtime' in type name 'DeviceRealtimeTracking'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Geopoint" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Geopoint" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Geopoint' in type name 'Geopoint'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LogViewer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CompareEventLogEntry(EventLogEntryModel,EventLogEntryModel)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="90">In method 'LogViewer.CompareEventLogEntry(EventLogEntryModel, EventLogEntryModel)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+            <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="90">In method 'LogViewer.CompareEventLogEntry(EventLogEntryModel, EventLogEntryModel)', consider providing a more meaningful name than parameter name 'y'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="91">In externally visible method 'LogViewer.CompareEventLogEntry(EventLogEntryModel, EventLogEntryModel)', validate parameter 'x' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="91">In externally visible method 'LogViewer.CompareEventLogEntry(EventLogEntryModel, EventLogEntryModel)', validate parameter 'y' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#doSort(System.Object,System.Web.UI.WebControls.DataGridSortCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="do" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="123">Correct the casing of 'do' in member name 'LogViewer.doSort(object, DataGridSortCommandEventArgs)' by changing it to 'Do'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="124">In externally visible method 'LogViewer.doSort(object, DataGridSortCommandEventArgs)', validate parameter 'e' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#eventlog" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="eventlog" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'eventlog' in member name 'LogViewer.eventlog' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#eventviewer" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="eventviewer" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'eventviewer' in member name 'LogViewer.eventviewer' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#eventviewgrid" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="eventviewgrid" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'eventviewgrid' in member name 'LogViewer.eventviewgrid' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillByDeviceID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="35">Correct the casing of 'ID' in member name 'LogViewer.FillByDeviceID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillByDeviceIDCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="128">Correct the casing of 'ID' in member name 'LogViewer.FillByDeviceIDCmd_Click(object, EventArgs)' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getlogfiles()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="getlogfiles" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="95">Correct the casing of 'getlogfiles' in member name 'LogViewer.getlogfiles()' by changing it to 'Getlogfiles'.</Issue>
+            </Message>
+            <Message Id="getlogfiles" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="95">Correct the spelling of 'getlogfiles' in member name 'LogViewer.getlogfiles()' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GridChange(System.Object,System.Web.UI.WebControls.DataGridPageChangedEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="113">In externally visible method 'LogViewer.GridChange(object, DataGridPageChangedEventArgs)', validate parameter 'e' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#machinename" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="machinename" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'machinename' in member name 'LogViewer.machinename' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#refinesearch" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="refinesearch" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'refinesearch' in member name 'LogViewer.refinesearch' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#refinesearch_click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="click" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="103">Correct the casing of 'click' in member name 'LogViewer.refinesearch_click(object, EventArgs)' by changing it to 'Click'.</Issue>
+            </Message>
+            <Message Id="refinesearch" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="103">Correct the casing of 'refinesearch' in member name 'LogViewer.refinesearch_click(object, EventArgs)' by changing it to 'Refinesearch'.</Issue>
+            </Message>
+            <Message Id="refinesearch" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="LogViewer.aspx.cs" Line="103">Correct the spelling of 'refinesearch' in member name 'LogViewer.refinesearch_click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SortExpression" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'LogViewer.SortExpression' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#whichmachine" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="whichmachine" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'whichmachine' in member name 'LogViewer.whichmachine' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MessageViewer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#MessateTypeText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Messate" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Messate' in member name 'MessageViewer.MessateTypeText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#msgviewgrid" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="msgviewgrid" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'msgviewgrid' in member name 'MessageViewer.msgviewgrid' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="MessageViewer.aspx.cs" Line="19">In method 'MessageViewer.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'service' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="MessageViewer.aspx.cs" Line="43">Method 'MessageViewer.Page_Load(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Exception: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="MessageViewer.aspx.cs" Line="41">Modify 'MessageViewer.Page_Load(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb" File="MessageViewer.aspx.cs" Line="29">Because the behavior of 'string.ToLower()' could vary based on the current user's locale settings, replace this call in 'MessageViewer.Page_Load(object, EventArgs)' with a call to 'string.ToLower(CultureInfo)'. If the result of 'string.ToLower(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="D:\Documents and Settings\parinya.c.CARPASSAD\Local Settings\Temp\tmp20C.tmp.cadir\bin\App_Web_jxxdsnhh.dll">
+   <Modules>
+    <Module Name="app_web_jxxdsnhh.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Confs_UCCommunicationProtocolConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Confs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Confs' in type name 'Confs_UCCommunicationProtocolConf'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DeviceMustSendCheckConfigurationUploadOnHeartbeat" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_DeviceMustSendCheckConfigurationUploadOnHeartbeat()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="65">'Confs_UCCommunicationProtocolConf.DeviceMustSendCheckConfigurationUploadOnHeartbeat.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="14">In method 'Confs_UCCommunicationProtocolConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="47">Method 'Confs_UCCommunicationProtocolConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call CommunicationProtocolConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="21">Method 'Confs_UCCommunicationProtocolConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="43">Method 'Confs_UCCommunicationProtocolConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="45">Modify 'Confs_UCCommunicationProtocolConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="21">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="CommunicationProtocolConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="47">Correct the spelling of the unrecognized token 'CommunicationProtocolConf' in the literal '"Error call CommunicationProtocolConf: "'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="21">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TcpPortNumber" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TcpPortNumber()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="129">'Confs_UCCommunicationProtocolConf.TcpPortNumber.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TcpTimeout" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TcpTimeout()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="85">'Confs_UCCommunicationProtocolConf.TcpTimeout.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#UdpPortNumber" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_UdpPortNumber()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="119">'Confs_UCCommunicationProtocolConf.UdpPortNumber.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#UdpTimeout" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_UdpTimeout()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCCommunicationProtocolConf.ascx.cs" Line="75">'Confs_UCCommunicationProtocolConf.UdpTimeout.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Confs_UCFuelDropConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Confs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Confs' in type name 'Confs_UCFuelDropConf'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DeviceID" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberAbbreviation" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="48">Correct the casing of 'ID' in member name 'Confs_UCFuelDropConf.DeviceID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FuelDropDurationTriggerDefinition" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_FuelDropDurationTriggerDefinition()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="66">'Confs_UCFuelDropConf.FuelDropDurationTriggerDefinition.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#FuelDropRangTriggerDefinition" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_FuelDropRangTriggerDefinition()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="56">'Confs_UCFuelDropConf.FuelDropRangTriggerDefinition.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="14">In method 'Confs_UCFuelDropConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="41">Method 'Confs_UCFuelDropConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call FuelDropConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="21">Method 'Confs_UCFuelDropConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="37">Method 'Confs_UCFuelDropConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="39">Modify 'Confs_UCFuelDropConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="21">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="FuelDropConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="41">Correct the spelling of the unrecognized token 'FuelDropConf' in the literal '"Error call FuelDropConf: "'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCFuelDropConf.ascx.cs" Line="21">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UCAlgorithmConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ComputeDiscrepancyGpsMore" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="231">Correct the spelling of 'Gps' in member name 'UCAlgorithmConf.ComputeDiscrepancyGpsMore' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_ComputeDiscrepancyGpsMore()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="233">'UCAlgorithmConf.ComputeDiscrepancyGpsMore.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ComputeDiscrepancyGpsMoreText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Gps' in member name 'UCAlgorithmConf.ComputeDiscrepancyGpsMoreText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DataDurationUsedFroDeltaVCompution" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Compution" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="221">Correct the spelling of 'Compution' in member name 'UCAlgorithmConf.DataDurationUsedFroDeltaVCompution' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_DataDurationUsedFroDeltaVCompution()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="223">'UCAlgorithmConf.DataDurationUsedFroDeltaVCompution.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#DataDurationUsedFroDeltaVComputionText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Compution" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Compution' in member name 'UCAlgorithmConf.DataDurationUsedFroDeltaVComputionText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeltaSpeed" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_DeltaSpeed()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="183">'UCAlgorithmConf.DeltaSpeed.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#DeltaVChangeThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_DeltaVChangeThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="213">'UCAlgorithmConf.DeltaVChangeThreshold.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GPSGroundSpeedToCalculateEulerAngles_km_h" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GroundSpeed" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="241">The compound word 'GroundSpeed' in member name 'UCAlgorithmConf.GPSGroundSpeedToCalculateEulerAngles_km_h' exists as a discrete term. If your usage is intended to be single word, case it as 'Groundspeed' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="GPS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="241">Correct the casing of 'GPS' in member name 'UCAlgorithmConf.GPSGroundSpeedToCalculateEulerAngles_km_h' by changing it to 'Gps'.</Issue>
+            </Message>
+            <Message Id="h" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="241">Correct the casing of 'h' in member name 'UCAlgorithmConf.GPSGroundSpeedToCalculateEulerAngles_km_h' by changing it to 'H'.</Issue>
+            </Message>
+            <Message Id="km" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="241">Correct the casing of 'km' in member name 'UCAlgorithmConf.GPSGroundSpeedToCalculateEulerAngles_km_h' by changing it to 'KM'.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_GPSGroundSpeedToCalculateEulerAngles_km_h()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="243">'UCAlgorithmConf.GPSGroundSpeedToCalculateEulerAngles_km_h.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GPSGroundSpeedToCalculateEulerAngles_km_hText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GroundSpeed" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'GroundSpeed' in member name 'UCAlgorithmConf.GPSGroundSpeedToCalculateEulerAngles_km_hText' exists as a discrete term. If your usage is intended to be single word, case it as 'Groundspeed' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GPSGroundSpeedToReadObdCoreData_km_h" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GroundSpeed" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="251">The compound word 'GroundSpeed' in member name 'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_h' exists as a discrete term. If your usage is intended to be single word, case it as 'Groundspeed' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="GPS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="251">Correct the casing of 'GPS' in member name 'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_h' by changing it to 'Gps'.</Issue>
+            </Message>
+            <Message Id="h" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="251">Correct the casing of 'h' in member name 'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_h' by changing it to 'H'.</Issue>
+            </Message>
+            <Message Id="km" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="251">Correct the casing of 'km' in member name 'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_h' by changing it to 'KM'.</Issue>
+            </Message>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="251">Correct the spelling of 'Obd' in member name 'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_h' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_GPSGroundSpeedToReadObdCoreData_km_h()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="253">'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_h.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GPSGroundSpeedToReadObdCoreData_km_hText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GroundSpeed" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'GroundSpeed' in member name 'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_hText' exists as a discrete term. If your usage is intended to be single word, case it as 'Groundspeed' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obd' in member name 'UCAlgorithmConf.GPSGroundSpeedToReadObdCoreData_km_hText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Lamda1" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Lamda" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="91">Correct the spelling of 'Lamda' in member name 'UCAlgorithmConf.Lamda1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_Lamda1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="93">'UCAlgorithmConf.Lamda1.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Lamda1Text" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Lamda" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Lamda' in member name 'UCAlgorithmConf.Lamda1Text' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Lamda2" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Lamda" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="101">Correct the spelling of 'Lamda' in member name 'UCAlgorithmConf.Lamda2' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_Lamda2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="103">'UCAlgorithmConf.Lamda2.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Lamda2Text" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Lamda" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Lamda' in member name 'UCAlgorithmConf.Lamda2Text' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="14">In method 'UCAlgorithmConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PhiThetaSize" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_PhiThetaSize()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="193">'UCAlgorithmConf.PhiThetaSize.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#PsiSize" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_PsiSize()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="203">'UCAlgorithmConf.PsiSize.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="73">Method 'UCAlgorithmConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call AlgorithmConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="33">Method 'UCAlgorithmConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="69">Method 'UCAlgorithmConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="71">Modify 'UCAlgorithmConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="AlgorithmConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="73">Correct the spelling of the unrecognized token 'AlgorithmConf' in the literal '"Error call AlgorithmConf: "'.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="33">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="33">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadAndStorePIDx31EverySecond" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dx" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="271">Correct the casing of 'Dx' in member name 'UCAlgorithmConf.ReadAndStorePIDx31EverySecond' by changing it to 'DX'.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_ReadAndStorePIDx31EverySecond()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="273">'UCAlgorithmConf.ReadAndStorePIDx31EverySecond.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ReadFuelGaugeTemperatureEverySecond" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ReadFuelGaugeTemperatureEverySecond()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="283">'UCAlgorithmConf.ReadFuelGaugeTemperatureEverySecond.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#RequestEulerAnglesCalculationEverySecond" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_RequestEulerAnglesCalculationEverySecond()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="263">'UCAlgorithmConf.RequestEulerAnglesCalculationEverySecond.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TAveraging" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TAveraging()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="83">'UCAlgorithmConf.TAveraging.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TBraking" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TBraking()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="163">'UCAlgorithmConf.TBraking.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TDriving" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TDriving()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="143">'UCAlgorithmConf.TDriving.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ThresholdHigh" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ThresholdHigh()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="123">'UCAlgorithmConf.ThresholdHigh.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ThresholdLow" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ThresholdLow()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="113">'UCAlgorithmConf.ThresholdLow.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ThresholdSpeed" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ThresholdSpeed()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="173">'UCAlgorithmConf.ThresholdSpeed.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TSleep" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TSleep()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="153">'UCAlgorithmConf.TSleep.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TStandstill" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TStandstill()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCAlgorithmConf.ascx.cs" Line="133">'UCAlgorithmConf.TStandstill.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UCGeofenceConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Geofence" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Geofence' in type name 'UCGeofenceConf'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#GeoFenceId" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceId()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="66">'UCGeofenceConf.GeoFenceId.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceLatitude" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceLatitude()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Decimal.TryParse(System.String,System.Decimal@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="84">'UCGeofenceConf.GeoFenceLatitude.get()' calls 'decimal.TryParse(string, out decimal)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceLatitudeUpperRight" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceLatitudeUpperRight()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Decimal.TryParse(System.String,System.Decimal@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="102">'UCGeofenceConf.GeoFenceLatitudeUpperRight.get()' calls 'decimal.TryParse(string, out decimal)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceLongitude" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceLongitude()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Decimal.TryParse(System.String,System.Decimal@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="93">'UCGeofenceConf.GeoFenceLongitude.get()' calls 'decimal.TryParse(string, out decimal)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceLongitudeUpperRight" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceLongitudeUpperRight()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Decimal.TryParse(System.String,System.Decimal@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="111">'UCGeofenceConf.GeoFenceLongitudeUpperRight.get()' calls 'decimal.TryParse(string, out decimal)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceRadius" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceRadius()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="120">'UCGeofenceConf.GeoFenceRadius.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceStatus" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceStatus()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="138">'UCGeofenceConf.GeoFenceStatus.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceTriggerRule" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceTriggerRule()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="129">'UCGeofenceConf.GeoFenceTriggerRule.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GeoFenceType" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoFenceType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="75">'UCGeofenceConf.GeoFenceType.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="14">In method 'UCGeofenceConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="48">Method 'UCGeofenceConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call GeoFenceConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="22">Method 'UCGeofenceConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="44">Method 'UCGeofenceConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="46">Modify 'UCGeofenceConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="22">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="GeoFenceConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="48">Correct the spelling of the unrecognized token 'GeoFenceConf' in the literal '"Error call GeoFenceConf: "'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeofenceConf.ascx.cs" Line="22">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UCGeoPointProfileConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GeoPointSpeedThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_GeoPointSpeedThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="76">'UCGeoPointProfileConf.GeoPointSpeedThreshold.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GpsReception" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="164">Correct the spelling of 'Gps' in member name 'UCGeoPointProfileConf.GpsReception' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_GpsReception()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="166">'UCGeoPointProfileConf.GpsReception.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GpsReceptionText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Gps' in member name 'UCGeoPointProfileConf.GpsReceptionText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IntervalAngleTurnInDegrees" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_IntervalAngleTurnInDegrees()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="106">'UCGeoPointProfileConf.IntervalAngleTurnInDegrees.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#IntervalMeters" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_IntervalMeters()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="96">'UCGeoPointProfileConf.IntervalMeters.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#IntervalSecond" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_IntervalSecond()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="86">'UCGeoPointProfileConf.IntervalSecond.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="14">In method 'UCGeoPointProfileConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Profile2RatioGeoPointPercentageUpload" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Profile2RatioGeoPointPercentageUpload()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="156">'UCGeoPointProfileConf.Profile2RatioGeoPointPercentageUpload.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Profile2RatioInterval" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Profile2RatioInterval()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="146">'UCGeoPointProfileConf.Profile2RatioInterval.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Profile2RatioUpload" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_Profile2RatioUpload()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="136">'UCGeoPointProfileConf.Profile2RatioUpload.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ProfileNumber" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ProfileNumber()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="66">'UCGeoPointProfileConf.ProfileNumber.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="56">Method 'UCGeoPointProfileConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call GeoPointProfileConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="26">Method 'UCGeoPointProfileConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="52">Method 'UCGeoPointProfileConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="54">Modify 'UCGeoPointProfileConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="26">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="GeoPointProfileConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="56">Correct the spelling of the unrecognized token 'GeoPointProfileConf' in the literal '"Error call GeoPointProfileConf: "'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="26">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UploadDataEverySecondsIfGps3dFixIsMissing" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="d" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="174">Correct the casing of 'd' in member name 'UCGeoPointProfileConf.UploadDataEverySecondsIfGps3dFixIsMissing' by changing it to 'D'.</Issue>
+            </Message>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="174">Correct the spelling of 'Gps' in member name 'UCGeoPointProfileConf.UploadDataEverySecondsIfGps3dFixIsMissing' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_UploadDataEverySecondsIfGps3dFixIsMissing()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="176">'UCGeoPointProfileConf.UploadDataEverySecondsIfGps3dFixIsMissing.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#UploadDataEverySecondsIfGps3dFixIsMissingText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Gps' in member name 'UCGeoPointProfileConf.UploadDataEverySecondsIfGps3dFixIsMissingText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UploadFrequencyEveryGeopoints" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Geopoints" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="114">Correct the spelling of 'Geopoints' in member name 'UCGeoPointProfileConf.UploadFrequencyEveryGeopoints' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_UploadFrequencyEveryGeopoints()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="116">'UCGeoPointProfileConf.UploadFrequencyEveryGeopoints.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#UploadFrequencyEveryGeopointsText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Geopoints" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Geopoints' in member name 'UCGeoPointProfileConf.UploadFrequencyEveryGeopointsText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UploadFrequencyEveryHours" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_UploadFrequencyEveryHours()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCGeoPointProfileConf.ascx.cs" Line="126">'UCGeoPointProfileConf.UploadFrequencyEveryHours.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UCHistogramsConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HistogramCapture" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_HistogramCapture()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="58">'UCHistogramsConf.HistogramCapture.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="14">In method 'UCHistogramsConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="48">Method 'UCHistogramsConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call HistogramsConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="27">Method 'UCHistogramsConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="44">Method 'UCHistogramsConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="46">Modify 'UCHistogramsConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="27">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="HistogramsConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="48">Correct the spelling of the unrecognized token 'HistogramsConf' in the literal '"Error call HistogramsConf: "'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="27">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UploadEveryDays" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_UploadEveryDays()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="78">'UCHistogramsConf.UploadEveryDays.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#UploadWhenBinCountsReachThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_UploadWhenBinCountsReachThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCHistogramsConf.ascx.cs" Line="68">'UCHistogramsConf.UploadWhenBinCountsReachThreshold.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UCIdlingConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="14">In method 'UCIdlingConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="50">Method 'UCIdlingConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call IdlingConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="26">Method 'UCIdlingConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="46">Method 'UCIdlingConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="48">Modify 'UCIdlingConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="26">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="IdlingConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="50">Correct the spelling of the unrecognized token 'IdlingConf' in the literal '"Error call IdlingConf: "'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="26">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StartIdlingDurationThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_StartIdlingDurationThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="80">'UCIdlingConf.StartIdlingDurationThreshold.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#StartIdlingGpsFallbackThresholdSpeed" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="68">Correct the spelling of 'Gps' in member name 'UCIdlingConf.StartIdlingGpsFallbackThresholdSpeed' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_StartIdlingGpsFallbackThresholdSpeed()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="70">'UCIdlingConf.StartIdlingGpsFallbackThresholdSpeed.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#StartIdlingGpsFallbackThresholdSpeedText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Gps' in member name 'UCIdlingConf.StartIdlingGpsFallbackThresholdSpeedText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StartIdlingObdThresholdSpeed" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="58">Correct the spelling of 'Obd' in member name 'UCIdlingConf.StartIdlingObdThresholdSpeed' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_StartIdlingObdThresholdSpeed()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="60">'UCIdlingConf.StartIdlingObdThresholdSpeed.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#StartIdlingObdThresholdSpeedText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obd' in member name 'UCIdlingConf.StartIdlingObdThresholdSpeedText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StopIdlingGpsSpeedThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="108">Correct the spelling of 'Gps' in member name 'UCIdlingConf.StopIdlingGpsSpeedThreshold' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_StopIdlingGpsSpeedThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="110">'UCIdlingConf.StopIdlingGpsSpeedThreshold.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#StopIdlingGpsSpeedThresholdText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Gps" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Gps' in member name 'UCIdlingConf.StopIdlingGpsSpeedThresholdText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StopIdlingObdRpmThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="88">Correct the spelling of 'Obd' in member name 'UCIdlingConf.StopIdlingObdRpmThreshold' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_StopIdlingObdRpmThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="90">'UCIdlingConf.StopIdlingObdRpmThreshold.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#StopIdlingObdRpmThresholdText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obd' in member name 'UCIdlingConf.StopIdlingObdRpmThresholdText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StopIdlingObdSpeedThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="98">Correct the spelling of 'Obd' in member name 'UCIdlingConf.StopIdlingObdSpeedThreshold' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_StopIdlingObdSpeedThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt16.TryParse(System.String,System.UInt16@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCIdlingConf.ascx.cs" Line="100">'UCIdlingConf.StopIdlingObdSpeedThreshold.get()' calls 'ushort.TryParse(string, out ushort)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#StopIdlingObdSpeedThresholdText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Obd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Obd' in member name 'UCIdlingConf.StopIdlingObdSpeedThresholdText' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UCTowingConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="14">In method 'UCTowingConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="42">Method 'UCTowingConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call TowingConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="22">Method 'UCTowingConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="38">Method 'UCTowingConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="40">Modify 'UCTowingConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="22">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="22">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+            <Message Id="TowingConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="42">Correct the spelling of the unrecognized token 'TowingConf' in the literal '"Error call TowingConf: "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TowingGroundSpeedThreshold" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GroundSpeed" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="65">The compound word 'GroundSpeed' in member name 'UCTowingConf.TowingGroundSpeedThreshold' exists as a discrete term. If your usage is intended to be single word, case it as 'Groundspeed' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_TowingGroundSpeedThreshold()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="67">'UCTowingConf.TowingGroundSpeedThreshold.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TowingGroundSpeedThresholdText" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GroundSpeed" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'GroundSpeed' in member name 'UCTowingConf.TowingGroundSpeedThresholdText' exists as a discrete term. If your usage is intended to be single word, case it as 'Groundspeed' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TowingStatusConfigure" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TowingStatusConfigure()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCTowingConf.ascx.cs" Line="57">'UCTowingConf.TowingStatusConfigure.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UCVehicleBatteryConf" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#MinimumTriggerDurationForTrigger1" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_MinimumTriggerDurationForTrigger1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="100">'UCVehicleBatteryConf.MinimumTriggerDurationForTrigger1.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#MinimumTriggerDurationForTrigger2" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_MinimumTriggerDurationForTrigger2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.UInt32.TryParse(System.String,System.UInt32@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="110">'UCVehicleBatteryConf.MinimumTriggerDurationForTrigger2.get()' calls 'uint.TryParse(string, out uint)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="14">In method 'UCVehicleBatteryConf.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'this.dcService' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PushUdpRequestCmd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Literal.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="50">Method 'UCVehicleBatteryConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Error call VehicleBatteryConf: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="26">Method 'UCVehicleBatteryConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Invalide Device ID ,  at CarPass system.".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="46">Method 'UCVehicleBatteryConf.PushUdpRequestCmd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Literal.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Push TCP Result: ".</Issue>
+            </Message>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="48">Modify 'UCVehicleBatteryConf.PushUdpRequestCmd_Click(object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+            </Message>
+            <Message Id="CarPass" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="26">Correct the spelling of the unrecognized token 'CarPass' in the literal '" at CarPass system."'.</Issue>
+            </Message>
+            <Message Id="Invalide" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="26">Correct the spelling of the unrecognized token 'Invalide' in the literal '"Invalide Device ID "'.</Issue>
+            </Message>
+            <Message Id="VehicleBatteryConf" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="50">Correct the spelling of the unrecognized token 'VehicleBatteryConf' in the literal '"Error call VehicleBatteryConf: "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TriggerVoltage1Lower" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TriggerVoltage1Lower()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="70">'UCVehicleBatteryConf.TriggerVoltage1Lower.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TriggerVoltage1Upper" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TriggerVoltage1Upper()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="60">'UCVehicleBatteryConf.TriggerVoltage1Upper.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TriggerVoltage2Lower" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TriggerVoltage2Lower()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="90">'UCVehicleBatteryConf.TriggerVoltage2Lower.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#TriggerVoltage2Upper" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_TriggerVoltage2Upper()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Byte.TryParse(System.String,System.Byte@)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2011-04-11 03:37:43Z" FixCategory="NonBreaking">
+               <Issue Name="TryParse" Certainty="95" Level="Warning" Path="d:\Doc1\back\Servers\CarPassCommunicationWeb\Confs" File="UCVehicleBatteryConf.ascx.cs" Line="80">'UCVehicleBatteryConf.TriggerVoltage2Upper.get()' calls 'byte.TryParse(string, out byte)' but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DeclareTypesInNamespaces" Category="Microsoft.Design" CheckId="CA1050">
+   <Name>Declare types in namespaces</Name>
+   <Description>A type should be defined inside a namespace to avoid duplication.</Description>
+   <Resolution Name="Default">{0} should be declared inside a namespace.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182134(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>Do not ignore method results</Name>
+   <Description>The result of methods that return new instances of strings should be assigned to a variable and subsequently used. If the result of a method that creates a new object, such as String.ToLower(), is not assigned to a variable, the call is wasted.</Description>
+   <Resolution Name="TryParse">{0} calls {1} but does not explicitly check whether the conversion succeeded. Either use the return value in a conditional statement or verify that the call site expects that the out argument will be set to the default value when the conversion fails.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="MemberAbbreviation">Correct the casing of '{0}' in member name {1} by changing it to '{2}'. '{2}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>Specify CultureInfo</Name>
+   <Description>If an overload exists that takes a CultureInfo argument, it should always be called in favor of an overload that does not. The CultureInfo type contains culture-specific information required for performing numeric and string operations, such as casing, formatting, and string comparisons. In scenarios where conversion and parsing behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182189(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<script src="@Url.Content("~/Scripts/pouch.alpha.js")" type="text/javascript"></script>
+
+<script>
+    $(function () {
+        var authors = [
+                { _id: '1', name: 'Dale Harvey', commits: 253 },
+                { _id: '2', name: 'Mikeal Rogers', commits: 42 },
+                { _id: '3', name: 'Johannes J. Schmidt', commits: 13 },
+                { _id: '4', name: 'Randall Leeds', commits: 9 }
+        ];
+
+        Pouch('idb://authors', function (err, db) {
+            db.bulkDocs({ docs: authors }, function (err, results) {
+
+            });
+
+            db.put({ _id: '1', title: 'Rock and Roll Heart' }, function (err, response) {
+                // Response:
+                // {
+                //   "ok": true,
+                //   "id": "mydoc",
+                //   "rev": "1-A6157A5EA545C99B00FF904EEF05FD9F"
+                // }
+            })
+
+            db.get('1', function (err, doc) {
+                console.log(doc.name + " " + doc.commits);
+                ++doc.commits;
+                db.put(doc);
+            });
+
+        });
+
+    });
+</script>

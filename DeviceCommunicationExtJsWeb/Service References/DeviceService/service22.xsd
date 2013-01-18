@@ -1,0 +1,1880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="DeployOtaHeaderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="otaHeaderRequest" nillable="true" type="q1:OtaHeaderRequestMessage" />
+        <xs:element minOccurs="0" name="firmeware" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployOtaHeaderRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployOtaHeaderRequestResult" nillable="true" type="q2:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployOtaHeaderRequestFromFilePath">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="otaHeaderRequest" nillable="true" type="q3:OtaHeaderRequestMessage" />
+        <xs:element minOccurs="0" name="otaTempFilePath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployOtaHeaderRequestFromFilePathResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployOtaHeaderRequestFromFilePathResult" nillable="true" type="q4:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployOtaHeaderRequestFromGridFs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="otaHeaderRequest" nillable="true" type="q5:OtaHeaderRequestMessage" />
+        <xs:element minOccurs="0" name="databaseName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="otaMd5" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployOtaHeaderRequestFromGridFsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployOtaHeaderRequestFromGridFsResult" nillable="true" type="q6:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeployOtaState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="beginRequestUpdateOtaDay" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeployOtaStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetDeployOtaStateResult" nillable="true" type="q7:DeployOtaStateResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Deploy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSnOrImei" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="requestId" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployResult" nillable="true" type="q8:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployAlgorithmConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newAlgoConf" nillable="true" type="q9:AlgorithmConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployAlgorithmConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployAlgorithmConfResult" nillable="true" type="q10:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployHistogramsConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newHistogramsConf" nillable="true" type="q11:HistogramsConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployHistogramsConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployHistogramsConfResult" nillable="true" type="q12:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployHistogramsBinConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newHistogramsBinConf" nillable="true" type="q13:HistogramsBinConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployHistogramsBinConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployHistogramsBinConfResult" nillable="true" type="q14:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployTowingConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newTowingConf" nillable="true" type="q15:TowingConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployTowingConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployTowingConfResult" nillable="true" type="q16:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployObdConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newObdConf" nillable="true" type="q17:ObdConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployObdConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployObdConfResult" nillable="true" type="q18:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployObdProtocolConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newObdProtocolConf" nillable="true" type="q19:ObdProtocolConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployObdProtocolConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployObdProtocolConfResult" nillable="true" type="q20:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployGeoFenceConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newGeoFenceConf" nillable="true" type="q21:GeoFenceConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployGeoFenceConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployGeoFenceConfResult" nillable="true" type="q22:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployVehicleBatteryConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newVehicleBatteryConf" nillable="true" type="q23:VehicleBatteryConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployVehicleBatteryConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployVehicleBatteryConfResult" nillable="true" type="q24:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployFuelDropConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newFuelDropConf" nillable="true" type="q25:FuelDropConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployFuelDropConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployFuelDropConfResult" nillable="true" type="q26:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployIdlingConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newIdlingConf" nillable="true" type="q27:IdlingConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployIdlingConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployIdlingConfResult" nillable="true" type="q28:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployGeoPointProfileConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newGeoPointProfileConf" nillable="true" type="q29:GeoPointProfileConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployGeoPointProfileConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployGeoPointProfileConfResult" nillable="true" type="q30:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployCommunicationProtocolConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newCommunicationProtocolConf" nillable="true" type="q31:CommunicationProtocolConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployCommunicationProtocolConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployCommunicationProtocolConfResult" nillable="true" type="q32:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployEngineStartStopConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newEngineStartStopConf" nillable="true" type="q33:EngineStartStopConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployEngineStartStopConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployEngineStartStopConfResult" nillable="true" type="q34:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployGps3DFixConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newGps3DFixConf" nillable="true" type="q35:Gps3DFixConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployGps3DFixConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployGps3DFixConfResult" nillable="true" type="q36:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployJourneySummaryConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newJourneySummaryConf" nillable="true" type="q37:JourneySummaryConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployJourneySummaryConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployJourneySummaryConfResult" nillable="true" type="q38:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployAGpsConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newAGpsConf" nillable="true" type="q39:AGpsConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployAGpsConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployAGpsConfResult" nillable="true" type="q40:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployAesKeyConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newAesKeyConf" nillable="true" type="q41:AesKeyConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployAesKeyConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployAesKeyConfResult" nillable="true" type="q42:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployInternalBatteryConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newInternalBatteryConf" nillable="true" type="q43:InternalBatteryConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployInternalBatteryConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployInternalBatteryConfResult" nillable="true" type="q44:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployTiltAlertConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newTiltAlertConf" nillable="true" type="q45:TiltAlertConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployTiltAlertConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployTiltAlertConfResult" nillable="true" type="q46:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployStationeryAlertConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newStationeryAlertConf" nillable="true" type="q47:StationeryAlertConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeployStationeryAlertConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeployStationeryAlertConfResult" nillable="true" type="q48:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingReqConfAndCmd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingReqConfAndCmdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetPendingReqConfAndCmdResult" nillable="true" type="q49:ArrayOfReqConfAndCmd" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployAlgorithmConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q50:AlgorithmConfMessage" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q51:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployAlgorithmConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployAlgorithmConfResult" nillable="true" type="q52:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployHistogramsConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q53:HistogramsConfMessage" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q54:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployHistogramsConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployHistogramsConfResult" nillable="true" type="q55:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployTowingConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q56:TowingConfMessage" />
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q57:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployTowingConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployTowingConfResult" nillable="true" type="q58:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployVehicleBatteryConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q59:VehicleBatteryConfMessage" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q60:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployVehicleBatteryConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployVehicleBatteryConfResult" nillable="true" type="q61:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployFuelDropConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q62:FuelDropConfMessage" />
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q63:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployFuelDropConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployFuelDropConfResult" nillable="true" type="q64:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployIdlingConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q65:IdlingConfMessage" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q66:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployIdlingConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployIdlingConfResult" nillable="true" type="q67:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployGeoPointProfileConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q68:GeoPointProfileConfMessage" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q69:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployGeoPointProfileConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployGeoPointProfileConfResult" nillable="true" type="q70:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployCommunicationProtocolConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q71:CommunicationProtocolConfMessage" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q72:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployCommunicationProtocolConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployCommunicationProtocolConfResult" nillable="true" type="q73:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployEngineStartStopConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q74:EngineStartStopConfMessage" />
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q75:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployEngineStartStopConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployEngineStartStopConfResult" nillable="true" type="q76:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployGps3DFixConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q77:Gps3DFixConfMessage" />
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q78:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployGps3DFixConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployGps3DFixConfResult" nillable="true" type="q79:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployJourneySummaryConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q80:JourneySummaryConfMessage" />
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q81:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployJourneySummaryConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployJourneySummaryConfResult" nillable="true" type="q82:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployAGpsConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q83:AGpsConfMessage" />
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q84:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployAGpsConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployAGpsConfResult" nillable="true" type="q85:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployInternalBatteryConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q86:InternalBatteryConfMessage" />
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q87:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployInternalBatteryConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployInternalBatteryConfResult" nillable="true" type="q88:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployTiltAlertConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q89:TiltAlertConfMessage" />
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q90:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployTiltAlertConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployTiltAlertConfResult" nillable="true" type="q91:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployObdConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q92:ObdConfMessage" />
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q93:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployObdConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployObdConfResult" nillable="true" type="q94:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployHistogramsBinConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newConf" nillable="true" type="q95:HistogramsBinConfMessage" />
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deployScheduleElement" nillable="true" type="q96:DeployScheduleElement" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScheduleDeployHistogramsBinConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ScheduleDeployHistogramsBinConfResult" nillable="true" type="q97:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBinCountHistogram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q98:DeleteBinCountHistogramMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBinCountHistogramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="DeleteBinCountHistogramResult" nillable="true" type="q99:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadHistogram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q100:ForceUploadHistogramMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadHistogramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceUploadHistogramResult" nillable="true" type="q101:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestObdData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q102:RequestObdDataMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestObdDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="RequestObdDataResult" nillable="true" type="q103:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestLocationUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q104:RequestLocationUpdateMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestLocationUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="RequestLocationUpdateResult" nillable="true" type="q105:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadGeoPointLast48Hrs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q106:ForceUploadGeoPointLast48HrsMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadGeoPointLast48HrsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceUploadGeoPointLast48HrsResult" nillable="true" type="q107:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadGeoPointInMemory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q108:ForceUploadGeoPointInMemoryMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadGeoPointInMemoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceUploadGeoPointInMemoryResult" nillable="true" type="q109:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadLastGeoPointsInMemory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q110:ForceUploadLastGeoPointsInMemoryMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadLastGeoPointsInMemoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceUploadLastGeoPointsInMemoryResult" nillable="true" type="q111:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadRawAcceleration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q112:ForceUploadRawAccelerationMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadRawAccelerationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceUploadRawAccelerationResult" nillable="true" type="q113:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EncryptionOption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q114:EncryptionOptionMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EncryptionOptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="EncryptionOptionResult" nillable="true" type="q115:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompressionOption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q116:CompressionOptionMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompressionOptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="CompressionOptionResult" nillable="true" type="q117:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceDownloadOfAGps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q118:ForceDownloadOfAgpsMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceDownloadOfAGpsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceDownloadOfAGpsResult" nillable="true" type="q119:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceRequestButton">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q120:ForceRequestButtonMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceRequestButtonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceRequestButtonResult" nillable="true" type="q121:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PairDeviceAndDongle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q122:PairDeviceAndDongleMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PairDeviceAndDongleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="PairDeviceAndDongleResult" nillable="true" type="q123:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearDataOnDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q124:ClearDataOnDeviceMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearDataOnDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ClearDataOnDeviceResult" nillable="true" type="q125:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToChangeProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q126:ForceToChangeProfileMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToChangeProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceToChangeProfileResult" nillable="true" type="q127:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToUploadHealthAndInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q128:ForceToUploadHealthAndInfoMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToUploadHealthAndInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceToUploadHealthAndInfoResult" nillable="true" type="q129:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestGsmCellDataOnMemory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q130="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q130:RequestGsmCellDataOnMemoryMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestGsmCellDataOnMemoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="RequestGsmCellDataOnMemoryResult" nillable="true" type="q131:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToChangeGpsReceptionOption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q132:ForceToChangeGpsReceptionOptionMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToChangeGpsReceptionOptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceToChangeGpsReceptionOptionResult" nillable="true" type="q133:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateKeyfobProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q134="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q134:ActivateKeyfobProfileMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateKeyfobProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ActivateKeyfobProfileResult" nillable="true" type="q135:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadPid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q136="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q136:ForceUploadPidMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceUploadPidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceUploadPidResult" nillable="true" type="q137:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToDumpFwConfigurationAndProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="msg" nillable="true" type="q138:ForceToDumpFwConfigurationAndProfileMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToDumpFwConfigurationAndProfileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceToDumpFwConfigurationAndProfileResult" nillable="true" type="q139:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToManageMileageCalculation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eventIdentifier" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="mileageSetEffected" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="startStopAccruing" type="xs:unsignedByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForceToManageMileageCalculationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="ForceToManageMileageCalculationResult" nillable="true" type="q140:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancleRequestId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resuestId" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancleRequestIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="CancleRequestIdResult" nillable="true" type="q141:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancleRequestIdByDeviceSn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resuestId" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancleRequestIdByDeviceSnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="CancleRequestIdByDeviceSnResult" nillable="true" type="q142:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeofenceOverlapWith">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="newGeoFenceConf" nillable="true" type="q143:GeoFenceConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeofenceOverlapWithResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetGeofenceOverlapWithResult" nillable="true" type="q144:ArrayOfGeoFenceConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeployedGeoFenceConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeployedGeoFenceConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetDeployedGeoFenceConfResult" nillable="true" type="q145:ArrayOfGeoFenceConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeployingGeoFenceConf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeployingGeoFenceConfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetDeployingGeoFenceConfResult" nillable="true" type="q146:ArrayOfGeoFenceConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceByImei">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceByImeiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetDeviceByImeiResult" nillable="true" type="q147:DeviceDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeviceExistByDeviceSN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeviceExistByDeviceSNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeviceExistByDeviceSNResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJourneyGpsFixAlertByDeviceSNAndJourneyList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q148="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="journeyIdList" nillable="true" type="q148:ArrayOfunsignedShort" />
+        <xs:element minOccurs="0" name="from" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="to" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJourneyGpsFixAlertByDeviceSNAndJourneyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetJourneyGpsFixAlertByDeviceSNAndJourneyListResult" nillable="true" type="q149:ArrayOfJourneyGpsFixAlertDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentHealthInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentHealthInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetCurrentHealthInfoResult" nillable="true" type="q150:HealthInfoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentObdCore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentObdCoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetCurrentObdCoreResult" nillable="true" type="q151:ObdCoreDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentJourneySummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentJourneySummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetCurrentJourneySummaryResult" nillable="true" type="q152:JourneySummaryDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentCasingOpeningAlert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentCasingOpeningAlertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetCurrentCasingOpeningAlertResult" nillable="true" type="q153:CasingOpeningAlertMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentGoodMorning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentGoodMorningResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetCurrentGoodMorningResult" nillable="true" type="q154:GoodMorningMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentButtonTriggered">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentButtonTriggeredResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetCurrentButtonTriggeredResult" nillable="true" type="q155:ButtonTriggeredMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentCalibrationInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentCalibrationInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetCurrentCalibrationInformationResult" nillable="true" type="q156:CalibrationInformationMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentGpsAwakeArray">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentGpsAwakeArrayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetCurrentGpsAwakeArrayResult" nillable="true" type="q157:ArrayOfGpsAwakeMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentEngine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentEngineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q158="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetCurrentEngineResult" nillable="true" type="q158:ArrayOfEngineStartStopDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentInternalBatterySoh">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentInternalBatterySohResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q159="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetCurrentInternalBatterySohResult" nillable="true" type="q159:InternalBatterySohMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MustBeUpgrade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MustBeUpgradeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MustBeUpgradeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceConfById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="deviceConfId" nillable="true" type="q160:DeviceConfId" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceConfByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="GetDeviceConfByIdResult" nillable="true" type="q161:DeviceConf" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeoFenceConfByPacketId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="packetId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGeoFenceConfByPacketIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetGeoFenceConfByPacketIdResult" nillable="true" type="q162:GeoFenceConfMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceConfByDeviceSn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="confType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceConfByDeviceSnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q163="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.ValueObjects" minOccurs="0" name="GetDeviceConfByDeviceSnResult" nillable="true" type="q163:DeviceConf" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLastKnownLocationBetweenResult" nillable="true" type="q164:GeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationsBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q165="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="deviceSns" nillable="true" type="q165:ArrayOfstring" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationsBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLastKnownLocationsBetweenResult" nillable="true" type="q166:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLastKnownLocationsBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLastKnownLocationsBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetAllLastKnownLocationsBetweenResult" nillable="true" type="q167:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithHavDistance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="startTrackingTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithHavDistanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q168="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLocationsWithHavDistanceResult" nillable="true" type="q168:GeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDistance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDistanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetDistanceResult" nillable="true" type="q169:ArrayOfMileageDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDistancePerDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDistancePerDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetDistancePerDayResult" nillable="true" type="q170:ArrayOfMileageDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsForSpeedCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element xmlns:q171="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="durationDrive" type="q171:duration" />
+        <xs:element xmlns:q172="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="waitingTime" type="q172:duration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsForSpeedCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLocationsForSpeedCheckResult" nillable="true" type="q173:LocationsForSpeedCheck" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSpeedCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSpeedCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetSpeedCheckResult" nillable="true" type="q174:ArrayOfSpeedCheckDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSpeedCheckByBeginTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="beginTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSpeedCheckByBeginTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetSpeedCheckByBeginTimeResult" nillable="true" type="q175:ArrayOfSpeedCheckDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EndTcpConnection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EndTcpConnectionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonGeoPointGsmInfoByPacketId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="packetId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNonGeoPointGsmInfoByPacketIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q176="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages" minOccurs="0" name="GetNonGeoPointGsmInfoByPacketIdResult" nillable="true" type="q176:ArrayOfNonGeoPointGsmInfoMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q177="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLastKnownLocationResult" nillable="true" type="q177:GeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q178="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="deviceSns" nillable="true" type="q178:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q179="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLastKnownLocationsResult" nillable="true" type="q179:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationByImei">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationByImeiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLastKnownLocationByImeiResult" nillable="true" type="q180:GeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationByTop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="top" type="xs:unsignedByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastKnownLocationByTopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLastKnownLocationByTopResult" nillable="true" type="q181:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsByMeters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="beginTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="limitMeters" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsByMetersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q182="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLocationsByMetersResult" nillable="true" type="q182:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q183="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLocationsBetweenResult" nillable="true" type="q183:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithJourneyCompletedBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithJourneyCompletedBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLocationsWithJourneyCompletedBetweenResult" nillable="true" type="q184:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLocationsWithJourneyCompletedBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLocationsWithJourneyCompletedBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetAllLocationsWithJourneyCompletedBetweenResult" nillable="true" type="q185:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithJourneyCompletedAndUsageBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsWithJourneyCompletedAndUsageBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q186="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLocationsWithJourneyCompletedAndUsageBetweenResult" nillable="true" type="q186:GeoPointHistoryDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsByJourney">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="journeyId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLocationsByJourneyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q187="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetLocationsByJourneyResult" nillable="true" type="q187:ArrayOfGeoPointDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceSnFileterByLastGoodNight">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q188="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="deviceSn" nillable="true" type="q188:ArrayOfstring" />
+        <xs:element minOccurs="0" name="priorHours" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceSnFileterByLastGoodNightResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q189="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDeviceSnFileterByLastGoodNightResult" nillable="true" type="q189:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsDeviceComunicated">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsDeviceComunicatedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsDeviceComunicatedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJourneyInfoBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJourneyInfoBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q190="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetJourneyInfoBetweenResult" nillable="true" type="q190:ArrayOfJourneyDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJourneyInfoByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetJourneyInfoByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q191="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetJourneyInfoByDateResult" nillable="true" type="q191:ArrayOfJourneyDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalDistanceJourneyGroupByBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalDistanceJourneyGroupByBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q192="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetTotalDistanceJourneyGroupByBetweenResult" nillable="true" type="q192:ArrayOfTotalDistanceJourneyDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalDistanceJourneyGroupByDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalDistanceJourneyGroupByDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetTotalDistanceJourneyGroupByDateResult" nillable="true" type="q193:ArrayOfTotalDistanceJourneyDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleUsageInfoPerDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="day" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleUsageInfoPerDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q194="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetVehicleUsageInfoPerDayResult" nillable="true" type="q194:VehicleUsageInfoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleUsageInfoPerMonth">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="month" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleUsageInfoPerMonthResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetVehicleUsageInfoPerMonthResult" nillable="true" type="q195:VehicleUsageInfoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleUsageInfoBetween">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="firstSpeed" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="secondSpeed" type="xs:unsignedByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleUsageInfoBetweenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q196="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetVehicleUsageInfoBetweenResult" nillable="true" type="q196:ArrayOfVehicleUsageInfoDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Echo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="msg" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EchoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EchoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsVehicleBatterLowAlertWithIn24Hourse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imie" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsVehicleBatterLowAlertWithIn24HourseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsVehicleBatterLowAlertWithIn24HourseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPowerLossAlert">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imie" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPowerLossAlertResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q197="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetPowerLossAlertResult" nillable="true" type="q197:PowerLossAlert" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCumulativeDuration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imie" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCumulativeDurationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q198="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetCumulativeDurationResult" nillable="true" type="q198:CummulativeDuration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceSn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q199="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetDeviceResult" nillable="true" type="q199:DeviceDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDevices">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDevicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q200="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetAllDevicesResult" nillable="true" type="q200:ArrayOfDeviceDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDemoDevices">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDemoDevicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q201="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetDemoDevicesResult" nillable="true" type="q201:ArrayOfDeviceDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveDevices">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveDevicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q202="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetActiveDevicesResult" nillable="true" type="q202:ArrayOfDeviceDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDemoOrActiveDevices">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDemoOrActiveDevicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q203="http://schemas.datacontract.org/2004/07/CarPass.Services.Communications.Contracts.Dtos" minOccurs="0" name="GetDemoOrActiveDevicesResult" nillable="true" type="q203:ArrayOfDeviceDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

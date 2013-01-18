@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages.Values" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CarPass.Domains.Communications.Messages.Values" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfRpmValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RpmValue" type="tns:RpmValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRpmValue" nillable="true" type="tns:ArrayOfRpmValue" />
+  <xs:complexType name="RpmValue">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Higher" type="xs:unsignedShort" />
+      <xs:element minOccurs="0" name="Lower" type="xs:unsignedShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RpmValue" nillable="true" type="tns:RpmValue" />
+  <xs:complexType name="ArrayOfSpeedValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SpeedValue" type="tns:SpeedValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSpeedValue" nillable="true" type="tns:ArrayOfSpeedValue" />
+  <xs:complexType name="SpeedValue">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Higher" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Lower" type="xs:unsignedByte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SpeedValue" nillable="true" type="tns:SpeedValue" />
+  <xs:complexType name="ArrayOfXYZValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="XYZValue" type="tns:XYZValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfXYZValue" nillable="true" type="tns:ArrayOfXYZValue" />
+  <xs:complexType name="XYZValue">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Higher" type="xs:short" />
+      <xs:element minOccurs="0" name="Lower" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="XYZValue" nillable="true" type="tns:XYZValue" />
+</xs:schema>

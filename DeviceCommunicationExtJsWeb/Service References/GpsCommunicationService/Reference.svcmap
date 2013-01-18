@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="66cc0c7f-a2ff-4979-a652-582add2fbd0a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://appsit01:8881/GpsCommunicationServer/GpsCommunicationService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="02dbede6-2b49-4015-971c-106513a294f9" SourceId="1" SourceUrl="http://appsit01:8881/GpsCommunicationServer/GpsCommunicationService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="28ee77ee-4dc4-41a2-a5c9-5939878768db" SourceId="1" SourceUrl="http://appsit01:8881/GpsCommunicationServer/GpsCommunicationService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="f6e68a22-8106-4483-ac41-0bf8cac9db5a" SourceId="1" SourceUrl="http://appsit01:8881/GpsCommunicationServer/GpsCommunicationService/mex" />
+    <MetadataFile FileName="CarPass.Domains.Communications.Messages.xsd" MetadataType="Schema" ID="6be5c500-beb9-4cb5-90ef-5a316b4899a5" SourceId="1" SourceUrl="http://appsit01:8881/GpsCommunicationServer/GpsCommunicationService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="bb87ea2f-62de-41ff-82e5-eee1700d380f" SourceId="1" SourceUrl="http://appsit01:8881/GpsCommunicationServer/GpsCommunicationService/mex" />
+    <MetadataFile FileName="CarPass.Services.Communications.Contracts.Dtos.xsd" MetadataType="Schema" ID="a3fd509f-c74d-4cdb-b01c-1d8f59ac433d" SourceId="1" SourceUrl="http://appsit01:8881/GpsCommunicationServer/GpsCommunicationService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

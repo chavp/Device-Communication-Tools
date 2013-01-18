@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DeviceCommunicationExtJsWeb.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UsernameDatabase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="PasswordDatabase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">p@ssw0rdsa</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CommunicationDatabase</Value>
+    </Setting>
+    <Setting Name="ServerDatabase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">appsit01</Value>
+    </Setting>
+    <Setting Name="DocumentConnectionstring" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mongodb://appsit01</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
